@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply overflow-x-hidden bg-white font-roboto text-leena-gray;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-montserrat font-bold text-leena-navy;
+  }
+  a {
+    @apply transition-colors;
+  }
+}
+
+.transition-all-custom {
+  @apply transition-all duration-300 ease-in-out;
+}
+
+.swiper-button-next, .swiper-button-prev {
+  color: #ffffff !important;
+  background: rgba(10, 23, 61, 0.45);
+  width: 52px !important;
+  height: 52px !important;
+  border-radius: 9999px;
+  backdrop-filter: blur(8px);
+}
+
+.swiper-button-next::after, .swiper-button-prev::after {
+  font-size: 18px !important;
+  font-weight: 700;
+}
+
+.swiper-pagination-bullet-active {
+  @apply bg-leena-yellow !important;
+}
