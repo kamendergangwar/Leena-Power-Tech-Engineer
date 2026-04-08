@@ -78,7 +78,7 @@ const Footer = () => {
       </div>
 
       <div className="mx-auto mt-12 max-w-7xl border-t border-white/10 pt-8 text-center text-sm text-gray-500">
-        <p>©2022 All Rights Reserved. | Powred by <a href="https://webperfecto.com/" className="hover:text-leena-yellow">webperfecto</a></p>
+        <p>©2026 All Rights Reserved. | Powred by <a href="https://webperfecto.com/" className="hover:text-leena-yellow">webperfecto</a></p>
       </div>
     </footer>
   );
