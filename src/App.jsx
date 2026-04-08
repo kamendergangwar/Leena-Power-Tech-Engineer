@@ -1,17 +1,23 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import TopBar from './components/TopBar';
 import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import Welcome from './components/Welcome';
-import WhyChooseUs from './components/WhyChooseUs';
-import Services from './components/Services';
-import StatsStrip from './components/StatsStrip';
-import Testimonials from './components/Testimonials';
-import Clients from './components/Clients';
 import Footer from './components/Footer';
+import HomePage from './pages/HomePage';
+import ContentPage from './pages/ContentPage';
+import NotFoundPage from './pages/NotFoundPage';
+import { pageContent } from './data/pageContent';
+import { ROUTES } from './data/siteContent';
 
 function App() {
+  const location = useLocation();
+  const dynamicPages = Object.entries(pageContent);
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }, [location.pathname]);
+
   return (
     <div className="relative flex min-h-screen flex-col overflow-hidden bg-white">
       <div className="pointer-events-none fixed inset-0 -z-10 overflow-hidden">
@@ -43,13 +49,13 @@ function App() {
         transition={{ duration: 0.7, ease: 'easeOut' }}
         className="flex-grow"
       >
-        <Hero />
-        <Welcome />
-        <WhyChooseUs />
-        <Services />
-        <StatsStrip />
-        <Testimonials />
-        <Clients />
+        <Routes location={location}>
+          <Route path={ROUTES.home} element={<HomePage />} />
+          {dynamicPages.map(([path, page]) => (
+            <Route key={path} path={path} element={<ContentPage page={page} />} />
+          ))}
+          <Route path="*" element={<NotFoundPage />} />
+        </Routes>
       </motion.main>
 
       <Footer />

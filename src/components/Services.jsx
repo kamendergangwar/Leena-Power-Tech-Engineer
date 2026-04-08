@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import SectionHeading from './SectionHeading';
 import { services } from '../data/siteContent';
 
@@ -29,12 +30,12 @@ const Services = () => {
                   {service.title}
                 </h3>
                 <div className="mx-auto mt-4 h-0.5 w-12 bg-leena-yellow" />
-                <a
-                  href={service.href}
+                <Link
+                  to={service.href}
                   className="mt-6 inline-flex opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-full border border-white/70 px-5 py-2 text-sm font-bold uppercase tracking-[0.14em] text-white"
                 >
                   Learn More
-                </a>
+                </Link>
               </div>
             </motion.div>
           ))}
@@ -42,9 +43,9 @@ const Services = () => {
             <div>
               <h4 className="text-xl font-bold uppercase tracking-[0.18em] mb-4">Need an Expert?</h4>
               <p className="mb-6 opacity-80">We provide integrated solutions for power, electrification, and infrastructure delivery.</p>
-              <a href="https://leenapowertech.in/contact/" className="rounded-full bg-leena-yellow px-6 py-2 font-bold uppercase text-sm text-leena-navy hover:bg-white transition-colors">
+              <Link to="/contact" className="rounded-full bg-leena-yellow px-6 py-2 font-bold uppercase text-sm text-leena-navy hover:bg-white transition-colors">
                 Contact Us
-              </a>
+              </Link>
             </div>
           </div>
         </div>

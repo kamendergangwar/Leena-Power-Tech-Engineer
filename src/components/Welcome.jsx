@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import SectionHeading from './SectionHeading';
 import { welcomeContent } from '../data/siteContent';
 
@@ -23,12 +24,12 @@ const Welcome = () => {
             ))}
           </div>
 
-          <a
-            href={welcomeContent.ctaHref}
+          <Link
+            to={welcomeContent.ctaHref}
             className="mt-10 inline-flex rounded-full bg-leena-yellow px-10 py-3 font-bold uppercase tracking-[0.14em] text-leena-navy shadow-md transition-all hover:bg-leena-navy hover:text-white"
           >
             {welcomeContent.ctaLabel}
-          </a>
+          </Link>
         </motion.div>
       </div>
     </section>

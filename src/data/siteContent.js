@@ -2,6 +2,28 @@ export const SITE_URL = 'https://leenapowertech.in';
 const BASE_URL = import.meta.env.BASE_URL;
 const withBase = (path) => `${BASE_URL}${path.replace(/^\/+/, '')}`;
 
+export const ROUTES = {
+  home: '/',
+  about: '/about',
+  directors: '/directors',
+  awards: '/awards-recognitions',
+  mep: '/mep-works',
+  transmission: '/transmission',
+  distribution: '/distribution',
+  om: '/o-m',
+  railways: '/railways-metro',
+  solar: '/solar-system-installations',
+  evcs: '/evcs',
+  liftEscalators: '/ift-escalators',
+  csr: '/csr',
+  careers: '/careers',
+  currentVacancy: '/current-vacancy',
+  joinTeam: '/join-the-team',
+  hrInitiatives: '/hr-initiatives',
+  events: '/events',
+  contact: '/contact',
+};
+
 export const companyInfo = {
   name: 'Leena Powertech Engineers Pvt. Ltd.',
   phone: '022 61389100',
@@ -14,48 +36,48 @@ export const companyInfo = {
 };
 
 export const navigation = [
-  { name: 'Home', href: `${SITE_URL}/` },
+  { name: 'Home', href: ROUTES.home },
   {
     name: 'About Us',
-    href: '#',
+    href: ROUTES.about,
     children: [
-      { name: 'About Us', href: `${SITE_URL}/about/` },
-      { name: 'Our team', href: `${SITE_URL}/directors/` },
-      { name: 'Awards & Recognitions', href: `${SITE_URL}/awards-recognitions/` },
+      { name: 'About Us', href: ROUTES.about },
+      { name: 'Our team', href: ROUTES.directors },
+      { name: 'Awards & Recognitions', href: ROUTES.awards },
     ],
   },
   {
     name: 'Verticals',
-    href: '#',
+    href: ROUTES.mep,
     children: [
-      { name: 'MEP works', href: `${SITE_URL}/mep-works/` },
-      { name: 'Transmission', href: `${SITE_URL}/transmission/` },
-      { name: 'Distribution', href: `${SITE_URL}/distribution/` },
-      { name: 'O & M', href: `${SITE_URL}/o-m/` },
-      { name: 'Railways & Metro', href: `${SITE_URL}/railways-metro/` },
+      { name: 'MEP works', href: ROUTES.mep },
+      { name: 'Transmission', href: ROUTES.transmission },
+      { name: 'Distribution', href: ROUTES.distribution },
+      { name: 'O & M', href: ROUTES.om },
+      { name: 'Railways & Metro', href: ROUTES.railways },
     ],
   },
   {
     name: 'New Ventures',
-    href: '#',
+    href: ROUTES.solar,
     children: [
-      { name: 'Solar system installations', href: `${SITE_URL}/solar-system-installations/` },
-      { name: 'EVCS', href: `${SITE_URL}/evcs/` },
-      { name: 'Lift & Escalators', href: `${SITE_URL}/ift-escalators/` },
+      { name: 'Solar system installations', href: ROUTES.solar },
+      { name: 'EVCS', href: ROUTES.evcs },
+      { name: 'Lift & Escalators', href: ROUTES.liftEscalators },
     ],
   },
-  { name: 'CSR', href: `${SITE_URL}/csr/` },
+  { name: 'CSR', href: ROUTES.csr },
   {
     name: 'Careers',
-    href: `${SITE_URL}/careers/`,
+    href: ROUTES.careers,
     children: [
-      { name: 'Current Vacancy', href: `${SITE_URL}/current-vacancy/` },
-      { name: 'Join the Team', href: `${SITE_URL}/join-the-team/` },
-      { name: 'HR Initiatives', href: `${SITE_URL}/hr-initiatives/` },
+      { name: 'Current Vacancy', href: ROUTES.currentVacancy },
+      { name: 'Join the Team', href: ROUTES.joinTeam },
+      { name: 'HR Initiatives', href: ROUTES.hrInitiatives },
     ],
   },
-  { name: 'Events', href: `${SITE_URL}/events/` },
-  { name: 'Contact Us', href: `${SITE_URL}/contact/` },
+  { name: 'Events', href: ROUTES.events },
+  { name: 'Contact Us', href: ROUTES.contact },
 ];
 
 export const heroSlides = [
@@ -92,7 +114,7 @@ export const welcomeContent = {
     'Our work spans sectors like Power Transmission, Distribution, Building Electrification, Railway Electrification, Renewable Energy (Solar), and Electric Vehicle Charging Station Systems.',
   ],
   ctaLabel: 'Read More',
-  ctaHref: `${SITE_URL}/about/`,
+  ctaHref: ROUTES.about,
 };
 
 export const reasons = [
@@ -116,27 +138,27 @@ export const reasons = [
 export const services = [
   {
     title: 'MEP Works',
-    href: `${SITE_URL}/mep-works/`,
+    href: ROUTES.mep,
     image: `${SITE_URL}/wp-content/uploads/2022/04/MEP-7.png`,
   },
   {
     title: 'Transmission',
-    href: `${SITE_URL}/transmission/`,
+    href: ROUTES.transmission,
     image: withBase('assets/hero1.png'),
   },
   {
     title: 'Distribution',
-    href: `${SITE_URL}/distribution/`,
+    href: ROUTES.distribution,
     image: withBase('assets/distribution.png'),
   },
   {
     title: 'O & M',
-    href: `${SITE_URL}/o-m/`,
+    href: ROUTES.om,
     image: withBase('assets/om.png'),
   },
   {
     title: 'Railways & Metro',
-    href: `${SITE_URL}/railways-metro/`,
+    href: ROUTES.railways,
     image: withBase('assets/hero3.png'),
   },
 ];

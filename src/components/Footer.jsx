@@ -1,5 +1,6 @@
 import React from 'react';
 import { Phone, Mail, MapPin, ChevronRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import { LinkedInIcon, TwitterIcon, FacebookIcon } from './SocialIcons';
 import { companyInfo, navigation } from '../data/siteContent';
 
@@ -33,10 +34,10 @@ const Footer = () => {
           <ul className="space-y-3">
             {quickLinks.map((link) => (
               <li key={link.name}>
-                <a href={link.href} className="flex items-center text-gray-400 transition-colors hover:text-leena-yellow">
+                <Link to={link.href} className="flex items-center text-gray-400 transition-colors hover:text-leena-yellow">
                   <ChevronRight size={14} className="mr-2 text-leena-yellow" />
                   {link.name}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
@@ -47,10 +48,10 @@ const Footer = () => {
           <ul className="space-y-3">
             {serviceLinks.map((link) => (
               <li key={link.name}>
-                <a href={link.href} className="flex items-center text-gray-400 transition-colors hover:text-leena-yellow">
+                <Link to={link.href} className="flex items-center text-gray-400 transition-colors hover:text-leena-yellow">
                   <ChevronRight size={14} className="mr-2 text-leena-yellow" />
                   {link.name}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
