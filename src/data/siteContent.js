@@ -1,4 +1,6 @@
 export const SITE_URL = 'https://leenapowertech.in';
+const BASE_URL = import.meta.env.BASE_URL;
+const withBase = (path) => `${BASE_URL}${path.replace(/^\/+/, '')}`;
 
 export const companyInfo = {
   name: 'Leena Powertech Engineers Pvt. Ltd.',
@@ -120,22 +122,22 @@ export const services = [
   {
     title: 'Transmission',
     href: `${SITE_URL}/transmission/`,
-    image: '/assets/hero1.png',
+    image: withBase('assets/hero1.png'),
   },
   {
     title: 'Distribution',
     href: `${SITE_URL}/distribution/`,
-    image: '/assets/distribution.png',
+    image: withBase('assets/distribution.png'),
   },
   {
     title: 'O & M',
     href: `${SITE_URL}/o-m/`,
-    image: '/assets/om.png',
+    image: withBase('assets/om.png'),
   },
   {
     title: 'Railways & Metro',
     href: `${SITE_URL}/railways-metro/`,
-    image: '/assets/hero3.png',
+    image: withBase('assets/hero3.png'),
   },
 ];
 
