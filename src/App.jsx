@@ -52,7 +52,7 @@ function App() {
         <Routes location={location}>
           <Route path={ROUTES.home} element={<HomePage />} />
           {dynamicPages.map(([path, page]) => (
-            <Route key={path} path={path} element={<ContentPage page={page} />} />
+            <Route key={path} path={path} element={<ContentPage page={page} pathKey={path} />} />
           ))}
           <Route path="*" element={<NotFoundPage />} />
         </Routes>

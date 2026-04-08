@@ -3,8 +3,11 @@ import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { ROUTES } from '../data/siteContent';
+import { pageImages } from '../data/pageContent';
 
-const ContentPage = ({ page }) => {
+const ContentPage = ({ page, pathKey }) => {
+  const imageSet = pageImages[pathKey] ?? {};
+
   return (
     <section className="py-16 md:py-20">
       <div className="mx-auto max-w-6xl px-4 md:px-12">
@@ -18,6 +21,17 @@ const ContentPage = ({ page }) => {
           <h1 className="mt-4 text-3xl uppercase tracking-[0.14em] text-white md:text-5xl">{page.title}</h1>
           <p className="mt-4 max-w-3xl text-base text-white/85 md:text-lg">{page.subtitle}</p>
         </motion.div>
+
+        {imageSet.hero ? (
+          <motion.div
+            initial={{ opacity: 0, y: 16 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.08, ease: 'easeOut' }}
+            className="mt-8 overflow-hidden rounded-[28px] border border-slate-200 bg-white p-3 shadow-[0_20px_60px_-45px_rgba(10,23,61,0.65)] md:p-4"
+          >
+            <img src={imageSet.hero} alt={`${page.title} visual`} className="h-[220px] w-full rounded-[20px] object-cover md:h-[360px]" />
+          </motion.div>
+        ) : null}
 
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -45,6 +59,19 @@ const ContentPage = ({ page }) => {
               </article>
             ))}
           </div>
+
+          {imageSet.gallery?.length ? (
+            <div className="mt-10">
+              <h3 className="text-xl uppercase tracking-[0.14em] text-leena-navy">Project Gallery</h3>
+              <div className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                {imageSet.gallery.map((item) => (
+                  <div key={item.src} className="overflow-hidden rounded-2xl border border-slate-200 bg-slate-100">
+                    <img src={item.src} alt={item.alt} className="h-44 w-full object-cover" />
+                  </div>
+                ))}
+              </div>
+            </div>
+          ) : null}
 
           <div className="mt-10">
             <Link

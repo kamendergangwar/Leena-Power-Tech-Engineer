@@ -326,3 +326,108 @@ export const pageContent = {
     ],
   },
 };
+
+const asset = (path) => `${import.meta.env.BASE_URL}${path.replace(/^\/+/, '')}`;
+
+export const pageImages = {
+  [ROUTES.about]: {
+    hero: asset('assets/pages/about/hero.png'),
+    gallery: [
+      { src: asset('assets/pages/about/collage.jpg'), alt: 'About Leena Powertech collage' },
+      { src: asset('assets/pages/about/presence.png'), alt: 'Regional presence graphic' },
+    ],
+  },
+  [ROUTES.directors]: {
+    hero: asset('assets/pages/directors/director-amit.jpg'),
+    gallery: [
+      { src: asset('assets/pages/directors/director-komal.png'), alt: 'Director Komal Teckchandani' },
+      { src: asset('assets/pages/directors/leadership-natwar.png'), alt: 'Leadership - Natwar Jha' },
+    ],
+  },
+  [ROUTES.awards]: {
+    hero: asset('assets/pages/awards/maharashtra-cm.jpg'),
+    gallery: [
+      { src: asset('assets/pages/awards/goa-governor.jpg'), alt: 'Award recognition with Goa Governor' },
+      { src: asset('assets/pages/awards/power-minister.jpg'), alt: 'Recognition from Power Minister' },
+      { src: asset('assets/pages/awards/jharkhand-cm.jpg'), alt: 'Jharkhand recognition ceremony' },
+    ],
+  },
+  [ROUTES.mep]: {
+    hero: asset('assets/pages/mep/mep-1.png'),
+    gallery: [
+      { src: asset('assets/pages/mep/mep-2.png'), alt: 'MEP project visual 2' },
+      { src: asset('assets/pages/mep/mep-3.png'), alt: 'MEP project visual 3' },
+    ],
+  },
+  [ROUTES.transmission]: {
+    hero: asset('assets/pages/transmission/trans-1.png'),
+    gallery: [
+      { src: asset('assets/pages/transmission/trans-2.png'), alt: 'Transmission project visual 2' },
+      { src: asset('assets/pages/transmission/trans-3.png'), alt: 'Transmission project visual 3' },
+    ],
+  },
+  [ROUTES.distribution]: {
+    hero: asset('assets/pages/distribution/ehv-substation.jpg'),
+    gallery: [
+      { src: asset('assets/pages/distribution/dist-1.png'), alt: 'Distribution project visual 1' },
+      { src: asset('assets/pages/distribution/dist-2.png'), alt: 'Distribution project visual 2' },
+      { src: asset('assets/pages/distribution/dist-3.png'), alt: 'Distribution project visual 3' },
+    ],
+  },
+  [ROUTES.om]: {
+    hero: asset('assets/pages/om/om-1.png'),
+    gallery: [
+      { src: asset('assets/pages/om/om-2.png'), alt: 'Operations and maintenance visual 2' },
+      { src: asset('assets/pages/om/om-3.png'), alt: 'Operations and maintenance visual 3' },
+    ],
+  },
+  [ROUTES.railways]: {
+    hero: asset('assets/pages/railways/railway-hero.jpeg'),
+    gallery: [
+      { src: asset('assets/pages/railways/railway-1.png'), alt: 'Railways and metro visual 1' },
+      { src: asset('assets/pages/railways/railway-2.png'), alt: 'Railways and metro visual 2' },
+    ],
+  },
+  [ROUTES.solar]: {
+    hero: asset('assets/pages/solar/solar-hero.jpg'),
+    gallery: [
+      { src: asset('assets/pages/solar/solar-1.png'), alt: 'Solar installations visual 1' },
+      { src: asset('assets/pages/solar/solar-2.png'), alt: 'Solar installations visual 2' },
+    ],
+  },
+  [ROUTES.evcs]: {
+    hero: asset('assets/pages/evcs/evcs-hero.png'),
+    gallery: [{ src: asset('assets/pages/evcs/evcs-1.png'), alt: 'EVCS project visual' }],
+  },
+  [ROUTES.liftEscalators]: {
+    hero: asset('assets/pages/lifts/lifts-hero.png'),
+  },
+  [ROUTES.csr]: {
+    hero: asset('assets/pages/csr/csr-hero.jpg'),
+    gallery: [
+      { src: asset('assets/pages/csr/csr-1.png'), alt: 'CSR activity visual 1' },
+      { src: asset('assets/pages/csr/csr-2.png'), alt: 'CSR activity visual 2' },
+    ],
+  },
+  [ROUTES.careers]: {
+    hero: asset('assets/pages/current-vacancy/jobs-card.png'),
+  },
+  [ROUTES.currentVacancy]: {
+    hero: asset('assets/pages/current-vacancy/jobs-card.png'),
+  },
+  [ROUTES.joinTeam]: {
+    hero: asset('assets/pages/join-team/join-hero.png'),
+  },
+  [ROUTES.hrInitiatives]: {
+    hero: asset('assets/pages/hr/hr-hero.png'),
+    gallery: [{ src: asset('assets/pages/hr/hr-1.png'), alt: 'HR initiatives visual' }],
+  },
+  [ROUTES.events]: {
+    hero: asset('assets/pages/events/events-hero.png'),
+    gallery: [{ src: asset('assets/pages/events/events-1.jpeg'), alt: 'Events gallery visual' }],
+  },
+  [ROUTES.contact]: {
+    hero: asset('assets/pages/contact/contact-hero.png'),
+    gallery: [{ src: asset('assets/pages/contact/contact-1.png'), alt: 'Contact page office visual' }],
+  },
+};
