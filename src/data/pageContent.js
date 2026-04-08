@@ -3,285 +3,321 @@ import { ROUTES, companyInfo } from './siteContent';
 export const pageContent = {
   [ROUTES.about]: {
     title: 'About Us',
-    subtitle: 'Integrated EPC expertise built over decades of execution.',
+    subtitle: 'Built on experience, expertise, and technological insight since 1995.',
     intro:
-      'Leena Powertech Engineers Pvt. Ltd. is an integrated EPC organization focused on electrical infrastructure, dependable project delivery, and long-term client relationships.',
+      'LPTE was started in 1995 and has grown from Navi Mumbai to a PAN-India EPC delivery footprint across power distribution, transmission, MEP projects, railways and metro infrastructure.',
     sections: [
       {
-        heading: 'Who We Are',
+        heading: 'Our Contribution In Nation Building',
         body:
-          'Our teams deliver turnkey electrical engineering services across planning, execution, commissioning, and operations support for public and private infrastructure projects.',
+          'Over the years, our teams have supported utilities and public development authorities by executing turnkey electrical projects that connect substations, buildings, and public infrastructure across multiple states.',
       },
       {
-        heading: 'What Drives Us',
+        heading: 'Vision & Mission',
         body:
-          'We prioritize safety, quality, and transparency in every project cycle, while continuously improving processes through modern tools and disciplined project management.',
+          'Our mission is to be a leading EPC company across PAN-India in Distribution, Transmission, Railway Electrification, MEP, and O&M while maintaining strong quality and safety standards.',
+      },
+      {
+        heading: 'Company Values',
+        bullets: [
+          'Believe in people and build long-term capability',
+          'Go beyond oneself through accountable execution',
+          'Deliver quality with discipline and transparency',
+          'Adopt technology and process improvement continuously',
+        ],
       },
     ],
   },
   [ROUTES.directors]: {
     title: 'Our Team',
-    subtitle: 'Experienced leadership with a delivery-first mindset.',
+    subtitle: 'Leadership driven by the philosophy of believing in people.',
     intro:
-      'Our leadership group combines engineering rigor, execution depth, and field experience to deliver complex assignments with predictable outcomes.',
+      'Leena Powertech attributes its growth to a professionally managed leadership team that combines technical depth, execution rigor, and people-first culture across 200+ team members.',
     sections: [
       {
-        heading: 'Execution Leadership',
-        body:
-          'Project leaders and functional heads coordinate design, procurement, site management, and stakeholder alignment to maintain schedule and quality control.',
+        heading: 'Our Directors',
+        bullets: [
+          'Mr. Amit Teckchandani - Founder, Chairman & Managing Director',
+          'Mrs. Komal Teckchandani - Co-founder and Director of Finance',
+        ],
+      },
+      {
+        heading: 'Our Leadership',
+        bullets: [
+          'Mr. Natwar Jha - Chief Executive Officer',
+          'Project and functional leadership with extensive EPC experience',
+          'Focused execution across multi-state infrastructure programs',
+        ],
       },
       {
         heading: 'Culture',
         body:
-          'We build teams that are accountable, collaborative, and responsive, enabling quick issue resolution and strong client confidence on live projects.',
+          'Our philosophy centers on people development, team ownership, and collaborative execution, enabling sustained delivery quality across challenging projects.',
       },
     ],
   },
   [ROUTES.awards]: {
     title: 'Awards & Recognitions',
-    subtitle: 'Recognition earned through quality and consistency.',
+    subtitle: 'Prestigious recognition for EPC contribution across India.',
     intro:
-      'Leena Powertech has been recognized by clients and institutions for project performance, reliability, and contribution to infrastructure development.',
+      'Our project delivery has been acknowledged by multiple government bodies including Maharashtra, Goa, Jharkhand, and national power sector leadership.',
     sections: [
       {
-        heading: 'Quality Milestones',
-        body:
-          'Our track record reflects dependable execution standards, repeat business, and long-term relationships with major infrastructure stakeholders.',
-      },
-      {
-        heading: 'Operational Excellence',
-        body:
-          'Consistent outcomes are driven by process discipline, skilled site teams, and proactive planning for technical and delivery risks.',
+        heading: 'Major Recognitions',
+        bullets: [
+          'Maharashtra State Chief Minister recognition',
+          'Governor of Goa recognition',
+          'Patna SBPCL Department recognition',
+          'Recognition from Power Minister of India',
+          'Jharkhand State Chief Minister recognition',
+        ],
       },
     ],
   },
   [ROUTES.mep]: {
     title: 'MEP Works',
-    subtitle: 'End-to-end MEP delivery for modern buildings and campuses.',
+    subtitle: 'Planning, design, and execution for complete MEP systems.',
     intro:
-      'We execute MEP works with integrated planning across electrical systems, utility coordination, safety practices, and commissioning readiness.',
+      'MEP engineering is a critical part of building infrastructure, and LPTE supports planning, design review, specification, estimation, inspection methods, and final commissioning support.',
     sections: [
       {
-        heading: 'Scope',
+        heading: 'Our Expertise',
         bullets: [
-          'Electrical design coordination and installation',
-          'Power distribution systems and panel integration',
-          'Testing, commissioning, and handover support',
+          'Project reports, drawings, and MEP specifications',
+          'Execution support from design to commissioning',
+          '30+ major projects executed with cumulative value above 150 Cr',
+          'Deliveries for clients including CIDCO, SBI, and IDBI',
         ],
       },
     ],
   },
   [ROUTES.transmission]: {
     title: 'Transmission',
-    subtitle: 'Robust transmission infrastructure with execution certainty.',
+    subtitle: 'Substations, lines, and high-voltage systems execution.',
     intro:
-      'Our transmission capabilities cover high-voltage works, route planning support, construction management, and completion oversight.',
+      'LPTE executes transmission infrastructure with capability across GIS, AIS, EHV substations, AC traction substations, tower and monopole lines, and EHV cable works.',
     sections: [
       {
-        heading: 'Delivery Strength',
+        heading: 'Capabilities',
         bullets: [
-          'Structured project sequencing and resource planning',
-          'Safety-first field execution',
-          'Quality checkpoints through each construction stage',
+          'Erection of GIS, AIS, and EHV substations',
+          'Design of 110/220/400 KV AC traction HV substations',
+          'Construction of 110/220 KV tower and monopole transmission lines',
+          'EHV cable laying and integration',
         ],
       },
     ],
   },
   [ROUTES.distribution]: {
     title: 'Distribution',
-    subtitle: 'Reliable last-mile power distribution programs.',
+    subtitle: 'End-to-end EPC for urban and regional distribution systems.',
     intro:
-      'We execute distribution projects that improve supply reliability and operational resilience across urban and regional networks.',
+      'With more than two decades of execution depth in electrical infrastructure, LPTE has delivered integrated concept-to-commissioning distribution projects for utilities and urban developers.',
     sections: [
       {
-        heading: 'Key Activities',
+        heading: 'What We Deliver',
         bullets: [
-          'Network strengthening and augmentation',
-          'Feeder and consumer-side electrical infrastructure',
-          'Execution support for utility modernization goals',
+          'Turnkey EPC including civil works, erection, testing, and substations',
+          'Technology-driven distribution systems including SCADA execution',
+          'Single-point accountability model for better project control',
+          'Support for central and state power sector programs',
         ],
       },
     ],
   },
   [ROUTES.om]: {
     title: 'O & M',
-    subtitle: 'Operational continuity through disciplined maintenance.',
+    subtitle: 'Long-term reliability through structured maintenance programs.',
     intro:
-      'Our operations and maintenance services are designed to maximize uptime, reduce failures, and extend asset life with predictable service models.',
+      'Our O&M services maintain substations, overhead and underground distribution systems, and exterior lighting networks to ensure safe and uninterrupted operations.',
     sections: [
       {
-        heading: 'Service Approach',
+        heading: 'Service Coverage',
         bullets: [
-          'Preventive and corrective maintenance workflows',
-          'On-call support and escalation protocols',
-          'Performance monitoring and reporting',
+          'Preventive and corrective maintenance planning',
+          'System reliability and safety compliance checks',
+          'Operational support in locations such as Nerul, Baman Dongri, Kharghar Metro, and Bhoomiputra Bhavan',
         ],
       },
     ],
   },
   [ROUTES.railways]: {
     title: 'Railways & Metro',
-    subtitle: 'Electrification and power systems for transport infrastructure.',
+    subtitle: 'Integrated power and electrification solutions for urban transit.',
     intro:
-      'We support rail and metro projects with focused execution on electrification-related systems, quality checks, and handover coordination.',
+      'LPTE has strategically expanded into rail and metro electrification to support safe, affordable, and reliable transportation infrastructure in rapidly growing urban corridors.',
     sections: [
       {
         heading: 'Capabilities',
         bullets: [
-          'Rail and metro electrical infrastructure packages',
-          'Commissioning support under strict timelines',
-          'Coordination across multi-agency stakeholders',
+          'Design, engineering, installation, testing, and commissioning support',
+          'Powering and connecting substations for metro and rail systems',
+          'Electrification of overhead line systems and related integration',
+          'Coordination with multiple stakeholders for large public programs',
         ],
       },
     ],
   },
   [ROUTES.solar]: {
     title: 'Solar System Installations',
-    subtitle: 'Scalable renewable energy implementation support.',
+    subtitle: 'Renewable energy delivery aligned to sustainable growth.',
     intro:
-      'Our solar project teams deliver structured execution support from site readiness and installation to commissioning and operational handover.',
+      'Solar energy is renewable, clean, and sustainable. LPTE supports solar implementation for organizations that are scaling green energy adoption and modern infrastructure practices.',
     sections: [
       {
-        heading: 'What We Deliver',
+        heading: 'Delivery Focus',
         bullets: [
-          'Solar infrastructure installation support',
-          'Electrical integration and quality validation',
-          'Commissioning and documentation assistance',
+          'Site-level solar system implementation and integration',
+          'Execution support for long-term renewable energy transition goals',
+          'Project support aligned to national sustainability priorities',
+          'Experience in deployments such as Bhoomiputra Bhavan, Ulwe',
         ],
       },
     ],
   },
   [ROUTES.evcs]: {
     title: 'EVCS',
-    subtitle: 'Electric vehicle charging infrastructure execution.',
+    subtitle: 'Electric vehicle charging infrastructure for future mobility.',
     intro:
-      'We deliver practical EV charging deployments with electrical safety, network readiness, and operational reliability at the core.',
+      'To address rising pollution and evolving mobility demand, LPTE offers electric mobility solutions through EV charging station infrastructure aligned with India’s EV vision.',
     sections: [
       {
-        heading: 'Deployment Focus',
+        heading: 'EV Mobility Direction',
         bullets: [
-          'Site infrastructure and charger integration',
-          'Power distribution and protection configuration',
-          'Commissioning and system acceptance support',
+          'Electric Vehicle Charging Station (EVCS) setup support',
+          'Infrastructure planning for scalable charging networks',
+          'Collaboration-led deployment with technology partners',
         ],
       },
     ],
   },
   [ROUTES.liftEscalators]: {
     title: 'Lift & Escalators',
-    subtitle: 'Integrated electrical support for vertical mobility systems.',
+    subtitle: 'Vertical mobility support for modern infrastructure.',
     intro:
-      'Our teams provide project support for power and control integration requirements around lift and escalator infrastructure.',
+      'As cities modernize, LPTE has expanded into lift and escalator business solutions, partnering to provide reliable accessibility-oriented infrastructure.',
     sections: [
       {
-        heading: 'Execution Areas',
+        heading: 'Service Scope',
         bullets: [
-          'Electrical coordination and readiness works',
-          'Installation-stage support and compliance checks',
-          'Final testing and handover facilitation',
+          'Power and electrical readiness for lift/escalator systems',
+          'Integration support with partner OEMs',
+          'Execution coordination for public and private facilities',
         ],
       },
     ],
   },
   [ROUTES.csr]: {
     title: 'CSR',
-    subtitle: 'Responsible growth through social commitment.',
+    subtitle: 'Giving back through safety, environment, and skill-building initiatives.',
     intro:
-      'Our CSR efforts focus on meaningful participation in initiatives that contribute to community development and social well-being.',
+      'At LPTE, CSR is centered on responsible citizenship through environmental activity, safety awareness, and social empowerment programs.',
     sections: [
       {
-        heading: 'Focus Areas',
+        heading: 'CSR @ LPTE',
         bullets: [
-          'Community-oriented participation',
-          'Support for local development priorities',
-          'Long-term value through responsible action',
+          'National Safety Week awareness campaigns at project sites',
+          'Plantation initiatives including community activity in Satpati',
+          'Skill workshops for underprivileged children',
+          'Programs inspired by our \"Believe in People\" principle',
         ],
       },
     ],
   },
   [ROUTES.careers]: {
     title: 'Careers',
-    subtitle: 'Build your career with a high-impact engineering team.',
+    subtitle: 'Current opportunities across project and planning functions.',
     intro:
-      'We offer opportunities for professionals who want to work on challenging infrastructure programs with real execution ownership.',
+      'LPTE hires across business development, project execution, and planning teams. Opportunities are listed by role type and location with full-time openings in multiple regions.',
     sections: [
       {
-        heading: 'Why Join',
+        heading: 'Highlighted Openings',
         bullets: [
-          'Large-scale project exposure',
-          'Learning-led delivery culture',
-          'Career paths across technical and managerial tracks',
+          'Supervisor Electrical (Project) - Kolhapur, Palghar, Ratnagiri, Vasai',
+          'Estimation Engineer (Business Development) - CBD Belapur, Navi Mumbai',
+          'Planning Engineer (Project Planning) - CBD Belapur, Navi Mumbai',
         ],
       },
     ],
   },
   [ROUTES.currentVacancy]: {
     title: 'Current Vacancy',
-    subtitle: 'Explore open roles across projects and functions.',
+    subtitle: 'Latest open positions across LPTE functions.',
     intro:
-      'We are regularly hiring for site, design, planning, and support roles aligned to active programs and growth initiatives.',
+      'Current vacancies are listed under project, business development, and planning functions with role-wise location tags and detailed descriptions.',
     sections: [
       {
-        heading: 'Application Note',
-        body:
-          'Share your updated profile with role preference and experience details. Shortlisted candidates are contacted by our hiring team.',
+        heading: 'Available Roles',
+        bullets: [
+          'Supervisor Electrical - Project',
+          'Estimation Engineer - Business Development',
+          'Planning Engineer - Project Planning',
+        ],
       },
     ],
   },
   [ROUTES.joinTeam]: {
     title: 'Join the Team',
-    subtitle: 'Work with people who build what matters.',
+    subtitle: 'Professionally managed, people-first work culture.',
     intro:
-      'Join Leena Powertech to contribute to projects that shape critical infrastructure and deliver measurable public impact.',
+      'LPTE follows the \"Believe in People\" principle and supports employee growth through team engagement programs, development pathways, and long-term career planning.',
     sections: [
       {
-        heading: 'How We Work',
+        heading: 'Opportunities In LPTE',
         body:
-          'We value accountability, collaboration, and problem-solving on live projects where quality and timelines both matter.',
+          'To join our team, you can share your resume with our hiring desk at careers@lptindia.in and hr@lptindia.in.',
+      },
+      {
+        heading: 'Important Notice',
+        body:
+          'LPTE follows a merit-based hiring practice and does not charge any fee, deposit, or payment at any stage of recruitment. Any such request is fraudulent and not associated with LPTE.',
       },
     ],
   },
   [ROUTES.hrInitiatives]: {
     title: 'HR Initiatives',
-    subtitle: 'People practices that support long-term growth.',
+    subtitle: 'Structured employee engagement and capability development programs.',
     intro:
-      'Our HR initiatives are designed around capability building, employee engagement, and a supportive delivery environment.',
+      'Our HR initiatives are built to strengthen belonging, improve capability, and reward long-term commitment through structured activities and development platforms.',
     sections: [
       {
-        heading: 'People Priorities',
+        heading: 'Salient HR Initiatives',
         bullets: [
-          'Learning and development pathways',
-          'Structured onboarding and mentorship',
-          'Performance support and recognition',
+          'Get-togethers, sports, cultural events, and festival celebrations',
+          'Employee welfare trust support programs',
+          'Best Employee and site-level recognition initiatives',
+          'Long Service Awards for sustained contribution',
+          'Learning Centre at CBD-Belapur for skill development',
         ],
       },
     ],
   },
   [ROUTES.events]: {
     title: 'Events',
-    subtitle: 'Milestones, participation, and industry engagement.',
+    subtitle: 'Organization and team activities across the year.',
     intro:
-      'We participate in sector events, project milestones, and organizational activities that strengthen collaboration across teams and stakeholders.',
+      'LPTE events include annual team engagements and organization-wide activities designed to strengthen culture, collaboration, and recognition.',
     sections: [
       {
-        heading: 'What You Will Find',
+        heading: 'Featured',
         bullets: [
-          'Project milestone highlights',
-          'Industry participation snapshots',
-          'Organization updates and announcements',
+          'Annual Day highlights',
+          'Employee and team celebration moments',
+          'Project-community engagement snapshots',
         ],
       },
     ],
   },
   [ROUTES.contact]: {
     title: 'Contact Us',
-    subtitle: 'Connect with Leena Powertech.',
+    subtitle: 'Get in touch with Leena Powertech Engineers Pvt. Ltd.',
     intro:
-      'Reach out to discuss project requirements, partnerships, and service opportunities. Our team will respond promptly.',
+      'For project discussions, partnerships, and service requests, connect with us through the details below. Our team will coordinate the next steps quickly.',
     sections: [
       {
         heading: 'Contact Details',
         bullets: [
+          'Office: Sai Chambers, Sector-11, C.B.D Belapur, Navi Mumbai - 400614',
           `Phone: ${companyInfo.phone}`,
           `Email: ${companyInfo.email}`,
           `Address: ${companyInfo.address}`,
