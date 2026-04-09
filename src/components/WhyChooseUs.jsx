@@ -2,11 +2,13 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Award, ShieldCheck, Wrench } from 'lucide-react';
 import SectionHeading from './SectionHeading';
-import { reasons } from '../data/siteContent';
+import { useData } from '../context/DataContext';
 
 const icons = [ShieldCheck, Wrench, Award];
 
 const WhyChooseUs = () => {
+  const { data } = useData();
+  const { reasons } = data;
   return (
     <section className="bg-slate-50 py-20">
       <div className="mx-auto max-w-7xl px-4 md:px-12">

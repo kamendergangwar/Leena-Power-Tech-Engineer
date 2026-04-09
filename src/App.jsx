@@ -5,38 +5,66 @@ import TopBar from './components/TopBar';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
+import AboutPage from './pages/AboutPage';
 import ContentPage from './pages/ContentPage';
+import ContactPage from './pages/ContactPage';
 import NotFoundPage from './pages/NotFoundPage';
-import { pageContent } from './data/pageContent';
-import { ROUTES } from './data/siteContent';
+import { useData } from './context/DataContext';
 
 function App() {
   const location = useLocation();
-  const dynamicPages = Object.entries(pageContent);
-
+  const { data, loading, error } = useData();
+  
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   }, [location.pathname]);
 
+  if (loading) {
+    return (
+      <div className="flex h-screen items-center justify-center bg-white">
+        <div className="h-12 w-12 animate-spin rounded-full border-b-2 border-leena-navy"></div>
+      </div>
+    );
+  }
+
+  if (error) {
+    return (
+      <div className="flex h-screen items-center justify-center bg-white">
+        <div className="text-center">
+          <h2 className="text-2xl font-bold text-red-600">Error loading content</h2>
+          <p className="mt-2 text-gray-600">{error}</p>
+        </div>
+      </div>
+    );
+  }
+
+  const { pageContent, routes: ROUTES } = data;
+  const dynamicPages = Object.entries(pageContent).filter(
+    ([path]) => path !== ROUTES.about && path !== ROUTES.contact
+  );
+  const isAboutPage = location.pathname === ROUTES.about;
+
   return (
     <div className="relative flex min-h-screen flex-col overflow-hidden bg-white">
-      <div className="pointer-events-none fixed inset-0 -z-10 overflow-hidden">
-        <motion.div
-          className="absolute -left-20 top-24 h-72 w-72 rounded-full bg-leena-yellow/10 blur-3xl"
-          animate={{ x: [0, 70, 0], y: [0, 40, 0], scale: [1, 1.08, 1] }}
-          transition={{ duration: 18, repeat: Infinity, ease: 'easeInOut' }}
-        />
-        <motion.div
-          className="absolute right-[-4rem] top-[30%] h-96 w-96 rounded-full bg-sky-200/20 blur-3xl"
-          animate={{ x: [0, -60, 0], y: [0, 55, 0], scale: [1.05, 1, 1.05] }}
-          transition={{ duration: 22, repeat: Infinity, ease: 'easeInOut' }}
-        />
-        <motion.div
-          className="absolute bottom-[-5rem] left-[30%] h-80 w-80 rounded-full bg-leena-navy/10 blur-3xl"
-          animate={{ x: [0, 30, 0], y: [0, -35, 0], scale: [1, 1.1, 1] }}
-          transition={{ duration: 20, repeat: Infinity, ease: 'easeInOut' }}
-        />
-      </div>
+      {isAboutPage ? null : (
+        <div className="pointer-events-none fixed inset-0 -z-10 overflow-hidden">
+          <motion.div
+            className="absolute -left-20 top-24 h-72 w-72 rounded-full bg-leena-yellow/10 blur-3xl"
+            animate={{ x: [0, 70, 0], y: [0, 40, 0], scale: [1, 1.08, 1] }}
+            transition={{ duration: 18, repeat: Infinity, ease: 'easeInOut' }}
+          />
+          <motion.div
+            className="absolute right-[-4rem] top-[30%] h-96 w-96 rounded-full bg-sky-200/20 blur-3xl"
+            animate={{ x: [0, -60, 0], y: [0, 55, 0], scale: [1.05, 1, 1.05] }}
+            transition={{ duration: 22, repeat: Infinity, ease: 'easeInOut' }}
+          />
+          <motion.div
+            className="absolute bottom-[-5rem] left-[30%] h-80 w-80 rounded-full bg-leena-navy/10 blur-3xl"
+            animate={{ x: [0, 30, 0], y: [0, -35, 0], scale: [1, 1.1, 1] }}
+            transition={{ duration: 20, repeat: Infinity, ease: 'easeInOut' }}
+          />
+        </div>
+      )}
 
       <header>
         <TopBar />
@@ -51,6 +79,8 @@ function App() {
       >
         <Routes location={location}>
           <Route path={ROUTES.home} element={<HomePage />} />
+          <Route path={ROUTES.about} element={<AboutPage />} />
+          <Route path={ROUTES.contact} element={<ContactPage />} />
           {dynamicPages.map(([path, page]) => (
             <Route key={path} path={path} element={<ContentPage page={page} pathKey={path} />} />
           ))}

@@ -1,0 +1,788 @@
+{
+  "companyInfo": {
+    "name": "Leena Powertech Engineers Pvt. Ltd.",
+    "phone": "022 61389100",
+    "phoneHref": "tel:02261389100",
+    "email": "info@lptindia.in",
+    "emailHref": "mailto:info@lptindia.in",
+    "address": "13-15, Ground Floor, Sai Chambers, Sector-11, C.B.D Belapur, Navi Mumbai - 400614",
+    "logo": "https://leenapowertech.in/wp-content/uploads/2022/04/Untitled-design-11.png",
+    "tagline": "Connecting People and Power"
+  },
+  "navigation": [
+    {
+      "name": "Home",
+      "href": "/"
+    },
+    {
+      "name": "About Us",
+      "href": "/about",
+      "children": [
+        {
+          "name": "About Us",
+          "href": "/about"
+        },
+        {
+          "name": "Our team",
+          "href": "/directors"
+        },
+        {
+          "name": "Awards & Recognitions",
+          "href": "/awards-recognitions"
+        }
+      ]
+    },
+    {
+      "name": "Verticals",
+      "href": "/mep-works",
+      "children": [
+        {
+          "name": "MEP works",
+          "href": "/mep-works"
+        },
+        {
+          "name": "Transmission",
+          "href": "/transmission"
+        },
+        {
+          "name": "Distribution",
+          "href": "/distribution"
+        },
+        {
+          "name": "O & M",
+          "href": "/o-m"
+        },
+        {
+          "name": "Railways & Metro",
+          "href": "/railways-metro"
+        }
+      ]
+    },
+    {
+      "name": "New Ventures",
+      "href": "/solar-system-installations",
+      "children": [
+        {
+          "name": "Solar system installations",
+          "href": "/solar-system-installations"
+        },
+        {
+          "name": "EVCS",
+          "href": "/evcs"
+        },
+        {
+          "name": "Lift & Escalators",
+          "href": "/ift-escalators"
+        }
+      ]
+    },
+    {
+      "name": "CSR",
+      "href": "/csr"
+    },
+    {
+      "name": "Careers",
+      "href": "/careers",
+      "children": [
+        {
+          "name": "Current Vacancy",
+          "href": "/current-vacancy"
+        },
+        {
+          "name": "Join the Team",
+          "href": "/join-the-team"
+        },
+        {
+          "name": "HR Initiatives",
+          "href": "/hr-initiatives"
+        }
+      ]
+    },
+    {
+      "name": "Events",
+      "href": "/events"
+    },
+    {
+      "name": "Contact Us",
+      "href": "/contact"
+    }
+  ],
+  "heroSlides": [
+    {
+      "desktop": "https://leenapowertech.in/wp-content/uploads/2022/07/1.png",
+      "mobile": "https://leenapowertech.in/wp-content/uploads/2022/07/1-1.png"
+    },
+    {
+      "desktop": "https://leenapowertech.in/wp-content/uploads/2022/07/7.png",
+      "mobile": "https://leenapowertech.in/wp-content/uploads/2022/07/5-1.png"
+    },
+    {
+      "desktop": "https://leenapowertech.in/wp-content/uploads/2022/07/5.png",
+      "mobile": "https://leenapowertech.in/wp-content/uploads/2022/07/4-1.png"
+    },
+    {
+      "desktop": "https://leenapowertech.in/wp-content/uploads/2022/07/4.png",
+      "mobile": "https://leenapowertech.in/wp-content/uploads/2022/07/6-1.png"
+    },
+    {
+      "desktop": "https://leenapowertech.in/wp-content/uploads/2022/07/6.png",
+      "mobile": "https://leenapowertech.in/wp-content/uploads/2022/07/1-1.png"
+    },
+    {
+      "desktop": "https://leenapowertech.in/wp-content/uploads/2022/07/9.png",
+      "mobile": "https://leenapowertech.in/wp-content/uploads/2022/07/5-1.png"
+    }
+  ],
+  "welcomeContent": {
+    "title": "WELCOME TO LEENA POWERTECH",
+    "body": [
+      "Partnering in the country’s progress in developing electrical distribution infrastructure, Leena Powertech Engineers Pvt Ltd (LPTE) is an integrated EPC company specializing in Turnkey Electrical Engineering Services.",
+      "Our work spans sectors like Power Transmission, Distribution, Building Electrification, Railway Electrification, Renewable Energy (Solar), and Electric Vehicle Charging Station Systems."
+    ],
+    "ctaLabel": "Read More",
+    "ctaHref": "/about"
+  },
+  "reasons": [
+    {
+      "title": "Quality Service",
+      "description": "We work on quality solutions and timely delivery of the projects by using the latest technologies and ISO procedures. Our strengths are our qualified engineers, diversified experience, and devoted employees who believe in the company’s mission of contributors to nation building."
+    },
+    {
+      "title": "Super Support",
+      "description": "Our experienced project management team provides uninterrupted operational excellence. They are backed by a professional support team working 24x7 on preventive measures and maintenance."
+    },
+    {
+      "title": "Award Winning",
+      "description": "Our team has been recognized for their contributions by governments all over the country. We have received prestigious awards from the Government of India, the Government of Maharashtra, the Government of Jharkhand, the Government of Goa, and other noted institutions."
+    }
+  ],
+  "services": [
+    {
+      "title": "MEP Works",
+      "href": "/mep-works",
+      "image": "https://leenapowertech.in/wp-content/uploads/2022/04/MEP-7.png"
+    },
+    {
+      "title": "Transmission",
+      "href": "/transmission",
+      "image": "/assets/hero1.png"
+    },
+    {
+      "title": "Distribution",
+      "href": "/distribution",
+      "image": "/assets/distribution.png"
+    },
+    {
+      "title": "O & M",
+      "href": "/o-m",
+      "image": "/assets/om.png"
+    },
+    {
+      "title": "Railways & Metro",
+      "href": "/railways-metro",
+      "image": "/assets/hero3.png"
+    }
+  ],
+  "stats": [
+    {
+      "value": "25+",
+      "label": "Client Associations",
+      "icon": "https://leenapowertech.in/wp-content/uploads/2022/06/Untitled-design-2022-06-29T134441.919.png"
+    },
+    {
+      "value": "150+",
+      "label": "Completed Projects",
+      "icon": "https://leenapowertech.in/wp-content/uploads/2022/06/Untitled-design-2022-06-29T135053.855.png"
+    },
+    {
+      "value": "25+",
+      "label": "Years of Experience",
+      "icon": "https://leenapowertech.in/wp-content/uploads/2022/06/Untitled-design-2022-06-29T134503.036.png"
+    }
+  ],
+  "testimonials": [
+    {
+      "name": "Mr. Sanjay Chotalia",
+      "role": "Chief Engineer (Special Projects)",
+      "organization": "CIDCO",
+      "image": "https://leenapowertech.in/wp-content/uploads/2022/07/Untitled-design-2022-07-01T115440.101.png",
+      "quote": "LPTE is a company that has always adhered to quality standards. Out of their many distinctive features, I was highly pleased with the way they plan things and anticipate the different challenges. It was nice to work with a company which is work round the clock to satisfy the requirements of its client."
+    },
+    {
+      "name": "Mr. Suresh Ganeshkar",
+      "role": "Chief Engineer",
+      "organization": "MSEDC",
+      "image": "https://leenapowertech.in/wp-content/uploads/2022/07/Untitled-design-2022-07-01T115430.355.png",
+      "quote": "I have worked with many a contracting company, but LPTE has always stood out. The company’s core values of integrity, accountability, and teamwork have always helped the company in challenging times. LPTE’s work has helped us improve our customer satisfaction and make a greater impact on society."
+    },
+    {
+      "name": "Mr. G. S. Gill",
+      "role": "Managing Director",
+      "organization": "CIDCO",
+      "image": "https://leenapowertech.in/wp-content/uploads/2022/07/Untitled-design-2022-07-01T115422.185.png",
+      "quote": "I have had the pleasure to work on a few projects with LPTE. I have seen them execute the projects in a planned manner and they have delivered the desired results while sticking to the strict timelines. Its work has been instrumental in electrifying the city."
+    }
+  ],
+  "clientLogos": [
+    {
+      "name": "Client 1",
+      "image": "https://leenapowertech.in/wp-content/uploads/2022/04/1.png"
+    },
+    {
+      "name": "Client 2",
+      "image": "https://leenapowertech.in/wp-content/uploads/2022/04/2.png"
+    },
+    {
+      "name": "Client 3",
+      "image": "https://leenapowertech.in/wp-content/uploads/2022/04/3.png"
+    },
+    {
+      "name": "Client 4",
+      "image": "https://leenapowertech.in/wp-content/uploads/2022/04/4.png"
+    },
+    {
+      "name": "Client 5",
+      "image": "https://leenapowertech.in/wp-content/uploads/2022/04/5.png"
+    },
+    {
+      "name": "Client 6",
+      "image": "https://leenapowertech.in/wp-content/uploads/2022/04/6.png"
+    },
+    {
+      "name": "Client 7",
+      "image": "https://leenapowertech.in/wp-content/uploads/2022/04/7.png"
+    },
+    {
+      "name": "Client 8",
+      "image": "https://leenapowertech.in/wp-content/uploads/2022/04/8.png"
+    },
+    {
+      "name": "Client 9",
+      "image": "https://leenapowertech.in/wp-content/uploads/2022/04/9.png"
+    },
+    {
+      "name": "Client 10",
+      "image": "https://leenapowertech.in/wp-content/uploads/2022/04/10.png"
+    },
+    {
+      "name": "Client 11",
+      "image": "https://leenapowertech.in/wp-content/uploads/2022/04/11.png"
+    },
+    {
+      "name": "Client 12",
+      "image": "https://leenapowertech.in/wp-content/uploads/2022/04/12.png"
+    }
+  ],
+  "pageContent": {
+    "/about": {
+      "title": "About Us",
+      "subtitle": "Built on experience, expertise, and technological insight since 1995.",
+      "intro": "LPTE was started in 1995 and has grown from Navi Mumbai to a PAN-India EPC delivery footprint across power distribution, transmission, MEP projects, railways and metro infrastructure.",
+      "sections": [
+        {
+          "heading": "Our Contribution In Nation Building",
+          "body": "Over the years, our teams have supported utilities and public development authorities by executing turnkey electrical projects that connect substations, buildings, and public infrastructure across multiple states."
+        },
+        {
+          "heading": "Vision & Mission",
+          "body": "Our mission is to be a leading EPC company across PAN-India in Distribution, Transmission, Railway Electrification, MEP, and O&M while maintaining strong quality and safety standards."
+        },
+        {
+          "heading": "Company Values",
+          "bullets": [
+            "Believe in people and build long-term capability",
+            "Go beyond oneself through accountable execution",
+            "Deliver quality with discipline and transparency",
+            "Adopt technology and process improvement continuously"
+          ]
+        }
+      ]
+    },
+    "/directors": {
+      "title": "Our Team",
+      "subtitle": "Leadership driven by the philosophy of believing in people.",
+      "intro": "Leena Powertech attributes its growth to a professionally managed leadership team that combines technical depth, execution rigor, and people-first culture across 200+ team members.",
+      "sections": [
+        {
+          "heading": "Our Directors",
+          "bullets": [
+            "Mr. Amit Teckchandani - Founder, Chairman & Managing Director",
+            "Mrs. Komal Teckchandani - Co-founder and Director of Finance"
+          ]
+        },
+        {
+          "heading": "Our Leadership",
+          "bullets": [
+            "Mr. Natwar Jha - Chief Executive Officer",
+            "Project and functional leadership with extensive EPC experience",
+            "Focused execution across multi-state infrastructure programs"
+          ]
+        },
+        {
+          "heading": "Culture",
+          "body": "Our philosophy centers on people development, team ownership, and collaborative execution, enabling sustained delivery quality across challenging projects."
+        }
+      ]
+    },
+    "/awards-recognitions": {
+      "title": "Awards & Recognitions",
+      "subtitle": "Prestigious recognition for EPC contribution across India.",
+      "intro": "Our project delivery has been acknowledged by multiple government bodies including Maharashtra, Goa, Jharkhand, and national power sector leadership.",
+      "sections": [
+        {
+          "heading": "Major Recognitions",
+          "bullets": [
+            "Maharashtra State Chief Minister recognition",
+            "Governor of Goa recognition",
+            "Patna SBPCL Department recognition",
+            "Recognition from Power Minister of India",
+            "Jharkhand State Chief Minister recognition"
+          ]
+        }
+      ]
+    },
+    "/mep-works": {
+      "title": "MEP Works",
+      "subtitle": "Planning, design, and execution for complete MEP systems.",
+      "intro": "MEP engineering is a critical part of building infrastructure, and LPTE supports planning, design review, specification, estimation, inspection methods, and final commissioning support.",
+      "sections": [
+        {
+          "heading": "Our Expertise",
+          "bullets": [
+            "Project reports, drawings, and MEP specifications",
+            "Execution support from design to commissioning",
+            "30+ major projects executed with cumulative value above 150 Cr",
+            "Deliveries for clients including CIDCO, SBI, and IDBI"
+          ]
+        }
+      ]
+    },
+    "/transmission": {
+      "title": "Transmission",
+      "subtitle": "Substations, lines, and high-voltage systems execution.",
+      "intro": "LPTE executes transmission infrastructure with capability across GIS, AIS, EHV substations, AC traction substations, tower and monopole lines, and EHV cable works.",
+      "sections": [
+        {
+          "heading": "Capabilities",
+          "bullets": [
+            "Erection of GIS, AIS, and EHV substations",
+            "Design of 110/220/400 KV AC traction HV substations",
+            "Construction of 110/220 KV tower and monopole transmission lines",
+            "EHV cable laying and integration"
+          ]
+        }
+      ]
+    },
+    "/distribution": {
+      "title": "Distribution",
+      "subtitle": "End-to-end EPC for urban and regional distribution systems.",
+      "intro": "With more than two decades of execution depth in electrical infrastructure, LPTE has delivered integrated concept-to-commissioning distribution projects for utilities and urban developers.",
+      "sections": [
+        {
+          "heading": "What We Deliver",
+          "bullets": [
+            "Turnkey EPC including civil works, erection, testing, and substations",
+            "Technology-driven distribution systems including SCADA execution",
+            "Single-point accountability model for better project control",
+            "Support for central and state power sector programs"
+          ]
+        }
+      ]
+    },
+    "/o-m": {
+      "title": "O & M",
+      "subtitle": "Long-term reliability through structured maintenance programs.",
+      "intro": "Our O&M services maintain substations, overhead and underground distribution systems, and exterior lighting networks to ensure safe and uninterrupted operations.",
+      "sections": [
+        {
+          "heading": "Service Coverage",
+          "bullets": [
+            "Preventive and corrective maintenance planning",
+            "System reliability and safety compliance checks",
+            "Operational support in locations such as Nerul, Baman Dongri, Kharghar Metro, and Bhoomiputra Bhavan"
+          ]
+        }
+      ]
+    },
+    "/railways-metro": {
+      "title": "Railways & Metro",
+      "subtitle": "Integrated power and electrification solutions for urban transit.",
+      "intro": "LPTE has strategically expanded into rail and metro electrification to support safe, affordable, and reliable transportation infrastructure in rapidly growing urban corridors.",
+      "sections": [
+        {
+          "heading": "Capabilities",
+          "bullets": [
+            "Design, engineering, installation, testing, and commissioning support",
+            "Powering and connecting substations for metro and rail systems",
+            "Electrification of overhead line systems and related integration",
+            "Coordination with multiple stakeholders for large public programs"
+          ]
+        }
+      ]
+    },
+    "/solar-system-installations": {
+      "title": "Solar System Installations",
+      "subtitle": "Renewable energy delivery aligned to sustainable growth.",
+      "intro": "Solar energy is renewable, clean, and sustainable. LPTE supports solar implementation for organizations that are scaling green energy adoption and modern infrastructure practices.",
+      "sections": [
+        {
+          "heading": "Delivery Focus",
+          "bullets": [
+            "Site-level solar system implementation and integration",
+            "Execution support for long-term renewable energy transition goals",
+            "Project support aligned to national sustainability priorities",
+            "Experience in deployments such as Bhoomiputra Bhavan, Ulwe"
+          ]
+        }
+      ]
+    },
+    "/evcs": {
+      "title": "EVCS",
+      "subtitle": "Electric vehicle charging infrastructure for future mobility.",
+      "intro": "To address rising pollution and evolving mobility demand, LPTE offers electric mobility solutions through EV charging station infrastructure aligned with India’s EV vision.",
+      "sections": [
+        {
+          "heading": "EV Mobility Direction",
+          "bullets": [
+            "Electric Vehicle Charging Station (EVCS) setup support",
+            "Infrastructure planning for scalable charging networks",
+            "Collaboration-led deployment with technology partners"
+          ]
+        }
+      ]
+    },
+    "/ift-escalators": {
+      "title": "Lift & Escalators",
+      "subtitle": "Vertical mobility support for modern infrastructure.",
+      "intro": "As cities modernize, LPTE has expanded into lift and escalator business solutions, partnering to provide reliable accessibility-oriented infrastructure.",
+      "sections": [
+        {
+          "heading": "Service Scope",
+          "bullets": [
+            "Power and electrical readiness for lift/escalator systems",
+            "Integration support with partner OEMs",
+            "Execution coordination for public and private facilities"
+          ]
+        }
+      ]
+    },
+    "/csr": {
+      "title": "CSR",
+      "subtitle": "Giving back through safety, environment, and skill-building initiatives.",
+      "intro": "At LPTE, CSR is centered on responsible citizenship through environmental activity, safety awareness, and social empowerment programs.",
+      "sections": [
+        {
+          "heading": "CSR @ LPTE",
+          "bullets": [
+            "National Safety Week awareness campaigns at project sites",
+            "Plantation initiatives including community activity in Satpati",
+            "Skill workshops for underprivileged children",
+            "Programs inspired by our \"Believe in People\" principle"
+          ]
+        }
+      ]
+    },
+    "/careers": {
+      "title": "Careers",
+      "subtitle": "Current opportunities across project and planning functions.",
+      "intro": "LPTE hires across business development, project execution, and planning teams. Opportunities are listed by role type and location with full-time openings in multiple regions.",
+      "sections": [
+        {
+          "heading": "Highlighted Openings",
+          "bullets": [
+            "Supervisor Electrical (Project) - Kolhapur, Palghar, Ratnagiri, Vasai",
+            "Estimation Engineer (Business Development) - CBD Belapur, Navi Mumbai",
+            "Planning Engineer (Project Planning) - CBD Belapur, Navi Mumbai"
+          ]
+        }
+      ]
+    },
+    "/current-vacancy": {
+      "title": "Current Vacancy",
+      "subtitle": "Latest open positions across LPTE functions.",
+      "intro": "Current vacancies are listed under project, business development, and planning functions with role-wise location tags and detailed descriptions.",
+      "sections": [
+        {
+          "heading": "Available Roles",
+          "bullets": [
+            "Supervisor Electrical - Project",
+            "Estimation Engineer - Business Development",
+            "Planning Engineer - Project Planning"
+          ]
+        }
+      ]
+    },
+    "/join-the-team": {
+      "title": "Join the Team",
+      "subtitle": "Professionally managed, people-first work culture.",
+      "intro": "LPTE follows the \"Believe in People\" principle and supports employee growth through team engagement programs, development pathways, and long-term career planning.",
+      "sections": [
+        {
+          "heading": "Opportunities In LPTE",
+          "body": "To join our team, you can share your resume with our hiring desk at careers@lptindia.in and hr@lptindia.in."
+        },
+        {
+          "heading": "Important Notice",
+          "body": "LPTE follows a merit-based hiring practice and does not charge any fee, deposit, or payment at any stage of recruitment. Any such request is fraudulent and not associated with LPTE."
+        }
+      ]
+    },
+    "/hr-initiatives": {
+      "title": "HR Initiatives",
+      "subtitle": "Structured employee engagement and capability development programs.",
+      "intro": "Our HR initiatives are built to strengthen belonging, improve capability, and reward long-term commitment through structured activities and development platforms.",
+      "sections": [
+        {
+          "heading": "Salient HR Initiatives",
+          "bullets": [
+            "Get-togethers, sports, cultural events, and festival celebrations",
+            "Employee welfare trust support programs",
+            "Best Employee and site-level recognition initiatives",
+            "Long Service Awards for sustained contribution",
+            "Learning Centre at CBD-Belapur for skill development"
+          ]
+        }
+      ]
+    },
+    "/events": {
+      "title": "Events",
+      "subtitle": "Organization and team activities across the year.",
+      "intro": "LPTE events include annual team engagements and organization-wide activities designed to strengthen culture, collaboration, and recognition.",
+      "sections": [
+        {
+          "heading": "Featured",
+          "bullets": [
+            "Annual Day highlights",
+            "Employee and team celebration moments",
+            "Project-community engagement snapshots"
+          ]
+        }
+      ]
+    },
+    "/contact": {
+      "title": "Contact Us",
+      "subtitle": "Get in touch with Leena Powertech Engineers Pvt. Ltd.",
+      "intro": "For project discussions, partnerships, and service requests, connect with us through the details below. Our team will coordinate the next steps quickly.",
+      "sections": [
+        {
+          "heading": "Contact Details",
+          "bullets": [
+            "Office: Sai Chambers, Sector-11, C.B.D Belapur, Navi Mumbai - 400614",
+            "Phone: 022 61389100",
+            "Email: info@lptindia.in",
+            "Address: 13-15, Ground Floor, Sai Chambers, Sector-11, C.B.D Belapur, Navi Mumbai - 400614"
+          ]
+        }
+      ]
+    }
+  },
+  "pageImages": {
+    "/about": {
+      "hero": "/assets/assets/pages/about/hero.png",
+      "gallery": [
+        {
+          "src": "/assets/assets/pages/about/collage.jpg",
+          "alt": "About Leena Powertech collage"
+        },
+        {
+          "src": "/assets/assets/pages/about/presence.png",
+          "alt": "Regional presence graphic"
+        }
+      ]
+    },
+    "/directors": {
+      "hero": "/assets/assets/pages/directors/director-amit.jpg",
+      "gallery": [
+        {
+          "src": "/assets/assets/pages/directors/director-komal.png",
+          "alt": "Director Komal Teckchandani"
+        },
+        {
+          "src": "/assets/assets/pages/directors/leadership-natwar.png",
+          "alt": "Leadership - Natwar Jha"
+        }
+      ]
+    },
+    "/awards-recognitions": {
+      "hero": "/assets/assets/pages/awards/maharashtra-cm.jpg",
+      "gallery": [
+        {
+          "src": "/assets/assets/pages/awards/goa-governor.jpg",
+          "alt": "Award recognition with Goa Governor"
+        },
+        {
+          "src": "/assets/assets/pages/awards/power-minister.jpg",
+          "alt": "Recognition from Power Minister"
+        },
+        {
+          "src": "/assets/assets/pages/awards/jharkhand-cm.jpg",
+          "alt": "Jharkhand recognition ceremony"
+        }
+      ]
+    },
+    "/mep-works": {
+      "hero": "/assets/assets/pages/mep/mep-1.png",
+      "gallery": [
+        {
+          "src": "/assets/assets/pages/mep/mep-2.png",
+          "alt": "MEP project visual 2"
+        },
+        {
+          "src": "/assets/assets/pages/mep/mep-3.png",
+          "alt": "MEP project visual 3"
+        }
+      ]
+    },
+    "/transmission": {
+      "hero": "/assets/assets/pages/transmission/trans-1.png",
+      "gallery": [
+        {
+          "src": "/assets/assets/pages/transmission/trans-2.png",
+          "alt": "Transmission project visual 2"
+        },
+        {
+          "src": "/assets/assets/pages/transmission/trans-3.png",
+          "alt": "Transmission project visual 3"
+        }
+      ]
+    },
+    "/distribution": {
+      "hero": "/assets/assets/pages/distribution/ehv-substation.jpg",
+      "gallery": [
+        {
+          "src": "/assets/assets/pages/distribution/dist-1.png",
+          "alt": "Distribution project visual 1"
+        },
+        {
+          "src": "/assets/assets/pages/distribution/dist-2.png",
+          "alt": "Distribution project visual 2"
+        },
+        {
+          "src": "/assets/assets/pages/distribution/dist-3.png",
+          "alt": "Distribution project visual 3"
+        }
+      ]
+    },
+    "/o-m": {
+      "hero": "/assets/assets/pages/om/om-1.png",
+      "gallery": [
+        {
+          "src": "/assets/assets/pages/om/om-2.png",
+          "alt": "Operations and maintenance visual 2"
+        },
+        {
+          "src": "/assets/assets/pages/om/om-3.png",
+          "alt": "Operations and maintenance visual 3"
+        }
+      ]
+    },
+    "/railways-metro": {
+      "hero": "/assets/assets/pages/railways/railway-hero.jpeg",
+      "gallery": [
+        {
+          "src": "/assets/assets/pages/railways/railway-1.png",
+          "alt": "Railways and metro visual 1"
+        },
+        {
+          "src": "/assets/assets/pages/railways/railway-2.png",
+          "alt": "Railways and metro visual 2"
+        }
+      ]
+    },
+    "/solar-system-installations": {
+      "hero": "/assets/assets/pages/solar/solar-hero.jpg",
+      "gallery": [
+        {
+          "src": "/assets/assets/pages/solar/solar-1.png",
+          "alt": "Solar installations visual 1"
+        },
+        {
+          "src": "/assets/assets/pages/solar/solar-2.png",
+          "alt": "Solar installations visual 2"
+        }
+      ]
+    },
+    "/evcs": {
+      "hero": "/assets/assets/pages/evcs/evcs-hero.png",
+      "gallery": [
+        {
+          "src": "/assets/assets/pages/evcs/evcs-1.png",
+          "alt": "EVCS project visual"
+        }
+      ]
+    },
+    "/ift-escalators": {
+      "hero": "/assets/assets/pages/lifts/lifts-hero.png"
+    },
+    "/csr": {
+      "hero": "/assets/assets/pages/csr/csr-hero.jpg",
+      "gallery": [
+        {
+          "src": "/assets/assets/pages/csr/csr-1.png",
+          "alt": "CSR activity visual 1"
+        },
+        {
+          "src": "/assets/assets/pages/csr/csr-2.png",
+          "alt": "CSR activity visual 2"
+        }
+      ]
+    },
+    "/careers": {
+      "hero": "/assets/assets/pages/current-vacancy/jobs-card.png"
+    },
+    "/current-vacancy": {
+      "hero": "/assets/assets/pages/current-vacancy/jobs-card.png"
+    },
+    "/join-the-team": {
+      "hero": "/assets/assets/pages/join-team/join-hero.png"
+    },
+    "/hr-initiatives": {
+      "hero": "/assets/assets/pages/hr/hr-hero.png",
+      "gallery": [
+        {
+          "src": "/assets/assets/pages/hr/hr-1.png",
+          "alt": "HR initiatives visual"
+        }
+      ]
+    },
+    "/events": {
+      "hero": "/assets/assets/pages/events/events-hero.png",
+      "gallery": [
+        {
+          "src": "/assets/assets/pages/events/events-1.jpeg",
+          "alt": "Events gallery visual"
+        }
+      ]
+    },
+    "/contact": {
+      "hero": "/assets/assets/pages/contact/contact-hero.png",
+      "gallery": [
+        {
+          "src": "/assets/assets/pages/contact/contact-1.png",
+          "alt": "Contact page office visual"
+        }
+      ]
+    }
+  },
+  "routes": {
+    "home": "/",
+    "about": "/about",
+    "directors": "/directors",
+    "awards": "/awards-recognitions",
+    "mep": "/mep-works",
+    "transmission": "/transmission",
+    "distribution": "/distribution",
+    "om": "/o-m",
+    "railways": "/railways-metro",
+    "solar": "/solar-system-installations",
+    "evcs": "/evcs",
+    "liftEscalators": "/ift-escalators",
+    "csr": "/csr",
+    "careers": "/careers",
+    "currentVacancy": "/current-vacancy",
+    "joinTeam": "/join-the-team",
+    "hrInitiatives": "/hr-initiatives",
+    "events": "/events",
+    "contact": "/contact"
+  }
+}

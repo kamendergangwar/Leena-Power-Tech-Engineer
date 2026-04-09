@@ -1,8 +1,10 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { stats } from '../data/siteContent';
+import { useData } from '../context/DataContext';
 
 const StatsStrip = () => {
+  const { data } = useData();
+  const { stats } = data;
   return (
     <section className="bg-white py-16">
       <div className="mx-auto max-w-7xl px-4 md:px-12">

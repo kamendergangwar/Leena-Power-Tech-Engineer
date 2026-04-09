@@ -2,10 +2,11 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 import { motion } from 'framer-motion';
-import { ROUTES } from '../data/siteContent';
-import { pageImages } from '../data/pageContent';
+import { useData } from '../context/DataContext';
 
 const ContentPage = ({ page, pathKey }) => {
+  const { data } = useData();
+  const { routes: ROUTES, pageImages } = data;
   const imageSet = pageImages[pathKey] ?? {};
 
   return (

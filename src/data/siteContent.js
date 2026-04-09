@@ -26,11 +26,11 @@ export const ROUTES = {
 
 export const companyInfo = {
   name: 'Leena Powertech Engineers Pvt. Ltd.',
-  phone: '022 61389100',
+  phone: '022 61389100 / 022 61389150',
   phoneHref: 'tel:02261389100',
   email: 'info@lptindia.in',
   emailHref: 'mailto:info@lptindia.in',
-  address: '13-15, Ground Floor, Sai Chambers, Sector-11, C.B.D Belapur, Navi Mumbai - 400614',
+  address: 'Sai Chambers, Sector-11, C.B.D Belapur, Navi Mumbai - 400614',
   logo: `${SITE_URL}/wp-content/uploads/2022/04/Untitled-design-11.png`,
   tagline: 'Connecting People and Power',
 };

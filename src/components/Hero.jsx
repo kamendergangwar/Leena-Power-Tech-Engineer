@@ -5,9 +5,11 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/effect-fade';
-import { heroSlides } from '../data/siteContent';
+import { useData } from '../context/DataContext';
 
 const Hero = () => {
+  const { data } = useData();
+  const { heroSlides } = data;
   return (
     <section className="relative overflow-hidden bg-slate-200">
       <Swiper

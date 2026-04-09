@@ -2,9 +2,11 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import SectionHeading from './SectionHeading';
-import { services } from '../data/siteContent';
+import { useData } from '../context/DataContext';
 
 const Services = () => {
+  const { data } = useData();
+  const { services } = data;
   return (
     <section className="bg-slate-50 py-20">
       <div className="mx-auto max-w-7xl px-4 md:px-12">

@@ -1,85 +1,109 @@
 import React from 'react';
-import { Phone, Mail, MapPin, ChevronRight } from 'lucide-react';
+import { Phone, Mail, MapPin } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { LinkedInIcon, TwitterIcon, FacebookIcon } from './SocialIcons';
-import { companyInfo, navigation } from '../data/siteContent';
+import { useData } from '../context/DataContext';
 
 const Footer = () => {
+  const { data } = useData();
+  const { companyInfo, navigation } = data;
+  const base = import.meta.env.BASE_URL;
   const quickLinks = navigation;
   const serviceLinks = navigation.find((item) => item.name === 'Verticals')?.children ?? [];
+  const footerBackground = `${base}assets/footer/mep-4.png?v=20260408`;
 
   return (
-    <footer className="bg-leena-footer pt-16 pb-8 text-white">
-      <div className="mx-auto grid max-w-7xl grid-cols-1 gap-12 px-4 md:grid-cols-2 md:px-12 lg:grid-cols-4">
-        <div>
-          <img src={companyInfo.logo} alt="Leena Powertech" className="h-24 w-24 rounded-full object-cover" />
-          <p className="mt-6 text-gray-400 leading-relaxed italic">
-            ‘{companyInfo.tagline}’
+    <footer className="relative overflow-hidden text-white">
+      <div
+        className="absolute inset-0 bg-cover bg-center"
+        style={{ backgroundImage: `url(${footerBackground})`, backgroundPosition: 'center center' }}
+        aria-hidden="true"
+      />
+      <div className="absolute inset-0" style={{ backgroundColor: 'rgba(4, 9, 76, 0.88)' }} aria-hidden="true" />
+
+      <div className="relative mx-auto max-w-[1260px] px-4 pb-10 pt-14 md:px-8 md:pt-16">
+        <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-[1.15fr_0.9fr_0.95fr_1.2fr]">
+          <div className="rounded-sm px-8 py-6" style={{ backgroundColor: 'rgba(10, 23, 96, 0.32)' }}>
+            <img src={companyInfo.logo} alt="Leena Powertech" className="h-28 w-28 object-cover md:h-32 md:w-32" />
+            <p className="mt-6 text-[16px] leading-relaxed text-white/95">&lsquo;{companyInfo.tagline}&rsquo;</p>
+          </div>
+
+          <div className="rounded-sm px-8 py-6" style={{ backgroundColor: 'rgba(10, 23, 96, 0.32)' }}>
+            <h4 className="text-[23px] font-semibold leading-[1.2] text-leena-yellow">Quick Links</h4>
+            <ul className="mt-5 space-y-2 text-[16px] text-white/95">
+              {quickLinks.map((link) => (
+                <li key={link.name}>
+                  <Link to={link.href} className="transition-colors hover:text-leena-yellow">
+                    {link.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div className="rounded-sm px-8 py-6" style={{ backgroundColor: 'rgba(10, 23, 96, 0.32)' }}>
+            <h4 className="text-[23px] font-semibold leading-[1.2] text-leena-yellow">Service</h4>
+            <ul className="mt-5 space-y-2 text-[16px] text-white/95">
+              {serviceLinks.map((link) => (
+                <li key={link.name}>
+                  <Link to={link.href} className="transition-colors hover:text-leena-yellow">
+                    {link.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div className="rounded-sm px-8 py-6" style={{ backgroundColor: 'rgba(10, 23, 96, 0.32)' }}>
+            <h4 className="text-[23px] font-semibold leading-[1.2] text-leena-yellow">Get In Touch!</h4>
+            <div className="mt-5 space-y-3 text-[16px] text-white/95">
+              <a href={companyInfo.phoneHref} className="flex items-center gap-3 transition-colors hover:text-leena-yellow">
+                <Phone size={16} className="text-white" />
+                <span>{companyInfo.phone}</span>
+              </a>
+              <a href={companyInfo.emailHref} className="flex items-center gap-3 transition-colors hover:text-leena-yellow">
+                <Mail size={16} className="text-white" />
+                <span>{companyInfo.email}</span>
+              </a>
+              <div className="flex items-start gap-3">
+                <MapPin size={16} className="mt-1 flex-shrink-0 text-white" />
+                <p className="max-w-[28ch] leading-8 text-white/95 md:leading-9">{companyInfo.address}</p>
+              </div>
+            </div>
+            <div className="mt-7 flex items-center gap-3">
+              <a
+                href="#"
+                aria-label="Facebook"
+                className="flex h-10 w-10 items-center justify-center rounded-full bg-leena-yellow text-[#111c62] transition-transform hover:scale-105"
+              >
+                <FacebookIcon size={18} />
+              </a>
+              <a
+                href="#"
+                aria-label="LinkedIn"
+                className="flex h-10 w-10 items-center justify-center rounded-full bg-leena-yellow text-[#111c62] transition-transform hover:scale-105"
+              >
+                <LinkedInIcon size={18} />
+              </a>
+              <a
+                href="#"
+                aria-label="Twitter"
+                className="flex h-10 w-10 items-center justify-center rounded-full bg-leena-yellow text-[#111c62] transition-transform hover:scale-105"
+              >
+                <TwitterIcon size={18} />
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-12 border-t border-white/35 pt-7 text-center text-[15px] text-white/90">
+          <p>
+            ©2022 All Rights Reserved. | Powred by{' '}
+            <a href="https://webperfecto.com/" className="transition-colors hover:text-leena-yellow" target="_blank" rel="noopener noreferrer">
+              webperfecto
+            </a>
           </p>
-          <div className="mt-6 flex space-x-4">
-            <a href="#" aria-label="Facebook" className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 transition-all hover:bg-leena-yellow hover:text-leena-navy">
-              <FacebookIcon size={20} />
-            </a>
-            <a href="#" aria-label="LinkedIn" className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 transition-all hover:bg-leena-yellow hover:text-leena-navy">
-              <LinkedInIcon size={20} />
-            </a>
-            <a href="#" aria-label="Twitter" className="flex h-10 w-10 items-center justify-center rounded-full bg-white/10 transition-all hover:bg-leena-yellow hover:text-leena-navy">
-              <TwitterIcon size={20} />
-            </a>
-          </div>
         </div>
-
-        <div>
-          <h4 className="inline-block border-b-2 border-leena-yellow pb-1 text-lg font-bold uppercase mb-6">Quick Links</h4>
-          <ul className="space-y-3">
-            {quickLinks.map((link) => (
-              <li key={link.name}>
-                <Link to={link.href} className="flex items-center text-gray-400 transition-colors hover:text-leena-yellow">
-                  <ChevronRight size={14} className="mr-2 text-leena-yellow" />
-                  {link.name}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </div>
-
-        <div>
-          <h4 className="inline-block border-b-2 border-leena-yellow pb-1 text-lg font-bold uppercase mb-6">Service</h4>
-          <ul className="space-y-3">
-            {serviceLinks.map((link) => (
-              <li key={link.name}>
-                <Link to={link.href} className="flex items-center text-gray-400 transition-colors hover:text-leena-yellow">
-                  <ChevronRight size={14} className="mr-2 text-leena-yellow" />
-                  {link.name}
-                </Link>
-              </li>
-            ))}
-          </ul>
-        </div>
-
-        <div>
-          <h4 className="inline-block border-b-2 border-leena-yellow pb-1 text-lg font-bold uppercase mb-6">Get In Touch!</h4>
-          <div className="space-y-4">
-            <div className="flex items-start space-x-3">
-              <MapPin size={20} className="text-leena-yellow flex-shrink-0 mt-1" />
-              <p className="text-gray-400 text-sm">
-                {companyInfo.address}
-              </p>
-            </div>
-            <div className="flex items-center space-x-3">
-              <Phone size={18} className="text-leena-yellow flex-shrink-0" />
-              <a href={companyInfo.phoneHref} className="text-gray-400 text-sm hover:text-leena-yellow">{companyInfo.phone}</a>
-            </div>
-            <div className="flex items-center space-x-3">
-              <Mail size={18} className="text-leena-yellow flex-shrink-0" />
-              <a href={companyInfo.emailHref} className="text-gray-400 text-sm hover:text-leena-yellow">{companyInfo.email}</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className="mx-auto mt-12 max-w-7xl border-t border-white/10 pt-8 text-center text-sm text-gray-500">
-        <p>©2026 All Rights Reserved. | Powred by <a href="https://webperfecto.com/" className="hover:text-leena-yellow">webperfecto</a></p>
       </div>
     </footer>
   );

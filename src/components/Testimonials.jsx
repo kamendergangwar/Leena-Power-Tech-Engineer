@@ -1,9 +1,11 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import SectionHeading from './SectionHeading';
-import { testimonials } from '../data/siteContent';
+import { useData } from '../context/DataContext';
 
 const Testimonials = () => {
+  const { data } = useData();
+  const { testimonials } = data;
   return (
     <section className="bg-[linear-gradient(135deg,#0a173d_0%,#162d68_55%,#233e84_100%)] py-20">
       <div className="mx-auto max-w-7xl px-4 md:px-12">

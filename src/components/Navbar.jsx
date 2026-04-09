@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { ChevronDown, Menu, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import { companyInfo, navigation } from '../data/siteContent';
+import { useData } from '../context/DataContext';
 
 const Navbar = () => {
+  const { data } = useData();
+  const { companyInfo, navigation } = data;
   const [isSticky, setIsSticky] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [openGroup, setOpenGroup] = useState(null);
@@ -21,7 +23,7 @@ const Navbar = () => {
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 md:px-12">
         <div className="flex items-center">
           <Link to={navigation[0].href} className="flex items-center">
-            <img src={companyInfo.logo} alt="Leena Powertech" className="h-16 w-16 rounded-full object-cover" />
+            <img src={companyInfo.logo} alt="Leena Powertech" className="h-16 w-16 object-cover md:h-[72px] md:w-[72px]" />
           </Link>
         </div>
 
@@ -30,7 +32,7 @@ const Navbar = () => {
             <div key={link.name} className="group relative">
               <Link
                 to={link.href}
-                className="flex items-center text-sm font-semibold uppercase tracking-[0.14em] hover:text-leena-yellow transition-colors"
+                className="flex items-center text-sm font-semibold hover:text-leena-yellow transition-colors"
               >
                 {link.name}
                 {link.children ? <ChevronDown size={14} className="ml-1" /> : null}

@@ -1,9 +1,11 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import SectionHeading from './SectionHeading';
-import { clientLogos } from '../data/siteContent';
+import { useData } from '../context/DataContext';
 
 const Clients = () => {
+  const { data } = useData();
+  const { clientLogos } = data;
   const logos = [...clientLogos, ...clientLogos];
 
   return (

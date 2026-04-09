@@ -2,9 +2,11 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import SectionHeading from './SectionHeading';
-import { welcomeContent } from '../data/siteContent';
+import { useData } from '../context/DataContext';
 
 const Welcome = () => {
+  const { data } = useData();
+  const { welcomeContent } = data;
   return (
     <section className="bg-white py-20">
       <div className="mx-auto max-w-5xl px-4 text-center md:px-12">
