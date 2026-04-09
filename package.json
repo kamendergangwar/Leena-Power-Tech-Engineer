@@ -7,8 +7,10 @@
     "dev": "vite",
     "dev:full": "concurrently \"npm run dev\" \"npm run server\"",
     "server": "cd backend && npm run dev",
+    "start": "npm --prefix backend start",
     "build": "vite build",
-    "predeploy": "npm run build",
+    "build:github-pages": "DEPLOY_TARGET=github-pages vite build",
+    "predeploy": "npm run build:github-pages",
     "deploy": "gh-pages -d dist",
     "lint": "eslint .",
     "preview": "vite preview"

@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: leena-power-tech-engineer
+    runtime: node
+    region: oregon
+    plan: free
+    buildCommand: npm ci && npm --prefix backend ci && npm run build
+    startCommand: npm start
+    healthCheckPath: /api/health

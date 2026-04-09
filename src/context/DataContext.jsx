@@ -1,4 +1,5 @@
 import React, { createContext, useContext, useState, useEffect } from 'react';
+import { getApiBaseUrl, withApiBase } from '../utils/api';
 
 const DataContext = createContext();
 
@@ -18,7 +19,7 @@ export const DataProvider = ({ children }) => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5001';
+                const API_URL = getApiBaseUrl();
                 const response = await fetch(`${API_URL}/api/content`);
                 if (!response.ok) {
                     throw new Error('Failed to fetch content');
@@ -31,7 +32,7 @@ export const DataProvider = ({ children }) => {
                     
                     for (let key in obj) {
                         if (typeof obj[key] === 'string' && obj[key].startsWith('/assets/')) {
-                            obj[key] = `${API_URL}${obj[key]}`;
+                            obj[key] = withApiBase(obj[key]);
                         } else if (typeof obj[key] === 'object') {
                             processPaths(obj[key]);
                         }

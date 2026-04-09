@@ -764,6 +764,86 @@
       ]
     }
   },
+  "specialPages": {
+    "/directors": {
+      "introParagraphs": [
+        "Leena Powertech has created infrastructure of the highest quality throughout the country. Our practices and working methods have been praised by many organizations. We owe our success to our philosophy of believing in people and going beyond oneself.",
+        "We are a team of around 200+ people, working across different states in the country. Over the past 25 years, we have been led by our dynamic Chairman & Managing Director Mr. Amit Teckchandani along with our Director of Finance Mrs. Komal Teckchandani. Supporting them is a team of highly professional and experienced individuals who continue to fuel our progress."
+      ],
+      "directors": [
+        {
+          "name": "Mr. Amit Teckchandani",
+          "role": "Chairman & Managing Director",
+          "shortDescription": "Founder of Leena Powertech and the driving force behind its long-term growth and execution culture.",
+          "fullDescription": "Mr. Amit Teckchandani is the founder and Chairman & Managing Director of Leena Powertech. A first-generation entrepreneur, he has been the driving force behind the company's growth over the decades. He believes in disciplined execution, people development, and the principle of looking beyond oneself.",
+          "image": "/assets/assets/pages/directors/director-amit.jpg",
+          "detailImage": "/assets/assets/pages/directors/director-amit.jpg"
+        },
+        {
+          "name": "Mrs. Komal Teckchandani",
+          "role": "Director of Finance",
+          "shortDescription": "Co-founder of Leena Powertech, leading finance with a practical and growth-oriented approach.",
+          "fullDescription": "Mrs. Komal Teckchandani, co-founder of Leena Powertech, serves as Director of Finance. Her energetic and thoughtful leadership has helped the company scale with stability and confidence while continuing to support teams across functions.",
+          "image": "/assets/assets/pages/directors/director-komal.png",
+          "detailImage": "/assets/assets/pages/directors/director-komal.png"
+        }
+      ],
+      "leadership": [
+        {
+          "name": "Mr. Natwar Jha",
+          "role": "Chief Executive Officer",
+          "shortDescription": "A highly experienced engineer focused on execution excellence and customer value creation.",
+          "fullDescription": "Mr. Natwar Jha, Chief Executive Officer, brings deep engineering and execution experience to Leena Powertech. His planning discipline, technical understanding, and commitment to customer value have helped the organization deliver complex EPC programs with consistency.",
+          "image": "/assets/assets/pages/directors/leadership-natwar.png",
+          "detailImage": "/assets/assets/pages/directors/leadership-natwar.png"
+        }
+      ]
+    },
+    "/events": {
+      "annualDayPics": [
+        "https://leenapowertech.in/wp-content/uploads/2023/08/WhatsApp-Image-2023-08-24-at-3.34.55-PM-5.jpeg",
+        "https://leenapowertech.in/wp-content/uploads/2022/04/CM-of-Maharashtra-scaled.jpg",
+        "https://leenapowertech.in/wp-content/uploads/2022/04/Governer-of-GOA-scaled.jpg",
+        "https://leenapowertech.in/wp-content/uploads/2022/04/Powerminister.jpg",
+        "https://leenapowertech.in/wp-content/uploads/2022/04/Untitled-design-2022-04-29T120627.482.png"
+      ],
+      "featuredEvents": [
+        {
+          "title": "Annual Day Highlights",
+          "date": "2023",
+          "location": "Main Office",
+          "description": "Celebrating our milestones and honoring the incredible people who drive Leena Powertech forward.",
+          "image": "/assets/assets/pages/events/events-1.jpeg",
+          "category": "Celebration"
+        },
+        {
+          "title": "National Safety Week",
+          "date": "2024",
+          "location": "Project Sites",
+          "description": "Our commitment to safety is absolute. Celebrating National Safety Week across our PAN-India project locations.",
+          "image": "https://leenapowertech.in/wp-content/uploads/2022/04/Untitled-design-2022-04-29T121115.248.png",
+          "category": "Safety"
+        },
+        {
+          "title": "CSR Initiatives",
+          "date": "2024",
+          "location": "Rural Communities",
+          "description": "Empowering communities through our social responsibility programs and healthcare-oriented outreach.",
+          "image": "https://leenapowertech.in/wp-content/uploads/2022/04/Untitled-design-2022-04-29T120613.271.png",
+          "category": "CSR"
+        },
+        {
+          "title": "Technical Training",
+          "date": "2024",
+          "location": "Training Centre",
+          "description": "Investing in our engineers to strengthen capability across EHV, GIS, and execution planning disciplines.",
+          "image": "https://leenapowertech.in/wp-content/uploads/2023/04/training.jpg",
+          "category": "Learning"
+        }
+      ],
+      "archiveUrl": "https://leenapowertech.in/wp-content/uploads/2023/08/event.pdf"
+    }
+  },
   "routes": {
     "home": "/",
     "about": "/about",

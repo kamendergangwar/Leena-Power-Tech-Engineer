@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Briefcase, Users, X } from 'lucide-react';
+import { useData } from '../context/DataContext';
 
 function LeaderModal({ leader, onClose }) {
   return (
@@ -28,7 +29,7 @@ function LeaderModal({ leader, onClose }) {
 
         <div className="p-10 flex flex-col items-center">
           <img
-            src={leader.detailImage}
+            src={leader.detailImage || leader.image}
             alt={leader.name}
             className="w-full max-w-[250px] rounded-lg shadow-sm border border-slate-100 mb-8"
           />
@@ -46,37 +47,14 @@ function LeaderModal({ leader, onClose }) {
 }
 
 const DirectorsPage = () => {
+  const { data } = useData();
   const [selectedLeader, setSelectedLeader] = useState(null);
-
-  const directors = [
-    {
-      name: "Mr. Amit Teckchandani",
-      role: "Chairman & Managing Director",
-      shortDescription: "Mr. Amit Teckchandani is the founder and Chairman & Managing Director of Leena Powertech.",
-      fullDescription: "Mr. Amit Teckchandani is the founder and Chairman & Managing Director of Leena Powertech. He is a first-generation entrepreneur and has been the driving force in Leena Powertech’s success over the decades. He is a passionate individual and believes in the principle ‘Look beyond yourself’.",
-      image: "https://leenapowertech.in/wp-content/uploads/bb-plugin/cache/Untitled-design-2022-04-26T123125.905-square.png",
-      detailImage: "https://leenapowertech.in/wp-content/uploads/2022/04/Untitled-design-2022-04-26T123125.905-257x300.png"
-    },
-    {
-      name: "Mrs. Komal Teckchandani",
-      role: "Director of Finance",
-      shortDescription: "A successful software engineer and our co-founder, Mrs. Komal Teckchandani is the Director of Finance.",
-      fullDescription: "A successful software engineer and our co-founder, Mrs. Komal Teckchandani is the Director of Finance. Her enthusiastic and vibrant approach has helped Leena Powertech to go beyond boundaries. She has been a staunch figure in Leena Powertech’s success over the years.",
-      image: "https://leenapowertech.in/wp-content/uploads/bb-plugin/cache/Untitled-design-2022-04-26T123132.909-square.png",
-      detailImage: "https://leenapowertech.in/wp-content/uploads/2022/04/Untitled-design-2022-04-26T123132.909-257x300.png"
-    }
-  ];
-
-  const leadership = [
-    {
-      name: "Mr. Natwar Jha",
-      role: "CEO",
-      shortDescription: "Mr. Natwar Jha, Chief Executive Officer, has immense experience in his field.",
-      fullDescription: "Mr. Natwar Jha, Chief Executive Officer, has immense experience in his field. A highly qualified engineer and a committed person, Mr. Natwar believes in creating value for our customers. With his exceptional execution skills and planning, he has taken Leena Powertech to new heights.",
-      image: "https://leenapowertech.in/wp-content/uploads/2022/04/Picture2.jpg",
-      detailImage: "https://leenapowertech.in/wp-content/uploads/2022/04/Picture2-295x300.jpg"
-    }
-  ];
+  const { pageContent, routes: ROUTES, specialPages } = data;
+  const page = pageContent[ROUTES.directors];
+  const teamContent = specialPages?.[ROUTES.directors] ?? {};
+  const introParagraphs = teamContent.introParagraphs ?? [page.intro];
+  const directors = teamContent.directors ?? [];
+  const leadership = teamContent.leadership ?? [];
 
   return (
     <div className="flex flex-col bg-white overflow-x-hidden font-montserrat">
@@ -89,7 +67,7 @@ const DirectorsPage = () => {
             viewport={{ once: true }}
             className="flex flex-wrap justify-center gap-2 text-[34px] font-bold font-montserrat mb-4"
           >
-            <span className="text-[#102071]">Our Team</span>
+            <span className="text-[#102071]">{page.title}</span>
           </motion.div>
           <div className="mx-auto h-[3px] w-12 bg-[#F7B500] rounded-full"></div>
           
@@ -100,12 +78,9 @@ const DirectorsPage = () => {
             transition={{ delay: 0.3 }}
             className="mt-12 space-y-6 text-[#555] text-[14px] leading-[1.8] max-w-4xl mx-auto font-montserrat"
           >
-            <p>
-              Leena Powertech has created infrastructure of the highest quality throughout the country. Our practices and working methods have been praised by many organizations. We owe our success to our philosophy of ‘Believing in People’ and ‘Going beyond oneself’.
-            </p>
-            <p>
-              We are a team of around 200+ people, working across different states in the country. Over the past 25 years, we have been led by our dynamic Chief Managing Director Mr. Amit Teckchandani along with our Director of Finance, Mrs. Komal Teckchandani. Supporting them we have a team of highly professional and experienced individuals who have fueled our progress over the year.
-            </p>
+            {introParagraphs.map((paragraph) => (
+              <p key={paragraph}>{paragraph}</p>
+            ))}
           </motion.div>
         </div>
       </section>
@@ -124,7 +99,7 @@ const DirectorsPage = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
             {directors.map((director, index) => (
               <motion.div
-                key={index}
+                key={director.name}
                 initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true, margin: "-100px" }}
@@ -180,7 +155,7 @@ const DirectorsPage = () => {
           <div className="max-w-md mx-auto">
             {leadership.map((leader, index) => (
               <motion.div
-                key={index}
+                key={leader.name}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}

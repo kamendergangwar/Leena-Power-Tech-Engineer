@@ -1,17 +1,36 @@
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
 # Leena-Power-Tech-Engineer
+
+This project supports two deployment modes:
+
+- Full-stack deployment on a Node host such as Render, where the Express backend serves both `/api/*` and the built React app.
+- GitHub Pages deployment for the frontend-only build using `npm run deploy`.
+
+## Local development
+
+Run the frontend and backend together:
+
+```bash
+npm run dev:full
+```
+
+The Vite app will use `http://localhost:5001` automatically during local development.
+
+## Full-stack deployment
+
+The repo includes `render.yaml` for deploying a single Node web service on Render.
+
+Build and start behavior:
+
+- `npm run build` builds the React app into `dist/`
+- `npm start` starts the Express server in `backend/server.js`
+- the Express server serves `/api/content`, `/api/health`, built frontend files from `dist/`, and backend assets from `/assets/*`
+
+## GitHub Pages deployment
+
+Use:
+
+```bash
+npm run deploy
+```
+
+That build uses the repo subpath `/Leena-Power-Tech-Engineer/`. For GitHub Pages with a separately hosted backend, set `VITE_API_URL` at build time so the frontend can reach the API.
