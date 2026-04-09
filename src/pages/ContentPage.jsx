@@ -68,6 +68,11 @@ const ContentPage = ({ page, pathKey }) => {
                 {imageSet.gallery.map((item) => (
                   <div key={item.src} className="overflow-hidden rounded-2xl border border-slate-200 bg-slate-100">
                     <img src={item.src} alt={item.alt} className="h-44 w-full object-cover" />
+                    {item.caption ? (
+                      <div className="border-t border-slate-200 bg-white px-4 py-3">
+                        <p className="text-sm font-medium text-leena-navy">{item.caption}</p>
+                      </div>
+                    ) : null}
                   </div>
                 ))}
               </div>

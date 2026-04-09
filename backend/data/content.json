@@ -342,126 +342,220 @@
       ]
     },
     "/mep-works": {
-      "title": "MEP Works",
-      "subtitle": "Planning, design, and execution for complete MEP systems.",
-      "intro": "MEP engineering is a critical part of building infrastructure, and LPTE supports planning, design review, specification, estimation, inspection methods, and final commissioning support.",
+      "title": "MEP",
+      "subtitle": "Integrated planning, design, and building electrification for complete MEP delivery.",
+      "intro": "MEP Engineering is an integral part of a building. We are responsible for planning and designing MEP systems, including developing policy standards, inspection procedures, and evaluation tools for MEP concerns. Our team specializes in preparing project reports, reviewing, drawing, specification, and cost estimates for the MEP project.",
       "sections": [
         {
           "heading": "Our Expertise",
           "bullets": [
-            "Project reports, drawings, and MEP specifications",
-            "Execution support from design to commissioning",
-            "30+ major projects executed with cumulative value above 150 Cr",
-            "Deliveries for clients including CIDCO, SBI, and IDBI"
+            "Internal and external building electrification",
+            "Captive power works",
+            "HVAC systems",
+            "Building management systems",
+            "Landscape lighting",
+            "Green building electrification"
+          ]
+        },
+        {
+          "heading": "Project Track Record",
+          "body": "We have executed more than 30 major projects costing having a total value of more than 150 Cr for clients such as CIDCO, SBI, and IDBI amongst many others.",
+          "bullets": [
+            "Palghar DHQ",
+            "Agri koli Bhavan",
+            "Kharghar",
+            "Central Park, Kharghar",
+            "Kharghar",
+            "Baman Dongri Station",
+            "Exhibition Centre, Vashi",
+            "Gram Vikas Bhavan",
+            "NRI complex, Nerul",
+            "Kharghar",
+            "Arshiya Warehouse, Panvel",
+            "Spaghetti Housing, Kharghar"
           ]
         }
       ]
     },
     "/transmission": {
       "title": "Transmission",
-      "subtitle": "Substations, lines, and high-voltage systems execution.",
-      "intro": "LPTE executes transmission infrastructure with capability across GIS, AIS, EHV substations, AC traction substations, tower and monopole lines, and EHV cable works.",
+      "subtitle": "Substations, traction systems, transmission lines, and EHV cabling.",
+      "intro": "LPTE is capable of proficiently erecting GIS, AIS, and EHV substations, designing AC traction HV Substation of 110/220/400 KV, constructing 110/220 KV Tower & monopole Transmission Lines, and laying EHV cabling.",
       "sections": [
         {
-          "heading": "Capabilities",
+          "heading": "Core Capabilities",
           "bullets": [
-            "Erection of GIS, AIS, and EHV substations",
-            "Design of 110/220/400 KV AC traction HV substations",
-            "Construction of 110/220 KV tower and monopole transmission lines",
-            "EHV cable laying and integration"
+            "EHV Substation",
+            "Designing of AC traction, HV Substation of 110/220/400 KV",
+            "33 KV Indoor/Outdoor Substation",
+            "Unitized Substation",
+            "Transmission Lines",
+            "GIS Substation",
+            "33/11 KV L.T. Overhead & Underground Network"
           ]
         }
       ]
     },
     "/distribution": {
       "title": "Distribution",
-      "subtitle": "End-to-end EPC for urban and regional distribution systems.",
-      "intro": "With more than two decades of execution depth in electrical infrastructure, LPTE has delivered integrated concept-to-commissioning distribution projects for utilities and urban developers.",
+      "subtitle": "Urban and rural electrification EPC with turnkey delivery and SCADA capability.",
+      "intro": "With an extensive experience spanning across 23 years of experience in building and partnering with urban developers for electrical infra projects, we have been well positioned in the industry. LPTE with its end-to-end concept to commissioning model, has been a leading EPC contractor for urban electrical distribution projects.",
+      "introParagraphs": [
+        "With an extensive experience spanning across 23 years of experience in building and partnering with urban developers for electrical infra projects, we have been well positioned in the industry. LPTE with its end-to-end concept to commissioning model, has been a leading EPC contractor for urban electrical distribution projects.",
+        "Providing electricity to every household in the country is a key policy initiative of the Government of India and we have been effectively partnering with both central and state governments in execution of several key power sector program in the country.",
+        "We offer turnkey EPC services for urban infra electrification EPC projects encompassing civil works, erection, testing, and substation construction, amongst others by using technology systems (SCADA) to maintain effective distribution system. SCADA is a good credential. Something more about it. We were one of the first companies to successfully execute and commission a SCADA system.",
+        "We have a team of highly skilled and experienced professionals with years of experience in the industry. We provide customers with an integrated solution with a single point of accountability, enabling better visibility and control over the project. LPTE has emerged as a highly-skilled and promising company by delivering world-class procurement, and construction services for various challenging urban electrification EPC projects as well as rural electrification projects across the country."
+      ],
+      "statsColumns": [
+        [
+          "HT cable laying (1500 km)",
+          "LT cable laying (1300km)",
+          "Around 150 Substations"
+        ],
+        [
+          "Urban and Rural area expertise",
+          "Executed IPDS projects",
+          "Underground cabling of more than 1500km"
+        ]
+      ],
       "sections": [
         {
-          "heading": "What We Deliver",
+          "heading": "Distribution Delivery",
+          "body": "LPTE supports a key public-infrastructure goal of extending reliable electricity access by partnering with central and state programs. The business executes turnkey urban electrification EPC packages covering civil works, erection, testing, and substation construction while using technology systems such as SCADA for better operating visibility.",
           "bullets": [
-            "Turnkey EPC including civil works, erection, testing, and substations",
-            "Technology-driven distribution systems including SCADA execution",
-            "Single-point accountability model for better project control",
-            "Support for central and state power sector programs"
+            "Integrated solution model with single-point accountability",
+            "Urban and rural electrification execution capability",
+            "Executed IPDS projects",
+            "Early execution and commissioning experience with SCADA systems"
+          ]
+        },
+        {
+          "heading": "Scale And Project Footprint",
+          "bullets": [
+            "HT cable laying: 1500+ km",
+            "LT cable laying: 1300+ km",
+            "Around 150 substations",
+            "Underground cabling of more than 1500 km",
+            "NCRMP Alibag horizontal drilling for UG cable",
+            "Kharghar Substation",
+            "CBD Belapur Substation",
+            "Palghar Substation and panel works",
+            "SBI Data Centre, Navi Mumbai",
+            "Sanpada Substation"
           ]
         }
       ]
     },
     "/o-m": {
-      "title": "O & M",
-      "subtitle": "Long-term reliability through structured maintenance programs.",
-      "intro": "Our O&M services maintain substations, overhead and underground distribution systems, and exterior lighting networks to ensure safe and uninterrupted operations.",
+      "title": "Operation & Maintenance",
+      "subtitle": "Periodic servicing, repair, and reliability support for operating electrical assets.",
+      "intro": "Electrical systems require planned servicing and repair to remain safe, compliant, and dependable. LPTE's O&M team maintains substations, overhead and underground distribution systems, and exterior lighting systems to reduce breakdowns and improve long-term performance.",
       "sections": [
         {
-          "heading": "Service Coverage",
+          "heading": "Maintenance Coverage",
+          "body": "LPTE supports utilities and power operators in improving efficiency and delivering uninterrupted service. The team has handled maintenance assignments across multiple operating public assets in Navi Mumbai and beyond.",
           "bullets": [
-            "Preventive and corrective maintenance planning",
-            "System reliability and safety compliance checks",
-            "Operational support in locations such as Nerul, Baman Dongri, Kharghar Metro, and Bhoomiputra Bhavan"
+            "Nerul station",
+            "Baman Dongri station",
+            "Kharghar Metro",
+            "Bhoomiputra Bhavan"
+          ]
+        },
+        {
+          "heading": "Representative Locations",
+          "bullets": [
+            "Patna Substation",
+            "Nerul Substation",
+            "Baman Dongri Railway Station",
+            "Bhoomiputra Bhavan",
+            "Navi Mumbai Metro"
           ]
         }
       ]
     },
     "/railways-metro": {
       "title": "Railways & Metro",
-      "subtitle": "Integrated power and electrification solutions for urban transit.",
-      "intro": "LPTE has strategically expanded into rail and metro electrification to support safe, affordable, and reliable transportation infrastructure in rapidly growing urban corridors.",
+      "subtitle": "Integrated rail and metro electrification with multi-disciplinary execution capability.",
+      "intro": "Metro rail systems have expanded rapidly across urban India, and LPTE has grown this vertical to support safe, affordable, and reliable transportation infrastructure through integrated project execution.",
       "sections": [
         {
-          "heading": "Capabilities",
+          "heading": "Delivery Scope",
+          "body": "LPTE assists metro rail electrification projects through design, engineering, installation, testing, and commissioning across multi-disciplinary rail and metro packages. The team supports the powering and connection of substations along with overhead line electrification and stakeholder coordination across public infrastructure programs.",
           "bullets": [
-            "Design, engineering, installation, testing, and commissioning support",
-            "Powering and connecting substations for metro and rail systems",
-            "Electrification of overhead line systems and related integration",
-            "Coordination with multiple stakeholders for large public programs"
+            "Integrated execution with strong safety and coordination controls",
+            "Power and electrification of overhead lines",
+            "Capability to build, power, and connect substations",
+            "Multi-stakeholder integration for large transport infrastructure"
+          ]
+        },
+        {
+          "heading": "Highlighted Projects",
+          "bullets": [
+            "Navi Mumbai Railway Station",
+            "Baman Dongri Railway Station",
+            "Koparkhairane Station",
+            "MMRDA Mumbai packages"
           ]
         }
       ]
     },
     "/solar-system-installations": {
-      "title": "Solar System Installations",
-      "subtitle": "Renewable energy delivery aligned to sustainable growth.",
-      "intro": "Solar energy is renewable, clean, and sustainable. LPTE supports solar implementation for organizations that are scaling green energy adoption and modern infrastructure practices.",
+      "title": "Solar system Installations",
+      "subtitle": "Renewable power delivery aligned with sustainability and long-term energy savings.",
+      "intro": "Solar energy offers a renewable, clean, and sustainable alternative to conventional power. LPTE positions this vertical around practical implementation for organizations that want greener operations and better long-term energy economics.",
       "sections": [
         {
-          "heading": "Delivery Focus",
+          "heading": "Advantages Of Solar Energy",
+          "bullets": [
+            "Renewable energy source",
+            "Reduced electricity bills",
+            "Diverse application possibilities",
+            "Low maintenance costs",
+            "Continuous technology development"
+          ]
+        },
+        {
+          "heading": "Industry Direction",
+          "body": "The live site positions solar as a fast-growing long-term infrastructure segment, highlighting continued scale-up in deployment and the role of solar in broader decarbonization goals. LPTE frames its solar delivery around building financially sustainable implementations that create stronger outcomes for end users and society.",
           "bullets": [
             "Site-level solar system implementation and integration",
-            "Execution support for long-term renewable energy transition goals",
-            "Project support aligned to national sustainability priorities",
-            "Experience in deployments such as Bhoomiputra Bhavan, Ulwe"
+            "Execution support for green infrastructure goals",
+            "Focus on financially sustainable delivery models",
+            "Solar system at Bhoomiputra Bhavan, Ulwe"
           ]
         }
       ]
     },
     "/evcs": {
-      "title": "EVCS",
-      "subtitle": "Electric vehicle charging infrastructure for future mobility.",
-      "intro": "To address rising pollution and evolving mobility demand, LPTE offers electric mobility solutions through EV charging station infrastructure aligned with India’s EV vision.",
+      "title": "Electric Vehicle Charging Stations",
+      "subtitle": "Electric mobility infrastructure for cleaner transport systems.",
+      "intro": "The growth of pollution and declining fuel reserves has accelerated the need for cleaner transport. LPTE's EVCS business addresses that shift through electric mobility infrastructure and charging-station deployment.",
       "sections": [
         {
-          "heading": "EV Mobility Direction",
+          "heading": "EVCS Direction",
+          "body": "The live site aligns this business with the Government of India's public-transport EV vision and positions LPTE as a provider of electric mobility solutions through EV charging-station setup.",
           "bullets": [
-            "Electric Vehicle Charging Station (EVCS) setup support",
-            "Infrastructure planning for scalable charging networks",
-            "Collaboration-led deployment with technology partners"
+            "Environment-friendly transport infrastructure",
+            "Electric mobility solutions through EVCS setup",
+            "Public-transport EV alignment toward 2030 goals",
+            "Joint ventures with international partners to expand capability"
           ]
         }
       ]
     },
     "/ift-escalators": {
       "title": "Lift & Escalators",
-      "subtitle": "Vertical mobility support for modern infrastructure.",
-      "intro": "As cities modernize, LPTE has expanded into lift and escalator business solutions, partnering to provide reliable accessibility-oriented infrastructure.",
+      "subtitle": "Vertical mobility support for modern public and private infrastructure.",
+      "intro": "LPTE has expanded into lift and escalator solutions as part of its broader infrastructure portfolio, focusing on dependable vertical-mobility support for modern facilities and urban development projects.",
       "sections": [
         {
           "heading": "Service Scope",
+          "body": "This vertical is presented as an extension of LPTE's infrastructure capability into accessibility and movement systems, complementing the company's electrical and building-services experience.",
           "bullets": [
             "Power and electrical readiness for lift/escalator systems",
             "Integration support with partner OEMs",
-            "Execution coordination for public and private facilities"
+            "Execution coordination for public and private facilities",
+            "Vertical mobility support for modernized urban assets"
           ]
         }
       ]
@@ -621,45 +715,160 @@
       ]
     },
     "/mep-works": {
-      "hero": "/assets/assets/pages/mep/mep-1.png",
+      "heroBanner": "/assets/pages/mep/mep-hero-8k.svg",
+      "hero": "https://leenapowertech.in/wp-content/uploads/2022/04/1-1.png",
       "gallery": [
         {
-          "src": "/assets/assets/pages/mep/mep-2.png",
-          "alt": "MEP project visual 2"
+          "src": "https://leenapowertech.in/wp-content/uploads/2022/04/8-2.png",
+          "alt": "Palghar DHQ",
+          "caption": "Palghar DHQ"
         },
         {
-          "src": "/assets/assets/pages/mep/mep-3.png",
-          "alt": "MEP project visual 3"
+          "src": "https://leenapowertech.in/wp-content/uploads/2022/04/2-1.png",
+          "alt": "Agri koli Bhavan",
+          "caption": "Agri koli Bhavan"
+        },
+        {
+          "src": "https://leenapowertech.in/wp-content/uploads/2022/04/11-2.png",
+          "alt": "Kharghar",
+          "caption": "Kharghar"
+        },
+        {
+          "src": "https://leenapowertech.in/wp-content/uploads/2022/04/7-2.png",
+          "alt": "Central Park Kharghar",
+          "caption": "Central Park Kharghar"
+        },
+        {
+          "src": "https://leenapowertech.in/wp-content/uploads/2022/04/5-1.png",
+          "alt": "Kharghar",
+          "caption": "Kharghar"
+        },
+        {
+          "src": "https://leenapowertech.in/wp-content/uploads/2022/04/3-1.png",
+          "alt": "Baman Dongri Station",
+          "caption": "Baman Dongri Station"
+        },
+        {
+          "src": "https://leenapowertech.in/wp-content/uploads/2022/04/10-2.png",
+          "alt": "Exhibition Centre Vashi",
+          "caption": "Exhibition Centre Vashi"
+        },
+        {
+          "src": "https://leenapowertech.in/wp-content/uploads/2022/04/9-2.png",
+          "alt": "Gram Vikas Bhavan",
+          "caption": "Gram Vikas Bhavan"
+        },
+        {
+          "src": "https://leenapowertech.in/wp-content/uploads/2022/04/4-1.png",
+          "alt": "NRI complex Nerul",
+          "caption": "NRI complex Nerul"
+        },
+        {
+          "src": "https://leenapowertech.in/wp-content/uploads/2022/04/6-1.png",
+          "alt": "Kharghar",
+          "caption": "Kharghar"
+        },
+        {
+          "src": "https://leenapowertech.in/wp-content/uploads/2022/04/12-2.png",
+          "alt": "Arshiya Warehouse Panvel",
+          "caption": "Arshiya Warehouse Panvel"
+        },
+        {
+          "src": "https://leenapowertech.in/wp-content/uploads/2022/04/1-1.png",
+          "alt": "Spaghetti Housing Kharghar",
+          "caption": "Spaghetti Housing Kharghar"
         }
       ]
     },
     "/transmission": {
-      "hero": "/assets/assets/pages/transmission/trans-1.png",
+      "heroBanner": "/assets/pages/transmission/transmission-hero-crop.png",
+      "hero": "https://leenapowertech.in/wp-content/uploads/2022/04/17.png",
       "gallery": [
         {
-          "src": "/assets/assets/pages/transmission/trans-2.png",
+          "src": "https://leenapowertech.in/wp-content/uploads/2022/04/16.png",
+          "alt": "Transmission project visual 1"
+        },
+        {
+          "src": "https://leenapowertech.in/wp-content/uploads/2022/04/13.png",
           "alt": "Transmission project visual 2"
         },
         {
-          "src": "/assets/assets/pages/transmission/trans-3.png",
+          "src": "https://leenapowertech.in/wp-content/uploads/2022/04/Untitled-design-2022-04-28T154103.001.png",
           "alt": "Transmission project visual 3"
+        },
+        {
+          "src": "https://leenapowertech.in/wp-content/uploads/2022/04/15.png",
+          "alt": "Transmission project visual 4"
+        },
+        {
+          "src": "https://leenapowertech.in/wp-content/uploads/2022/04/14.png",
+          "alt": "Transmission project visual 5"
         }
       ]
     },
     "/distribution": {
-      "hero": "/assets/assets/pages/distribution/ehv-substation.jpg",
+      "heroBanner": "/assets/pages/distribution/distribution-hero-banner.png",
+      "hero": "https://leenapowertech.in/wp-content/uploads/2022/04/23.png",
       "gallery": [
         {
-          "src": "/assets/assets/pages/distribution/dist-1.png",
-          "alt": "Distribution project visual 1"
+          "src": "https://leenapowertech.in/wp-content/uploads/2022/04/27.png",
+          "alt": "NCRMP Ratnagiri RMU",
+          "caption": "NCRMP Ratnagiri RMU"
         },
         {
-          "src": "/assets/assets/pages/distribution/dist-2.png",
-          "alt": "Distribution project visual 2"
+          "src": "https://leenapowertech.in/wp-content/uploads/2022/04/23.png",
+          "alt": "Palghar Substation",
+          "caption": "Palghar Substation"
         },
         {
-          "src": "/assets/assets/pages/distribution/dist-3.png",
-          "alt": "Distribution project visual 3"
+          "src": "https://leenapowertech.in/wp-content/uploads/2022/04/26.png",
+          "alt": "NCRMP Alibag UG Cable laying",
+          "caption": "NCRMP Alibag UG Cable laying"
+        },
+        {
+          "src": "https://leenapowertech.in/wp-content/uploads/2022/04/18.png",
+          "alt": "Palghar Substation Panel",
+          "caption": "Palghar Substation Panel"
+        },
+        {
+          "src": "https://leenapowertech.in/wp-content/uploads/2022/04/24.png",
+          "alt": "NCRMP Ratnagiri UG cable",
+          "caption": "NCRMP Ratnagiri UG cable"
+        },
+        {
+          "src": "https://leenapowertech.in/wp-content/uploads/2022/04/22.png",
+          "alt": "Sanpada Substation",
+          "caption": "Sanpada Substation"
+        },
+        {
+          "src": "https://leenapowertech.in/wp-content/uploads/2022/04/20.png",
+          "alt": "Kharghar Substation",
+          "caption": "Kharghar Substation"
+        },
+        {
+          "src": "https://leenapowertech.in/wp-content/uploads/2022/04/17.png",
+          "alt": "Navi Mumbai Substation",
+          "caption": "Navi Mumbai Substation"
+        },
+        {
+          "src": "https://leenapowertech.in/wp-content/uploads/2022/04/21.png",
+          "alt": "CBD Belapur Substation",
+          "caption": "CBD Belapur Substation"
+        },
+        {
+          "src": "https://leenapowertech.in/wp-content/uploads/2022/04/28.png",
+          "alt": "NCRMP Alibag Meter installation",
+          "caption": "NCRMP Alibag Meter installation"
+        },
+        {
+          "src": "https://leenapowertech.in/wp-content/uploads/2022/04/19.png",
+          "alt": "SBI data centre Navi Mumbai",
+          "caption": "SBI data centre Navi Mumbai"
+        },
+        {
+          "src": "https://leenapowertech.in/wp-content/uploads/2022/04/25.png",
+          "alt": "NCRMP Alibag Horizontal drilling for UG cable",
+          "caption": "NCRMP Alibag Horizontal drilling for UG cable"
         }
       ]
     },
