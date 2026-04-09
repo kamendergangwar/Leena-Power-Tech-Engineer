@@ -46,6 +46,46 @@ function LeaderModal({ leader, onClose }) {
   );
 }
 
+function LeaderCard({ leader, onSelect, initialAnimation }) {
+  return (
+    <motion.div
+      initial={initialAnimation}
+      whileInView={{ opacity: 1, x: 0, y: 0 }}
+      viewport={{ once: true, margin: '-100px' }}
+      className="group flex flex-col items-center bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300"
+    >
+      <div className="w-full p-6">
+        <div className="relative aspect-square overflow-hidden rounded-lg">
+          <img
+            src={leader.image}
+            alt={leader.name}
+            className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+          />
+        </div>
+      </div>
+      <div className="flex flex-col items-center p-6 pt-0">
+        <h3 className="text-[20px] font-bold text-[#102071] font-montserrat text-center">{leader.name}</h3>
+        <h5 className="text-[12px] font-medium text-[#212121] font-montserrat mt-1 mb-4 italic text-center uppercase tracking-wider">
+          {leader.role}
+        </h5>
+        <div className="text-[#555] text-[13px] text-center leading-[1.6] mb-8 max-w-[280px]">
+          <p>{leader.shortDescription}</p>
+        </div>
+        <motion.button
+          onClick={() => onSelect(leader)}
+          whileHover={{ scale: 1.05 }}
+          className="px-8 py-2 rounded-md text-leena-navy font-bold uppercase tracking-widest text-[12px] shadow-sm transition-all duration-200"
+          style={{
+            background: 'linear-gradient(rgb(255, 211, 30) 0px, rgb(247, 181, 0) 100%)',
+          }}
+        >
+          READ MORE
+        </motion.button>
+      </div>
+    </motion.div>
+  );
+}
+
 const DirectorsPage = () => {
   const { data } = useData();
   const [selectedLeader, setSelectedLeader] = useState(null);
@@ -98,42 +138,12 @@ const DirectorsPage = () => {
         <div className="mx-auto max-w-7xl">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
             {directors.map((director, index) => (
-              <motion.div
+              <LeaderCard
                 key={director.name}
-                initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true, margin: "-100px" }}
-                className="group flex flex-col items-center bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300"
-              >
-                <div className="w-full p-6">
-                  <div className="relative aspect-square overflow-hidden rounded-lg">
-                    <img 
-                      src={director.image} 
-                      alt={director.name} 
-                      className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-                    />
-                  </div>
-                </div>
-                <div className="flex flex-col items-center p-6 pt-0">
-                  <h3 className="text-[20px] font-bold text-[#102071] font-montserrat text-center">{director.name}</h3>
-                  <h5 className="text-[12px] font-medium text-[#212121] font-montserrat mt-1 mb-4 italic text-center uppercase tracking-wider">
-                    {director.role}
-                  </h5>
-                  <div className="text-[#555] text-[13px] text-center leading-[1.6] mb-8 max-w-[280px]">
-                    <p>{director.shortDescription}</p>
-                  </div>
-                  <motion.button 
-                    onClick={() => setSelectedLeader(director)}
-                    whileHover={{ scale: 1.05 }}
-                    className="px-8 py-2 rounded-md text-leena-navy font-bold uppercase tracking-widest text-[12px] shadow-sm transition-all duration-200"
-                    style={{
-                      background: 'linear-gradient(rgb(255, 211, 30) 0px, rgb(247, 181, 0) 100%)'
-                    }}
-                  >
-                    READ MORE
-                  </motion.button>
-                </div>
-              </motion.div>
+                leader={director}
+                onSelect={setSelectedLeader}
+                initialAnimation={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
+              />
             ))}
           </div>
         </div>
@@ -152,42 +162,14 @@ const DirectorsPage = () => {
       {/* Leadership Section */}
       <section className="py-24 px-4 md:px-12 bg-white">
         <div className="mx-auto max-w-7xl">
-          <div className="max-w-md mx-auto">
-            {leadership.map((leader, index) => (
-              <motion.div
+          <div className="max-w-[420px] mx-auto">
+            {leadership.map((leader) => (
+              <LeaderCard
                 key={leader.name}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                className="group flex flex-col items-center p-10 bg-[#e3f2fd] rounded-2xl transition-all duration-500 hover:shadow-xl"
-              >
-                <div className="h-48 w-48 mb-6 overflow-hidden rounded-full border border-slate-100 shadow-md bg-white">
-                  <img 
-                    src={leader.image} 
-                    alt={leader.name} 
-                    className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-                  />
-                </div>
-                <div className="text-center">
-                    <h3 className="text-[20px] font-bold text-[#102071] font-montserrat">{leader.name}</h3>
-                    <h4 className="text-[12px] font-medium text-[#212121] font-montserrat mt-1 mb-4 uppercase tracking-widest italic">
-                    {leader.role}
-                    </h4>
-                </div>
-                <p className="text-[#555] text-[13px] text-center leading-relaxed mb-8 max-w-[300px]">
-                  {leader.shortDescription}
-                </p>
-                <motion.button 
-                  onClick={() => setSelectedLeader(leader)}
-                  whileHover={{ scale: 1.05 }}
-                  className="px-8 py-2 rounded-md text-leena-navy font-bold uppercase tracking-widest text-[12px] shadow-sm transition-all duration-200"
-                  style={{
-                    background: 'linear-gradient(rgb(255, 211, 30) 0px, rgb(247, 181, 0) 100%)'
-                  }}
-                >
-                  READ MORE
-                </motion.button>
-              </motion.div>
+                leader={leader}
+                onSelect={setSelectedLeader}
+                initialAnimation={{ opacity: 0, y: 30 }}
+              />
             ))}
           </div>
         </div>

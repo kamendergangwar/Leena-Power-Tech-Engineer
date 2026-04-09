@@ -11,6 +11,7 @@ import ContactPage from './pages/ContactPage';
 import EventsPage from './pages/EventsPage';
 import CSRPage from './pages/CSRPage';
 import DirectorsPage from './pages/DirectorsPage';
+import AwardsPage from './pages/AwardsPage';
 import NotFoundPage from './pages/NotFoundPage';
 import { useData } from './context/DataContext';
 
@@ -43,7 +44,7 @@ function App() {
 
   const { pageContent, routes: ROUTES } = data;
   const dynamicPages = Object.entries(pageContent).filter(
-    ([path]) => path !== ROUTES.about && path !== ROUTES.contact && path !== ROUTES.events && path !== ROUTES.csr && path !== ROUTES.directors
+    ([path]) => path !== ROUTES.about && path !== ROUTES.contact && path !== ROUTES.events && path !== ROUTES.csr && path !== ROUTES.directors && path !== ROUTES.awards
   );
   const isAboutPage = location.pathname === ROUTES.about;
 
@@ -87,6 +88,7 @@ function App() {
           <Route path={ROUTES.events} element={<EventsPage />} />
           <Route path={ROUTES.csr} element={<CSRPage />} />
           <Route path={ROUTES.directors} element={<DirectorsPage />} />
+          <Route path={ROUTES.awards} element={<AwardsPage />} />
           {dynamicPages.map(([path, page]) => (
             <Route key={path} path={path} element={<ContentPage page={page} pathKey={path} />} />
           ))}

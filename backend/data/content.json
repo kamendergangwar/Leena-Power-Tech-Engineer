@@ -767,35 +767,35 @@
   "specialPages": {
     "/directors": {
       "introParagraphs": [
-        "Leena Powertech has created infrastructure of the highest quality throughout the country. Our practices and working methods have been praised by many organizations. We owe our success to our philosophy of believing in people and going beyond oneself.",
-        "We are a team of around 200+ people, working across different states in the country. Over the past 25 years, we have been led by our dynamic Chairman & Managing Director Mr. Amit Teckchandani along with our Director of Finance Mrs. Komal Teckchandani. Supporting them is a team of highly professional and experienced individuals who continue to fuel our progress."
+        "Leena Powertech has created infrastructure of the highest quality throughout the country. Our practices and working methods have been praised by many organizations. We owe our success to our philosophy of 'Believing in People' and 'Going beyond oneself'.",
+        "We are a team of around 200+ people, working across different states in the country. Over the past 25 years, we have been led by our dynamic Chief Managing Director Mr. Amit Teckchandani along with our Director of Finance, Mrs. Komal Teckchandani. Supporting them we have a team of highly professional and experienced individuals who have fueled our progress over the year."
       ],
       "directors": [
         {
           "name": "Mr. Amit Teckchandani",
           "role": "Chairman & Managing Director",
-          "shortDescription": "Founder of Leena Powertech and the driving force behind its long-term growth and execution culture.",
-          "fullDescription": "Mr. Amit Teckchandani is the founder and Chairman & Managing Director of Leena Powertech. A first-generation entrepreneur, he has been the driving force behind the company's growth over the decades. He believes in disciplined execution, people development, and the principle of looking beyond oneself.",
-          "image": "/assets/assets/pages/directors/director-amit.jpg",
-          "detailImage": "/assets/assets/pages/directors/director-amit.jpg"
+          "shortDescription": "Mr. Amit Teckchandani is the founder and Chairman & Managing Director of Leena Powertech.",
+          "fullDescription": "Mr. Amit Teckchandani is the founder and Chairman & Managing Director of Leena Powertech. He is a first-generation entrepreneur and has been the driving force in Leena Powertech's success over the decades. He is a passionate individual and believes in the principle 'Look beyond yourself'.",
+          "image": "https://leenapowertech.in/wp-content/uploads/bb-plugin/cache/Untitled-design-2022-04-26T123125.905-square.png",
+          "detailImage": "https://leenapowertech.in/wp-content/uploads/2022/04/Untitled-design-2022-04-26T123125.905-257x300.png"
         },
         {
           "name": "Mrs. Komal Teckchandani",
           "role": "Director of Finance",
-          "shortDescription": "Co-founder of Leena Powertech, leading finance with a practical and growth-oriented approach.",
-          "fullDescription": "Mrs. Komal Teckchandani, co-founder of Leena Powertech, serves as Director of Finance. Her energetic and thoughtful leadership has helped the company scale with stability and confidence while continuing to support teams across functions.",
-          "image": "/assets/assets/pages/directors/director-komal.png",
-          "detailImage": "/assets/assets/pages/directors/director-komal.png"
+          "shortDescription": "A successful software engineer and our co-founder, Mrs. Komal Teckchandani is the Director of Finance.",
+          "fullDescription": "A successful software engineer and our co-founder, Mrs. Komal Teckchandani is the Director of Finance. Her enthusiastic and vibrant approach has helped Leena Powertech to go beyond boundaries. She has been a staunch figure in Leena Powertech's success over the years.",
+          "image": "https://leenapowertech.in/wp-content/uploads/bb-plugin/cache/Untitled-design-2022-04-26T123132.909-square.png",
+          "detailImage": "https://leenapowertech.in/wp-content/uploads/2022/04/Untitled-design-2022-04-26T123132.909-257x300.png"
         }
       ],
       "leadership": [
         {
           "name": "Mr. Natwar Jha",
-          "role": "Chief Executive Officer",
-          "shortDescription": "A highly experienced engineer focused on execution excellence and customer value creation.",
-          "fullDescription": "Mr. Natwar Jha, Chief Executive Officer, brings deep engineering and execution experience to Leena Powertech. His planning discipline, technical understanding, and commitment to customer value have helped the organization deliver complex EPC programs with consistency.",
-          "image": "/assets/assets/pages/directors/leadership-natwar.png",
-          "detailImage": "/assets/assets/pages/directors/leadership-natwar.png"
+          "role": "CEO",
+          "shortDescription": "Mr. Natwar Jha, Chief Executive Officer, has immense experience in his field.",
+          "fullDescription": "Mr. Natwar Jha, Chief Executive Officer, has immense experience in his field. A highly qualified engineer and a committed person, Mr. Natwar believes in creating value for our customers. With his exceptional execution skills and planning, he has taken Leena Powertech to new heights.",
+          "image": "https://leenapowertech.in/wp-content/uploads/2022/04/Picture2.jpg",
+          "detailImage": "https://leenapowertech.in/wp-content/uploads/2022/04/Picture2-295x300.jpg"
         }
       ]
     },
@@ -842,6 +842,38 @@
         }
       ],
       "archiveUrl": "https://leenapowertech.in/wp-content/uploads/2023/08/event.pdf"
+    },
+    "/awards-recognitions": {
+      "title": "Awards & recognition",
+      "introHeading": "Introduction",
+      "intro": "Our company is one of the leading EPC companies in the country. This is demonstrated by the numerous prestigious awards our team has received from many governments like the Government of Maharashtra, Government of Goa, and the Government of Jharkhand. Here are some of the phots of our team receiving accolades.",
+      "awards": [
+        {
+          "title": "Maharashtra State Chief Minister",
+          "description": "Successful completion of ECBC project in Navi Mumbai.",
+          "image": "https://leenapowertech.in/wp-content/uploads/2022/04/CM-of-Maharashtra-scaled.jpg"
+        },
+        {
+          "title": "Governor of GOA",
+          "description": "Successful completion project.",
+          "image": "https://leenapowertech.in/wp-content/uploads/2022/04/Governer-of-GOA-scaled.jpg"
+        },
+        {
+          "title": "Patna SBPCL Dept.",
+          "description": "Successful completion of RAPDRP project.",
+          "image": "https://leenapowertech.in/wp-content/uploads/2022/04/Patna.jpg"
+        },
+        {
+          "title": "Power Minister of India",
+          "description": "Recognition from Power Minister for our contribution in Power infrastructure development in various part of India.",
+          "image": "https://leenapowertech.in/wp-content/uploads/2022/04/Powerminister.jpg"
+        },
+        {
+          "title": "Jharkhand State Chief Minister",
+          "description": "",
+          "image": "https://leenapowertech.in/wp-content/uploads/2022/04/Ranchi-CM.jpg"
+        }
+      ]
     }
   },
   "routes": {
