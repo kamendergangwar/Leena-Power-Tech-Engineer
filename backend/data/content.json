@@ -672,44 +672,44 @@
   },
   "pageImages": {
     "/about": {
-      "hero": "/assets/assets/pages/about/hero.png",
+      "hero": "/assets/pages/about/hero.png",
       "gallery": [
         {
-          "src": "/assets/assets/pages/about/collage.jpg",
+          "src": "/assets/pages/about/collage.jpg",
           "alt": "About Leena Powertech collage"
         },
         {
-          "src": "/assets/assets/pages/about/presence.png",
+          "src": "/assets/pages/about/presence.png",
           "alt": "Regional presence graphic"
         }
       ]
     },
     "/directors": {
-      "hero": "/assets/assets/pages/directors/director-amit.jpg",
+      "hero": "/assets/pages/directors/director-amit.jpg",
       "gallery": [
         {
-          "src": "/assets/assets/pages/directors/director-komal.png",
+          "src": "/assets/pages/directors/director-komal.png",
           "alt": "Director Komal Teckchandani"
         },
         {
-          "src": "/assets/assets/pages/directors/leadership-natwar.png",
+          "src": "/assets/pages/directors/leadership-natwar.png",
           "alt": "Leadership - Natwar Jha"
         }
       ]
     },
     "/awards-recognitions": {
-      "hero": "/assets/assets/pages/awards/maharashtra-cm.jpg",
+      "hero": "/assets/pages/awards/maharashtra-cm.jpg",
       "gallery": [
         {
-          "src": "/assets/assets/pages/awards/goa-governor.jpg",
+          "src": "/assets/pages/awards/goa-governor.jpg",
           "alt": "Award recognition with Goa Governor"
         },
         {
-          "src": "/assets/assets/pages/awards/power-minister.jpg",
+          "src": "/assets/pages/awards/power-minister.jpg",
           "alt": "Recognition from Power Minister"
         },
         {
-          "src": "/assets/assets/pages/awards/jharkhand-cm.jpg",
+          "src": "/assets/pages/awards/jharkhand-cm.jpg",
           "alt": "Jharkhand recognition ceremony"
         }
       ]
@@ -873,101 +873,101 @@
       ]
     },
     "/o-m": {
-      "hero": "/assets/assets/pages/om/om-1.png",
+      "hero": "/assets/pages/om/om-1.png",
       "gallery": [
         {
-          "src": "/assets/assets/pages/om/om-2.png",
+          "src": "/assets/pages/om/om-2.png",
           "alt": "Operations and maintenance visual 2"
         },
         {
-          "src": "/assets/assets/pages/om/om-3.png",
+          "src": "/assets/pages/om/om-3.png",
           "alt": "Operations and maintenance visual 3"
         }
       ]
     },
     "/railways-metro": {
-      "hero": "/assets/assets/pages/railways/railway-hero.jpeg",
+      "hero": "/assets/pages/railways/railway-hero.jpeg",
       "gallery": [
         {
-          "src": "/assets/assets/pages/railways/railway-1.png",
+          "src": "/assets/pages/railways/railway-1.png",
           "alt": "Railways and metro visual 1"
         },
         {
-          "src": "/assets/assets/pages/railways/railway-2.png",
+          "src": "/assets/pages/railways/railway-2.png",
           "alt": "Railways and metro visual 2"
         }
       ]
     },
     "/solar-system-installations": {
-      "hero": "/assets/assets/pages/solar/solar-hero.jpg",
+      "hero": "/assets/pages/solar/solar-hero.jpg",
       "gallery": [
         {
-          "src": "/assets/assets/pages/solar/solar-1.png",
+          "src": "/assets/pages/solar/solar-1.png",
           "alt": "Solar installations visual 1"
         },
         {
-          "src": "/assets/assets/pages/solar/solar-2.png",
+          "src": "/assets/pages/solar/solar-2.png",
           "alt": "Solar installations visual 2"
         }
       ]
     },
     "/evcs": {
-      "hero": "/assets/assets/pages/evcs/evcs-hero.png",
+      "hero": "/assets/pages/evcs/evcs-hero.png",
       "gallery": [
         {
-          "src": "/assets/assets/pages/evcs/evcs-1.png",
+          "src": "/assets/pages/evcs/evcs-1.png",
           "alt": "EVCS project visual"
         }
       ]
     },
     "/ift-escalators": {
-      "hero": "/assets/assets/pages/lifts/lifts-hero.png"
+      "hero": "/assets/pages/lifts/lifts-hero.png"
     },
     "/csr": {
-      "hero": "/assets/assets/pages/csr/csr-hero.jpg",
+      "hero": "/assets/pages/csr/csr-hero.jpg",
       "gallery": [
         {
-          "src": "/assets/assets/pages/csr/csr-1.png",
+          "src": "/assets/pages/csr/csr-1.png",
           "alt": "CSR activity visual 1"
         },
         {
-          "src": "/assets/assets/pages/csr/csr-2.png",
+          "src": "/assets/pages/csr/csr-2.png",
           "alt": "CSR activity visual 2"
         }
       ]
     },
     "/careers": {
-      "hero": "/assets/assets/pages/current-vacancy/jobs-card.png"
+      "hero": "/assets/pages/current-vacancy/jobs-card.png"
     },
     "/current-vacancy": {
-      "hero": "/assets/assets/pages/current-vacancy/jobs-card.png"
+      "hero": "/assets/pages/current-vacancy/jobs-card.png"
     },
     "/join-the-team": {
-      "hero": "/assets/assets/pages/join-team/join-hero.png"
+      "hero": "/assets/pages/join-team/join-hero.png"
     },
     "/hr-initiatives": {
-      "hero": "/assets/assets/pages/hr/hr-hero.png",
+      "hero": "/assets/pages/hr/hr-hero.png",
       "gallery": [
         {
-          "src": "/assets/assets/pages/hr/hr-1.png",
+          "src": "/assets/pages/hr/hr-1.png",
           "alt": "HR initiatives visual"
         }
       ]
     },
     "/events": {
-      "hero": "/assets/assets/pages/events/events-hero.png",
+      "hero": "/assets/pages/events/events-hero.png",
       "gallery": [
         {
-          "src": "/assets/assets/pages/events/events-1.jpeg",
+          "src": "/assets/pages/events/events-1.jpeg",
           "alt": "Events gallery visual"
         }
       ]
     },
     "/contact": {
-      "hero": "/assets/assets/pages/contact/contact-hero.png",
+      "hero": "/assets/pages/contact/contact-hero.png",
       "gallery": [
         {
-          "src": "/assets/assets/pages/contact/contact-1.png",
+          "src": "/assets/pages/contact/contact-1.png",
           "alt": "Contact page office visual"
         }
       ]
@@ -1022,7 +1022,7 @@
           "date": "2023",
           "location": "Main Office",
           "description": "Celebrating our milestones and honoring the incredible people who drive Leena Powertech forward.",
-          "image": "/assets/assets/pages/events/events-1.jpeg",
+          "image": "/assets/pages/events/events-1.jpeg",
           "category": "Celebration"
         },
         {

@@ -1,3 +1,4 @@
+import { withApiBase } from '../utils/api';
 import { ROUTES, companyInfo } from './siteContent';
 
 export const pageContent = {
@@ -327,7 +328,7 @@ export const pageContent = {
   },
 };
 
-const asset = (path) => `${import.meta.env.BASE_URL}${path.replace(/^\/+/, '')}`;
+const asset = (path) => withApiBase(path);
 
 export const pageImages = {
   [ROUTES.about]: {

@@ -3,14 +3,14 @@ import { Phone, Mail, MapPin } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { LinkedInIcon, TwitterIcon, FacebookIcon } from './SocialIcons';
 import { useData } from '../context/DataContext';
+import { withApiBase } from '../utils/api';
 
 const Footer = () => {
   const { data } = useData();
   const { companyInfo, navigation } = data;
-  const base = import.meta.env.BASE_URL;
   const quickLinks = navigation;
   const serviceLinks = navigation.find((item) => item.name === 'Verticals')?.children ?? [];
-  const footerBackground = `${base}assets/footer/mep-4.png?v=20260408`;
+  const footerBackground = `${withApiBase('assets/footer/mep-4.png')}?v=20260408`;
 
   return (
     <footer className="relative overflow-hidden text-white">

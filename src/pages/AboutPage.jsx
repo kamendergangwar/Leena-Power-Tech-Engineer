@@ -1,8 +1,8 @@
 import React from 'react';
+import { withApiBase } from '../utils/api';
 
-const base = import.meta.env.BASE_URL;
 const aboutAssetVersion = '20260408-1';
-const aboutAsset = (path) => `${base}${path}?v=${aboutAssetVersion}`;
+const aboutAsset = (path) => `${withApiBase(path)}?v=${aboutAssetVersion}`;
 const aboutHeroVideo = 'https://leenapowertech.in/wp-content/uploads/2022/07/MEP-1920-%C3%97-900-px-6.mp4';
 const aboutHeroPoster = aboutAsset('assets/pages/about/hero.png');
 const aboutSide = aboutAsset('assets/pages/about/about-side.png');

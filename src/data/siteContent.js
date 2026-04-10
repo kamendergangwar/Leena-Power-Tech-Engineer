@@ -1,6 +1,6 @@
+import { withApiBase } from '../utils/api';
+
 export const SITE_URL = 'https://leenapowertech.in';
-const BASE_URL = import.meta.env.BASE_URL;
-const withBase = (path) => `${BASE_URL}${path.replace(/^\/+/, '')}`;
 
 export const ROUTES = {
   home: '/',
@@ -144,22 +144,22 @@ export const services = [
   {
     title: 'Transmission',
     href: ROUTES.transmission,
-    image: withBase('assets/hero1.png'),
+    image: withApiBase('assets/hero1.png'),
   },
   {
     title: 'Distribution',
     href: ROUTES.distribution,
-    image: withBase('assets/distribution.png'),
+    image: withApiBase('assets/distribution.png'),
   },
   {
     title: 'O & M',
     href: ROUTES.om,
-    image: withBase('assets/om.png'),
+    image: withApiBase('assets/om.png'),
   },
   {
     title: 'Railways & Metro',
     href: ROUTES.railways,
-    image: withBase('assets/hero3.png'),
+    image: withApiBase('assets/hero3.png'),
   },
 ];
 

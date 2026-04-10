@@ -14,7 +14,6 @@ app.use(express.json());
 
 // Serve static assets
 app.use('/assets', express.static(path.join(__dirname, 'public/assets')));
-app.use('/assets/assets', express.static(path.join(__dirname, 'public/assets')));
 
 // API Routes
 app.get('/api/content', (req, res) => {
