@@ -15,22 +15,23 @@ const Hero = () => {
       <Swiper
         modules={[Autoplay, Navigation, Pagination, EffectFade]}
         effect="fade"
-        speed={1000}
+        speed={900}
         autoplay={{ delay: 4500, disableOnInteraction: false }}
         navigation
         pagination={{ clickable: true }}
         loop
-        className="h-full w-full"
+        className="homepage-hero-slider h-full w-full"
       >
         {heroSlides.map((slide, index) => (
           <SwiperSlide key={index}>
-            <div className="relative h-[340px] w-full md:h-[540px] xl:h-[720px]">
+            <div className="relative h-[320px] w-full bg-[#111827] sm:h-[420px] md:h-[52vw] md:max-h-[900px] md:min-h-[560px]">
               <picture>
                 <source media="(max-width: 767px)" srcSet={slide.mobile} />
                 <img
                   src={slide.desktop}
                   alt={`Leena Powertech banner ${index + 1}`}
-                  className="h-full w-full object-cover"
+                  className="h-full w-full object-contain"
+                  loading={index === 0 ? 'eager' : 'lazy'}
                 />
               </picture>
               <div className="absolute inset-0 bg-gradient-to-r from-black/10 via-transparent to-black/10" />

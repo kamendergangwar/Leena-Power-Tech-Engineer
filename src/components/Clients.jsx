@@ -9,7 +9,7 @@ const Clients = () => {
   const logos = [...clientLogos, ...clientLogos];
 
   return (
-    <section className="overflow-hidden bg-white py-20">
+    <section className="overflow-hidden bg-[#eaf1ff] py-16 md:py-20">
       <motion.div
         initial={{ opacity: 0, y: 28 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -34,7 +34,7 @@ const Clients = () => {
               <motion.div
                 key={`${client.name}-${index}`}
                 whileHover={{ y: -6, scale: 1.03 }}
-                className="flex h-24 w-32 flex-shrink-0 items-center justify-center rounded-[20px] border border-slate-200 bg-white px-4 py-3 shadow-sm md:h-28 md:w-36"
+                className="flex h-24 w-32 flex-shrink-0 items-center justify-center rounded-sm border border-slate-200 bg-white px-4 py-3 shadow-sm md:h-28 md:w-36"
               >
                 <img
                   src={client.image}

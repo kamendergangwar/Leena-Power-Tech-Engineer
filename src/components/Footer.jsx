@@ -11,6 +11,12 @@ const Footer = () => {
   const quickLinks = navigation;
   const serviceLinks = navigation.find((item) => item.name === 'Verticals')?.children ?? [];
   const footerBackground = `${withApiBase('assets/footer/mep-4.png')}?v=20260408`;
+  const socialLinks = companyInfo.socialLinks ?? {};
+  const socialItems = [
+    { key: 'facebook', label: 'Facebook', Icon: FacebookIcon },
+    { key: 'linkedin', label: 'LinkedIn', Icon: LinkedInIcon },
+    { key: 'twitter', label: 'Twitter', Icon: TwitterIcon },
+  ];
 
   return (
     <footer className="relative overflow-hidden text-white">
@@ -71,27 +77,33 @@ const Footer = () => {
               </div>
             </div>
             <div className="mt-7 flex items-center gap-3">
-              <a
-                href="#"
-                aria-label="Facebook"
-                className="flex h-10 w-10 items-center justify-center rounded-full bg-leena-yellow text-[#111c62] transition-transform hover:scale-105"
-              >
-                <FacebookIcon size={18} />
-              </a>
-              <a
-                href="#"
-                aria-label="LinkedIn"
-                className="flex h-10 w-10 items-center justify-center rounded-full bg-leena-yellow text-[#111c62] transition-transform hover:scale-105"
-              >
-                <LinkedInIcon size={18} />
-              </a>
-              <a
-                href="#"
-                aria-label="Twitter"
-                className="flex h-10 w-10 items-center justify-center rounded-full bg-leena-yellow text-[#111c62] transition-transform hover:scale-105"
-              >
-                <TwitterIcon size={18} />
-              </a>
+              {socialItems.map(({ key, label, Icon }) => {
+                const href = socialLinks[key]?.trim();
+
+                const commonClassName =
+                  'flex h-10 w-10 items-center justify-center rounded-full bg-leena-yellow text-[#111c62] transition-transform hover:scale-105';
+
+                return href ? (
+                  <a
+                    key={key}
+                    href={href}
+                    aria-label={label}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={commonClassName}
+                  >
+                    <Icon size={18} />
+                  </a>
+                ) : (
+                  <span
+                    key={key}
+                    aria-label={label}
+                    className={`${commonClassName} cursor-default`}
+                  >
+                    <Icon size={18} />
+                  </span>
+                );
+              })}
             </div>
           </div>
         </div>

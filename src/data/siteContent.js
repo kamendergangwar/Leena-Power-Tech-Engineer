@@ -33,6 +33,11 @@ export const companyInfo = {
   address: 'Sai Chambers, Sector-11, C.B.D Belapur, Navi Mumbai - 400614',
   logo: `${SITE_URL}/wp-content/uploads/2022/04/Untitled-design-11.png`,
   tagline: 'Connecting People and Power',
+  socialLinks: {
+    linkedin: '',
+    twitter: '',
+    facebook: '',
+  },
 };
 
 export const navigation = [
