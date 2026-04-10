@@ -110,9 +110,9 @@ const Footer = () => {
 
         <div className="mt-12 border-t border-white/35 pt-7 text-center text-[15px] text-white/90">
           <p>
-            ©2022 All Rights Reserved. | Powred by{' '}
-            <a href="https://webperfecto.com/" className="transition-colors hover:text-leena-yellow" target="_blank" rel="noopener noreferrer">
-              webperfecto
+            ©2026 All Rights Reserved. | Powred by{' '}
+            <a href="https://heliosadvisory.com/" className="transition-colors hover:text-leena-yellow" target="_blank" rel="noopener noreferrer">
+              Helios Advisory
             </a>
           </p>
         </div>
