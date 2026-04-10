@@ -449,80 +449,59 @@
     "/o-m": {
       "title": "Operation & Maintenance",
       "subtitle": "Periodic servicing, repair, and reliability support for operating electrical assets.",
-      "intro": "Electrical systems require planned servicing and repair to remain safe, compliant, and dependable. LPTE's O&M team maintains substations, overhead and underground distribution systems, and exterior lighting systems to reduce breakdowns and improve long-term performance.",
+      "intro": "Electrical systems need to ensure continued compliance with periodic servicing and repair. Our team helps in maintaining electrical systems like substations, overhead & underground electrical distribution system, and exterior lighting system to ensure that they work without any hindrance for a long time. Such maintenance helps to prevent system and equipment failure while ensuring maximum safety and efficiency in the utilization of the facilities.",
       "sections": [
         {
-          "heading": "Maintenance Coverage",
-          "body": "LPTE supports utilities and power operators in improving efficiency and delivering uninterrupted service. The team has handled maintenance assignments across multiple operating public assets in Navi Mumbai and beyond.",
+          "heading": "Operational Reach",
+          "body": "We have done maintenance work in numerous places in Navi Mumbai like Nerul station, Baman Dongri station, Kharghar metro, and Bhoomiputra Bhavan. We help the utilities and power companies in maximizing their efficiency and providing their consumers with uninterrupted service.",
           "bullets": [
             "Nerul station",
             "Baman Dongri station",
             "Kharghar Metro",
             "Bhoomiputra Bhavan"
           ]
-        },
-        {
-          "heading": "Representative Locations",
-          "bullets": [
-            "Patna Substation",
-            "Nerul Substation",
-            "Baman Dongri Railway Station",
-            "Bhoomiputra Bhavan",
-            "Navi Mumbai Metro"
-          ]
         }
       ]
     },
     "/railways-metro": {
       "title": "Railways & Metro",
-      "subtitle": "Integrated rail and metro electrification with multi-disciplinary execution capability.",
-      "intro": "Metro rail systems have expanded rapidly across urban India, and LPTE has grown this vertical to support safe, affordable, and reliable transportation infrastructure through integrated project execution.",
+      "subtitle": "Integrated rail and metro electrification for growing urban transit infrastructure.",
+      "intro": "Metro railways in urban areas have grown exponentially across the country and the volume of passengers continue to grow for rail transit systems for a safe, affordable, and reliable transportation service. LPTE has strategically ventured into this business vertical which shall contribute to growth of Indian infrastructure.",
       "sections": [
         {
-          "heading": "Delivery Scope",
-          "body": "LPTE assists metro rail electrification projects through design, engineering, installation, testing, and commissioning across multi-disciplinary rail and metro packages. The team supports the powering and connection of substations along with overhead line electrification and stakeholder coordination across public infrastructure programs.",
+          "heading": "Execution Focus",
+          "body": "LPTE assists in Metro Rail Electrification Projects by enabling integrated project execution with increased efficiency, stringent safety measures and higher visibility across all projects. LPTE offers its competence in Design, Engineering, Installation, Testing, and Commissioning of multi-disciplinary Metro & Rail Projects with the capability to build, power and connect substations. Our skills, experience and capability lie in power and electrification of overhead lines, including the installation of new lines, integration with multiple stake holders for common interest in the growth of nation building.",
           "bullets": [
-            "Integrated execution with strong safety and coordination controls",
-            "Power and electrification of overhead lines",
-            "Capability to build, power, and connect substations",
-            "Multi-stakeholder integration for large transport infrastructure"
-          ]
-        },
-        {
-          "heading": "Highlighted Projects",
-          "bullets": [
-            "Navi Mumbai Railway Station",
-            "Baman Dongri Railway Station",
-            "Koparkhairane Station",
-            "MMRDA Mumbai packages"
+            "Design",
+            "Engineering",
+            "Installation",
+            "Testing",
+            "Commissioning"
           ]
         }
       ]
     },
     "/solar-system-installations": {
       "title": "Solar system Installations",
-      "subtitle": "Renewable power delivery aligned with sustainability and long-term energy savings.",
-      "intro": "Solar energy offers a renewable, clean, and sustainable alternative to conventional power. LPTE positions this vertical around practical implementation for organizations that want greener operations and better long-term energy economics.",
+      "subtitle": "Clean, renewable, and sustainable solar infrastructure delivery.",
+      "intro": "Unlike gas and coal, solar energy is renewable, clean and sustainable. Solar power does not pollute our air or contribute to global warming. For many businesses, being “green” and making environmentally-friendly decisions is important to their business goals.",
       "sections": [
         {
-          "heading": "Advantages Of Solar Energy",
+          "heading": "Some Advantages of Solar Energy -",
           "bullets": [
-            "Renewable energy source",
-            "Reduced electricity bills",
-            "Diverse application possibilities",
-            "Low maintenance costs",
-            "Continuous technology development"
+            "Renewable Energy Source. Among all the benefits of solar panels, the most important thing is that solar energy is a truly renewable energy source.",
+            "Reduces Electricity Bills.",
+            "Diverse Applications.",
+            "Low Maintenance Costs.",
+            "Technology Development."
           ]
         },
         {
           "heading": "Industry Direction",
-          "body": "The live site positions solar as a fast-growing long-term infrastructure segment, highlighting continued scale-up in deployment and the role of solar in broader decarbonization goals. LPTE frames its solar delivery around building financially sustainable implementations that create stronger outcomes for end users and society.",
-          "bullets": [
-            "Site-level solar system implementation and integration",
-            "Execution support for green infrastructure goals",
-            "Focus on financially sustainable delivery models",
-            "Solar system at Bhoomiputra Bhavan, Ulwe"
-          ]
+          "body": "Compared with the approximately 15 GW of solar capacity deployed in 2020, annual solar deployment is 30 GW on average in the early 2020s and grows to 60 GW on average from 2025 to 2030. Similarly substantial solar deployment rates continue in the 2030s and beyond. Photovoltaics (PV) and concentrating solar power are likely to continue to grow rapidly. The National Renewable Energy Laboratory (NREL) projects solar energy could provide 45% of the electricity in the United States by 2050 if the energy system is fully decarbonized and technology costs are projected to continue to be lowered. The goals of this project for Solar Energy System Installations and Energy Efficiency Retrofits (SEER) is to be an efficient organization to implement these SEER activities and to do it in a way that the organization is financially profitable and therefore sustainable, so that the end users get better outcome and society as a whole gets a positive impact."
+        },
+        {
+          "heading": "Solar system at Bhoomiputra Bhavan Ulwe"
         }
       ]
     },
@@ -873,41 +852,112 @@
       ]
     },
     "/o-m": {
-      "hero": "/assets/pages/om/om-1.png",
+      "hero": "/assets/pages/om/om-hero.png",
       "gallery": [
         {
-          "src": "/assets/pages/om/om-2.png",
-          "alt": "Operations and maintenance visual 2"
+          "src": "/assets/pages/om/om-nerul-substation.png",
+          "alt": "Nerul Substation",
+          "caption": "Nerul Substation"
         },
         {
-          "src": "/assets/pages/om/om-3.png",
-          "alt": "Operations and maintenance visual 3"
+          "src": "/assets/pages/om/om-bhoomiputra-bhavan.png",
+          "alt": "Bhoomiputra Bhavan",
+          "caption": "Bhoomiputra Bhavan"
+        },
+        {
+          "src": "/assets/pages/om/om-patna-substation.png",
+          "alt": "Patna Substation",
+          "caption": "Patna Substation"
+        },
+        {
+          "src": "/assets/pages/om/om-navi-mumbai-metro.png",
+          "alt": "Navi Mumbai Metro",
+          "caption": "Navi Mumbai Metro"
+        },
+        {
+          "src": "/assets/pages/om/om-baman-dongri-station.png",
+          "alt": "Baman Dongri Railway station",
+          "caption": "Baman Dongri Railway station"
         }
       ]
     },
     "/railways-metro": {
-      "hero": "/assets/pages/railways/railway-hero.jpeg",
+      "hero": "/assets/pages/railways/railway-hero-live.jpeg",
       "gallery": [
         {
-          "src": "/assets/pages/railways/railway-1.png",
-          "alt": "Railways and metro visual 1"
+          "src": "/assets/pages/railways/railway-navi-mumbai-station.png",
+          "alt": "Navi Mumbai Railway station",
+          "caption": "Navi Mumbai Railway station"
         },
         {
-          "src": "/assets/pages/railways/railway-2.png",
-          "alt": "Railways and metro visual 2"
+          "src": "/assets/pages/railways/railway-baman-dongri-station-1.png",
+          "alt": "Baman Dongri Railway station",
+          "caption": "Baman Dongri Railway station"
+        },
+        {
+          "src": "/assets/pages/railways/railway-koparkhairane-station.png",
+          "alt": "Koparkhairane Station",
+          "caption": "Koparkhairane Station"
+        },
+        {
+          "src": "/assets/pages/railways/railway-baman-dongri-station-2.png",
+          "alt": "Baman Dongri Railway station",
+          "caption": "Baman Dongri Railway station"
+        },
+        {
+          "src": "/assets/pages/railways/railway-mmrda-1.png",
+          "alt": "MMRDA Mumbai",
+          "caption": "MMRDA Mumbai"
+        },
+        {
+          "src": "/assets/pages/railways/railway-mmrda-2.png",
+          "alt": "MMRDA Mumbai",
+          "caption": "MMRDA Mumbai"
+        },
+        {
+          "src": "/assets/pages/railways/railway-mmrda-3.png",
+          "alt": "MMRDA Mumbai",
+          "caption": "MMRDA Mumbai"
+        },
+        {
+          "src": "/assets/pages/railways/railway-mmrda-4.png",
+          "alt": "MMRDA Mumbai",
+          "caption": "MMRDA Mumbai"
+        },
+        {
+          "src": "/assets/pages/railways/railway-mmrda-5.png",
+          "alt": "MMRDA Mumbai",
+          "caption": "MMRDA Mumbai"
+        },
+        {
+          "src": "/assets/pages/railways/railway-mmrda-6.png",
+          "alt": "MMRDA Mumbai",
+          "caption": "MMRDA Mumbai"
         }
       ]
     },
     "/solar-system-installations": {
-      "hero": "/assets/pages/solar/solar-hero.jpg",
+      "hero": "/assets/pages/solar/solar-hero-live.jpg",
       "gallery": [
         {
-          "src": "/assets/pages/solar/solar-1.png",
-          "alt": "Solar installations visual 1"
+          "src": "/assets/pages/solar/solar-bhoomiputra-1.png",
+          "alt": "Solar system at Bhoomiputra Bhavan Ulwe view 1"
         },
         {
-          "src": "/assets/pages/solar/solar-2.png",
-          "alt": "Solar installations visual 2"
+          "src": "/assets/pages/solar/solar-bhoomiputra-2.png",
+          "alt": "Solar system at Bhoomiputra Bhavan Ulwe view 2"
+        },
+        {
+          "src": "/assets/pages/solar/solar-bhoomiputra-3.png",
+          "alt": "Solar system at Bhoomiputra Bhavan Ulwe view 3"
+        },
+        {
+          "src": "/assets/pages/solar/solar-bhoomiputra-4.png",
+          "alt": "Solar system at Bhoomiputra Bhavan Ulwe view 4"
+        },
+        {
+          "src": "/assets/pages/solar/solar-bhoomiputra-5.png",
+          "alt": "Solar system at Bhoomiputra Bhavan Ulwe view 5"
         }
       ]
     },

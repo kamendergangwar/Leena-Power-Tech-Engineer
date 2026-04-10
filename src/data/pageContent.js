@@ -127,52 +127,56 @@ export const pageContent = {
     ],
   },
   [ROUTES.om]: {
-    title: 'O & M',
-    subtitle: 'Long-term reliability through structured maintenance programs.',
+    title: 'Operation & Maintenance',
+    subtitle: 'Periodic servicing, repair, and reliability support for operating electrical assets.',
     intro:
-      'Our O&M services maintain substations, overhead and underground distribution systems, and exterior lighting networks to ensure safe and uninterrupted operations.',
+      'Electrical systems need to ensure continued compliance with periodic servicing and repair. Our team helps in maintaining electrical systems like substations, overhead & underground electrical distribution system, and exterior lighting system to ensure that they work without any hindrance for a long time. Such maintenance helps to prevent system and equipment failure while ensuring maximum safety and efficiency in the utilization of the facilities.',
     sections: [
       {
-        heading: 'Service Coverage',
-        bullets: [
-          'Preventive and corrective maintenance planning',
-          'System reliability and safety compliance checks',
-          'Operational support in locations such as Nerul, Baman Dongri, Kharghar Metro, and Bhoomiputra Bhavan',
-        ],
+        heading: 'Operational Reach',
+        body:
+          'We have done maintenance work in numerous places in Navi Mumbai like Nerul station, Baman Dongri station, Kharghar metro, and Bhoomiputra Bhavan. We help the utilities and power companies in maximizing their efficiency and providing their consumers with uninterrupted service.',
+        bullets: ['Nerul station', 'Baman Dongri station', 'Kharghar metro', 'Bhoomiputra Bhavan'],
       },
     ],
   },
   [ROUTES.railways]: {
     title: 'Railways & Metro',
-    subtitle: 'Integrated power and electrification solutions for urban transit.',
+    subtitle: 'Integrated rail and metro electrification for growing urban transit infrastructure.',
     intro:
-      'LPTE has strategically expanded into rail and metro electrification to support safe, affordable, and reliable transportation infrastructure in rapidly growing urban corridors.',
+      'Metro railways in urban areas have grown exponentially across the country and the volume of passengers continue to grow for rail transit systems for a safe, affordable, and reliable transportation service. LPTE has strategically ventured into this business vertical which shall contribute to growth of Indian infrastructure.',
     sections: [
       {
-        heading: 'Capabilities',
-        bullets: [
-          'Design, engineering, installation, testing, and commissioning support',
-          'Powering and connecting substations for metro and rail systems',
-          'Electrification of overhead line systems and related integration',
-          'Coordination with multiple stakeholders for large public programs',
-        ],
+        heading: 'Execution Focus',
+        body:
+          'LPTE assists in Metro Rail Electrification Projects by enabling integrated project execution with increased efficiency, stringent safety measures and higher visibility across all projects. LPTE offers its competence in Design, Engineering, Installation, Testing, and Commissioning of multi-disciplinary Metro & Rail Projects with the capability to build, power and connect substations. Our skills, experience and capability lie in power and electrification of overhead lines, including the installation of new lines, integration with multiple stake holders for common interest in the growth of nation building.',
+        bullets: ['Design', 'Engineering', 'Installation', 'Testing', 'Commissioning'],
       },
     ],
   },
   [ROUTES.solar]: {
-    title: 'Solar System Installations',
-    subtitle: 'Renewable energy delivery aligned to sustainable growth.',
+    title: 'Solar system Installations',
+    subtitle: 'Clean, renewable, and sustainable solar infrastructure delivery.',
     intro:
-      'Solar energy is renewable, clean, and sustainable. LPTE supports solar implementation for organizations that are scaling green energy adoption and modern infrastructure practices.',
+      'Unlike gas and coal, solar energy is renewable, clean and sustainable. Solar power does not pollute our air or contribute to global warming. For many businesses, being “green” and making environmentally-friendly decisions is important to their business goals.',
     sections: [
       {
-        heading: 'Delivery Focus',
+        heading: 'Some Advantages of Solar Energy -',
         bullets: [
-          'Site-level solar system implementation and integration',
-          'Execution support for long-term renewable energy transition goals',
-          'Project support aligned to national sustainability priorities',
-          'Experience in deployments such as Bhoomiputra Bhavan, Ulwe',
+          'Renewable Energy Source. Among all the benefits of solar panels, the most important thing is that solar energy is a truly renewable energy source.',
+          'Reduces Electricity Bills.',
+          'Diverse Applications.',
+          'Low Maintenance Costs.',
+          'Technology Development.',
         ],
+      },
+      {
+        heading: 'Industry Direction',
+        body:
+          'Compared with the approximately 15 GW of solar capacity deployed in 2020, annual solar deployment is 30 GW on average in the early 2020s and grows to 60 GW on average from 2025 to 2030. Similarly substantial solar deployment rates continue in the 2030s and beyond. Photovoltaics (PV) and concentrating solar power are likely to continue to grow rapidly. The National Renewable Energy Laboratory (NREL) projects solar energy could provide 45% of the electricity in the United States by 2050 if the energy system is fully decarbonized and technology costs are projected to continue to be lowered. The goals of this project for Solar Energy System Installations and Energy Efficiency Retrofits (SEER) is to be an efficient organization to implement these SEER activities and to do it in a way that the organization is financially profitable and therefore sustainable, so that the end users get better outcome and society as a whole gets a positive impact.',
+      },
+      {
+        heading: 'Solar system at Bhoomiputra Bhavan Ulwe',
       },
     ],
   },
@@ -376,24 +380,58 @@ export const pageImages = {
     ],
   },
   [ROUTES.om]: {
-    hero: asset('assets/pages/om/om-1.png'),
+    hero: asset('assets/pages/om/om-hero.png'),
     gallery: [
-      { src: asset('assets/pages/om/om-2.png'), alt: 'Operations and maintenance visual 2' },
-      { src: asset('assets/pages/om/om-3.png'), alt: 'Operations and maintenance visual 3' },
+      {
+        src: asset('assets/pages/om/om-nerul-substation.png'),
+        alt: 'Nerul Substation',
+        caption: 'Nerul Substation',
+      },
+      {
+        src: asset('assets/pages/om/om-bhoomiputra-bhavan.png'),
+        alt: 'Bhoomiputra Bhavan',
+        caption: 'Bhoomiputra Bhavan',
+      },
+      {
+        src: asset('assets/pages/om/om-patna-substation.png'),
+        alt: 'Patna Substation',
+        caption: 'Patna Substation',
+      },
+      {
+        src: asset('assets/pages/om/om-navi-mumbai-metro.png'),
+        alt: 'Navi Mumbai Metro',
+        caption: 'Navi Mumbai Metro',
+      },
+      {
+        src: asset('assets/pages/om/om-baman-dongri-station.png'),
+        alt: 'Baman Dongri Railway station',
+        caption: 'Baman Dongri Railway station',
+      },
     ],
   },
   [ROUTES.railways]: {
-    hero: asset('assets/pages/railways/railway-hero.jpeg'),
+    hero: asset('assets/pages/railways/railway-hero-live.jpeg'),
     gallery: [
-      { src: asset('assets/pages/railways/railway-1.png'), alt: 'Railways and metro visual 1' },
-      { src: asset('assets/pages/railways/railway-2.png'), alt: 'Railways and metro visual 2' },
+      { src: asset('assets/pages/railways/railway-navi-mumbai-station.png'), alt: 'Navi Mumbai Railway station', caption: 'Navi Mumbai Railway station' },
+      { src: asset('assets/pages/railways/railway-baman-dongri-station-1.png'), alt: 'Baman Dongri Railway station', caption: 'Baman Dongri Railway station' },
+      { src: asset('assets/pages/railways/railway-koparkhairane-station.png'), alt: 'Koparkhairane Station', caption: 'Koparkhairane Station' },
+      { src: asset('assets/pages/railways/railway-baman-dongri-station-2.png'), alt: 'Baman Dongri Railway station', caption: 'Baman Dongri Railway station' },
+      { src: asset('assets/pages/railways/railway-mmrda-1.png'), alt: 'MMRDA Mumbai', caption: 'MMRDA Mumbai' },
+      { src: asset('assets/pages/railways/railway-mmrda-2.png'), alt: 'MMRDA Mumbai', caption: 'MMRDA Mumbai' },
+      { src: asset('assets/pages/railways/railway-mmrda-3.png'), alt: 'MMRDA Mumbai', caption: 'MMRDA Mumbai' },
+      { src: asset('assets/pages/railways/railway-mmrda-4.png'), alt: 'MMRDA Mumbai', caption: 'MMRDA Mumbai' },
+      { src: asset('assets/pages/railways/railway-mmrda-5.png'), alt: 'MMRDA Mumbai', caption: 'MMRDA Mumbai' },
+      { src: asset('assets/pages/railways/railway-mmrda-6.png'), alt: 'MMRDA Mumbai', caption: 'MMRDA Mumbai' },
     ],
   },
   [ROUTES.solar]: {
-    hero: asset('assets/pages/solar/solar-hero.jpg'),
+    hero: asset('assets/pages/solar/solar-hero-live.jpg'),
     gallery: [
-      { src: asset('assets/pages/solar/solar-1.png'), alt: 'Solar installations visual 1' },
-      { src: asset('assets/pages/solar/solar-2.png'), alt: 'Solar installations visual 2' },
+      { src: asset('assets/pages/solar/solar-bhoomiputra-1.png'), alt: 'Solar system at Bhoomiputra Bhavan Ulwe view 1' },
+      { src: asset('assets/pages/solar/solar-bhoomiputra-2.png'), alt: 'Solar system at Bhoomiputra Bhavan Ulwe view 2' },
+      { src: asset('assets/pages/solar/solar-bhoomiputra-3.png'), alt: 'Solar system at Bhoomiputra Bhavan Ulwe view 3' },
+      { src: asset('assets/pages/solar/solar-bhoomiputra-4.png'), alt: 'Solar system at Bhoomiputra Bhavan Ulwe view 4' },
+      { src: asset('assets/pages/solar/solar-bhoomiputra-5.png'), alt: 'Solar system at Bhoomiputra Bhavan Ulwe view 5' },
     ],
   },
   [ROUTES.evcs]: {
