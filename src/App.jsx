@@ -18,6 +18,8 @@ import DistributionPage from './pages/DistributionPage';
 import OmPage from './pages/OmPage';
 import RailwaysPage from './pages/RailwaysPage';
 import SolarPage from './pages/SolarPage';
+import EvcsPage from './pages/EvcsPage';
+import LiftsPage from './pages/LiftsPage';
 import NotFoundPage from './pages/NotFoundPage';
 import { useData } from './context/DataContext';
 
@@ -50,7 +52,7 @@ function App() {
 
   const { pageContent, routes: ROUTES } = data;
   const dynamicPages = Object.entries(pageContent).filter(
-    ([path]) => path !== ROUTES.about && path !== ROUTES.contact && path !== ROUTES.events && path !== ROUTES.csr && path !== ROUTES.directors && path !== ROUTES.awards && path !== ROUTES.mep && path !== ROUTES.transmission && path !== ROUTES.distribution && path !== ROUTES.om && path !== ROUTES.railways && path !== ROUTES.solar
+    ([path]) => path !== ROUTES.about && path !== ROUTES.contact && path !== ROUTES.events && path !== ROUTES.csr && path !== ROUTES.directors && path !== ROUTES.awards && path !== ROUTES.mep && path !== ROUTES.transmission && path !== ROUTES.distribution && path !== ROUTES.om && path !== ROUTES.railways && path !== ROUTES.solar && path !== ROUTES.evcs && path !== ROUTES.liftEscalators
   );
   const isAboutPage = location.pathname === ROUTES.about;
 
@@ -101,6 +103,8 @@ function App() {
           <Route path={ROUTES.om} element={<OmPage />} />
           <Route path={ROUTES.railways} element={<RailwaysPage />} />
           <Route path={ROUTES.solar} element={<SolarPage />} />
+          <Route path={ROUTES.evcs} element={<EvcsPage />} />
+          <Route path={ROUTES.liftEscalators} element={<LiftsPage />} />
           {dynamicPages.map(([path, page]) => (
             <Route key={path} path={path} element={<ContentPage page={page} pathKey={path} />} />
           ))}

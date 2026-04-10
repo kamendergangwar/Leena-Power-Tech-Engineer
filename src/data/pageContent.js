@@ -181,34 +181,31 @@ export const pageContent = {
     ],
   },
   [ROUTES.evcs]: {
-    title: 'EVCS',
-    subtitle: 'Electric vehicle charging infrastructure for future mobility.',
+    title: 'Electric Vehicle Charging Stations',
+    subtitle: 'Electric mobility solutions aligned with India’s public transport future.',
     intro:
-      'To address rising pollution and evolving mobility demand, LPTE offers electric mobility solutions through EV charging station infrastructure aligned with India’s EV vision.',
+      'The challenge of increasing pollution and decreasing fuel reserves presented the opportunity to invent Electric Vehicle as an environment-friendly means of transport.',
     sections: [
       {
-        heading: 'EV Mobility Direction',
-        bullets: [
-          'Electric Vehicle Charging Station (EVCS) setup support',
-          'Infrastructure planning for scalable charging networks',
-          'Collaboration-led deployment with technology partners',
-        ],
+        heading: 'Public Transport Vision',
+        body:
+          'Sharing the vision of Govt of India to have Electric Vehicles for public transport by 2030, LPT is excited to offer Electric Mobility Solutions through setting up Electric Vehicle Charging Stations (EVCS).',
+      },
+      {
+        heading: 'Partnership Direction',
+        body:
+          'Through joint ventures with international partners, LPT EVCS aims at re-defining the transport scenario in India.',
       },
     ],
   },
   [ROUTES.liftEscalators]: {
-    title: 'Lift & Escalators',
-    subtitle: 'Vertical mobility support for modern infrastructure.',
+    title: 'Lift and Escalators',
+    subtitle: 'Accessible vertical mobility solutions for modern spaces.',
     intro:
-      'As cities modernize, LPTE has expanded into lift and escalator business solutions, partnering to provide reliable accessibility-oriented infrastructure.',
+      'With increasing modernization of places across the country, our company has forayed into the business of lifts and escalators. In collaboration with our partners, we provide seamless solutions to make places more accessible.',
     sections: [
       {
-        heading: 'Service Scope',
-        bullets: [
-          'Power and electrical readiness for lift/escalator systems',
-          'Integration support with partner OEMs',
-          'Execution coordination for public and private facilities',
-        ],
+        heading: 'Accessibility Support',
       },
     ],
   },
@@ -358,6 +355,7 @@ export const pageImages = {
     ],
   },
   [ROUTES.mep]: {
+    heroBanner: asset('assets/pages/mep/mep-hero-live.png'),
     hero: asset('assets/pages/mep/mep-1.png'),
     gallery: [
       { src: asset('assets/pages/mep/mep-2.png'), alt: 'MEP project visual 2' },
@@ -365,6 +363,7 @@ export const pageImages = {
     ],
   },
   [ROUTES.transmission]: {
+    heroBanner: asset('assets/pages/transmission/transmission-hero-live.png'),
     hero: asset('assets/pages/transmission/trans-1.png'),
     gallery: [
       { src: asset('assets/pages/transmission/trans-2.png'), alt: 'Transmission project visual 2' },
@@ -372,6 +371,7 @@ export const pageImages = {
     ],
   },
   [ROUTES.distribution]: {
+    heroBanner: asset('assets/pages/distribution/distribution-hero-live.jpg'),
     hero: asset('assets/pages/distribution/ehv-substation.jpg'),
     gallery: [
       { src: asset('assets/pages/distribution/dist-1.png'), alt: 'Distribution project visual 1' },
@@ -435,11 +435,11 @@ export const pageImages = {
     ],
   },
   [ROUTES.evcs]: {
-    hero: asset('assets/pages/evcs/evcs-hero.png'),
-    gallery: [{ src: asset('assets/pages/evcs/evcs-1.png'), alt: 'EVCS project visual' }],
+    hero: asset('assets/pages/evcs/evcs-hero-live.png'),
+    gallery: [{ src: asset('assets/pages/evcs/evcs-station-live.png'), alt: 'Electric vehicle charging station' }],
   },
   [ROUTES.liftEscalators]: {
-    hero: asset('assets/pages/lifts/lifts-hero.png'),
+    hero: asset('assets/pages/lifts/lifts-hero-live.png'),
   },
   [ROUTES.csr]: {
     hero: asset('assets/pages/csr/csr-hero.jpg'),

@@ -507,35 +507,26 @@
     },
     "/evcs": {
       "title": "Electric Vehicle Charging Stations",
-      "subtitle": "Electric mobility infrastructure for cleaner transport systems.",
-      "intro": "The growth of pollution and declining fuel reserves has accelerated the need for cleaner transport. LPTE's EVCS business addresses that shift through electric mobility infrastructure and charging-station deployment.",
+      "subtitle": "Electric mobility solutions aligned with India’s public transport future.",
+      "intro": "The challenge of increasing pollution and decreasing fuel reserves presented the opportunity to invent Electric Vehicle as an environment-friendly means of transport.",
       "sections": [
         {
-          "heading": "EVCS Direction",
-          "body": "The live site aligns this business with the Government of India's public-transport EV vision and positions LPTE as a provider of electric mobility solutions through EV charging-station setup.",
-          "bullets": [
-            "Environment-friendly transport infrastructure",
-            "Electric mobility solutions through EVCS setup",
-            "Public-transport EV alignment toward 2030 goals",
-            "Joint ventures with international partners to expand capability"
-          ]
+          "heading": "Public Transport Vision",
+          "body": "Sharing the vision of Govt of India to have Electric Vehicles for public transport by 2030, LPT is excited to offer Electric Mobility Solutions through setting up Electric Vehicle Charging Stations (EVCS)."
+        },
+        {
+          "heading": "Partnership Direction",
+          "body": "Through joint ventures with international partners, LPT EVCS aims at re-defining the transport scenario in India."
         }
       ]
     },
     "/ift-escalators": {
-      "title": "Lift & Escalators",
-      "subtitle": "Vertical mobility support for modern public and private infrastructure.",
-      "intro": "LPTE has expanded into lift and escalator solutions as part of its broader infrastructure portfolio, focusing on dependable vertical-mobility support for modern facilities and urban development projects.",
+      "title": "Lift and Escalators",
+      "subtitle": "Accessible vertical mobility solutions for modern spaces.",
+      "intro": "With increasing modernization of places across the country, our company has forayed into the business of lifts and escalators. In collaboration with our partners, we provide seamless solutions to make places more accessible.",
       "sections": [
         {
-          "heading": "Service Scope",
-          "body": "This vertical is presented as an extension of LPTE's infrastructure capability into accessibility and movement systems, complementing the company's electrical and building-services experience.",
-          "bullets": [
-            "Power and electrical readiness for lift/escalator systems",
-            "Integration support with partner OEMs",
-            "Execution coordination for public and private facilities",
-            "Vertical mobility support for modernized urban assets"
-          ]
+          "heading": "Accessibility Support"
         }
       ]
     },
@@ -694,7 +685,7 @@
       ]
     },
     "/mep-works": {
-      "heroBanner": "/assets/pages/mep/mep-hero-8k.svg",
+      "heroBanner": "/assets/pages/mep/mep-hero-live.png",
       "hero": "https://leenapowertech.in/wp-content/uploads/2022/04/1-1.png",
       "gallery": [
         {
@@ -760,7 +751,7 @@
       ]
     },
     "/transmission": {
-      "heroBanner": "/assets/pages/transmission/transmission-hero-crop.png",
+      "heroBanner": "/assets/pages/transmission/transmission-hero-live.png",
       "hero": "https://leenapowertech.in/wp-content/uploads/2022/04/17.png",
       "gallery": [
         {
@@ -786,7 +777,7 @@
       ]
     },
     "/distribution": {
-      "heroBanner": "/assets/pages/distribution/distribution-hero-banner.png",
+      "heroBanner": "/assets/pages/distribution/distribution-hero-live.jpg",
       "hero": "https://leenapowertech.in/wp-content/uploads/2022/04/23.png",
       "gallery": [
         {
@@ -962,16 +953,16 @@
       ]
     },
     "/evcs": {
-      "hero": "/assets/pages/evcs/evcs-hero.png",
+      "hero": "/assets/pages/evcs/evcs-hero-live.png",
       "gallery": [
         {
-          "src": "/assets/pages/evcs/evcs-1.png",
-          "alt": "EVCS project visual"
+          "src": "/assets/pages/evcs/evcs-station-live.png",
+          "alt": "Electric vehicle charging station"
         }
       ]
     },
     "/ift-escalators": {
-      "hero": "/assets/pages/lifts/lifts-hero.png"
+      "hero": "/assets/pages/lifts/lifts-hero-live.png"
     },
     "/csr": {
       "hero": "/assets/pages/csr/csr-hero.jpg",
