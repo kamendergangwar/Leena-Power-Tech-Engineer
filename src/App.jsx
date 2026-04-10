@@ -20,6 +20,9 @@ import RailwaysPage from './pages/RailwaysPage';
 import SolarPage from './pages/SolarPage';
 import EvcsPage from './pages/EvcsPage';
 import LiftsPage from './pages/LiftsPage';
+import CurrentVacancyPage from './pages/CurrentVacancyPage';
+import JoinTeamPage from './pages/JoinTeamPage';
+import HrInitiativesPage from './pages/HrInitiativesPage';
 import NotFoundPage from './pages/NotFoundPage';
 import { useData } from './context/DataContext';
 
@@ -52,7 +55,7 @@ function App() {
 
   const { pageContent, routes: ROUTES } = data;
   const dynamicPages = Object.entries(pageContent).filter(
-    ([path]) => path !== ROUTES.about && path !== ROUTES.contact && path !== ROUTES.events && path !== ROUTES.csr && path !== ROUTES.directors && path !== ROUTES.awards && path !== ROUTES.mep && path !== ROUTES.transmission && path !== ROUTES.distribution && path !== ROUTES.om && path !== ROUTES.railways && path !== ROUTES.solar && path !== ROUTES.evcs && path !== ROUTES.liftEscalators
+    ([path]) => path !== ROUTES.about && path !== ROUTES.contact && path !== ROUTES.events && path !== ROUTES.csr && path !== ROUTES.directors && path !== ROUTES.awards && path !== ROUTES.mep && path !== ROUTES.transmission && path !== ROUTES.distribution && path !== ROUTES.om && path !== ROUTES.railways && path !== ROUTES.solar && path !== ROUTES.evcs && path !== ROUTES.liftEscalators && path !== ROUTES.currentVacancy && path !== ROUTES.joinTeam && path !== ROUTES.hrInitiatives
   );
   const isAboutPage = location.pathname === ROUTES.about;
 
@@ -105,6 +108,9 @@ function App() {
           <Route path={ROUTES.solar} element={<SolarPage />} />
           <Route path={ROUTES.evcs} element={<EvcsPage />} />
           <Route path={ROUTES.liftEscalators} element={<LiftsPage />} />
+          <Route path={ROUTES.currentVacancy} element={<CurrentVacancyPage />} />
+          <Route path={ROUTES.joinTeam} element={<JoinTeamPage />} />
+          <Route path={ROUTES.hrInitiatives} element={<HrInitiativesPage />} />
           {dynamicPages.map(([path, page]) => (
             <Route key={path} path={path} element={<ContentPage page={page} pathKey={path} />} />
           ))}

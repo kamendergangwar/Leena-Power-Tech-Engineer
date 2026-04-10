@@ -562,50 +562,106 @@
       ]
     },
     "/current-vacancy": {
-      "title": "Current Vacancy",
-      "subtitle": "Latest open positions across LPTE functions.",
-      "intro": "Current vacancies are listed under project, business development, and planning functions with role-wise location tags and detailed descriptions.",
+      "title": "Join us",
+      "subtitle": "Current openings across LPTE teams.",
+      "intro": "Browse active openings across LPTE teams and filter by category, type, or location.",
       "sections": [
         {
-          "heading": "Available Roles",
-          "bullets": [
-            "Supervisor Electrical - Project",
-            "Estimation Engineer - Business Development",
-            "Planning Engineer - Project Planning"
-          ]
+          "heading": "Jobs"
+        }
+      ],
+      "jobs": [
+        {
+          "title": "Supervisor Electrical",
+          "category": "Project",
+          "type": "Full Time",
+          "locations": [
+            "Kolhapur",
+            "Palghar",
+            "Ratnagiri",
+            "Vasai"
+          ],
+          "href": "https://leenapowertech.in/jobs/supervisor-electrical/"
+        },
+        {
+          "title": "Estimation Engineer",
+          "category": "Business development",
+          "type": "Full Time",
+          "locations": [
+            "CBD Belapur Navi Mumbai"
+          ],
+          "href": "https://leenapowertech.in/jobs/estimation-engineer/"
+        },
+        {
+          "title": "Planning Engineer",
+          "category": "Project Planning",
+          "type": "Full Time",
+          "locations": [
+            "CBD Belapur Navi Mumbai"
+          ],
+          "href": "https://leenapowertech.in/jobs/scm-executive/"
         }
       ]
     },
     "/join-the-team": {
       "title": "Join the Team",
-      "subtitle": "Professionally managed, people-first work culture.",
-      "intro": "LPTE follows the \"Believe in People\" principle and supports employee growth through team engagement programs, development pathways, and long-term career planning.",
       "sections": [
         {
-          "heading": "Opportunities In LPTE",
-          "body": "To join our team, you can share your resume with our hiring desk at careers@lptindia.in and hr@lptindia.in."
+          "heading": "Opportunities in LPTE",
+          "body": "LPTE is a professionally managed EPC company with employment policies and systems that radiate from a single principle \"Believe in people\". People are our most valued assets and strength. At LPTE we believe that taking care of our team and encouraging them is an important part of our culture. We regularly provide our teams the opportunity to reinvigorate themselves through various motivational programs like picnics, sports facilities, movie shows, birthday celebrations, etc. At LPTE, our HR Policies are liberal and employee friendly. We value our employees and extend all support and co-operation for their professional development and providing career growth plan. HR plays the role of catalyst and acts as a voice of employee in order to improve employee's contribution and achieving business goals.",
+          "ctaText": "To be a part of our team, all you need to do is to send us your resume to:",
+          "emails": [
+            "careers@lptindia.in",
+            "hr@lptindia.in"
+          ]
         },
         {
           "heading": "Important Notice",
-          "body": "LPTE follows a merit-based hiring practice and does not charge any fee, deposit, or payment at any stage of recruitment. Any such request is fraudulent and not associated with LPTE."
+          "body": "LPTE has a merit-based employee selection practice. LPTE does not charge any security deposit or any kind of fees from the prospective job seekers, either fresh or experienced, at any stage of their employee selection process. Any such communication impersonating LPTE and soliciting money is misleading and it does not represent LPTE and is contrary to its company policy. LPTE shall not accept any liability for the content of any such fraudulent / unauthorized activity or for the consequences of any action taken on the basis of such communication originating from the deceptive addressers. You are advised to be vigilant against any such fraudulent communication."
         }
       ]
     },
     "/hr-initiatives": {
-      "title": "HR Initiatives",
-      "subtitle": "Structured employee engagement and capability development programs.",
-      "intro": "Our HR initiatives are built to strengthen belonging, improve capability, and reward long-term commitment through structured activities and development platforms.",
+      "title": "Human Resource",
       "sections": [
         {
-          "heading": "Salient HR Initiatives",
-          "bullets": [
-            "Get-togethers, sports, cultural events, and festival celebrations",
-            "Employee welfare trust support programs",
-            "Best Employee and site-level recognition initiatives",
-            "Long Service Awards for sustained contribution",
-            "Learning Centre at CBD-Belapur for skill development"
+          "heading": "Salient HR Initiatives:",
+          "items": [
+            {
+              "title": "Get together / Picnic / Sports / Cultural Meets / Festival Celebration / Movie show / Birthday wishes:",
+              "body": "To promote a sense of belonging among our teams and to create an environment where employees feel at home is our aim. Moreover, these activities are also undertaken to facilitate recreation for our team. Special occasions call for special celebrations and to enjoy our team members birthdays we bring on the celebrations with birthday cakes and snacks for all every month."
+            },
+            {
+              "title": "Helping employees through welfare trust:",
+              "body": "All employees contribute towards LPTE welfare trust along with the regular contributions from management. The basic purpose of this trust is to assist employees in their need of hour."
+            },
+            {
+              "title": "Best employee performance awards:",
+              "body": "Every year we call in nominations from our employees to state their achievements and to nominate themselves as Best Employee. This activity is undertaken to promote a sense of healthy competition and to acknowledge efforts of thousands of our team members. Along with these awards for Best site and Site with best safety conditions are also presented."
+            },
+            {
+              "title": "Long service award:",
+              "body": "At LPTE we cherish and value the long term association of our team members and to appreciate their commitment and contributions we present them with the Long Service Awards as a token of our gratitude."
+            },
+            {
+              "title": "Learning and Development:",
+              "body": "To cater to the ever growing needs of the industry we have set up a state of the art learning centre at CBD-Belapur. LPTE Learning Centre caters to the learning development need of our team and moreover helps us build a highly skilled and well informed workforce. A good blend of skill development, behavioural and functional programs provide a platform for growth. In addition to this we cater to such development needs through experts at our various project sites and regional offices also."
+            }
           ]
         }
+      ],
+      "departmentColumns": [
+        [
+          "Business Development",
+          "Estimation",
+          "Account & Finance",
+          "Human Resource and Admin"
+        ],
+        [
+          "Project",
+          "Project Planning",
+          "Procurement"
+        ]
       ]
     },
     "/events": {
@@ -981,17 +1037,17 @@
       "hero": "/assets/pages/current-vacancy/jobs-card.png"
     },
     "/current-vacancy": {
-      "hero": "/assets/pages/current-vacancy/jobs-card.png"
+      "hero": "/assets/pages/current-vacancy/current-vacancy-hero-live.png"
     },
     "/join-the-team": {
-      "hero": "/assets/pages/join-team/join-hero.png"
+      "hero": "/assets/pages/join-team/join-team-hero-live.png"
     },
     "/hr-initiatives": {
-      "hero": "/assets/pages/hr/hr-hero.png",
+      "hero": "/assets/pages/hr/hr-hero-live.png",
       "gallery": [
         {
-          "src": "/assets/pages/hr/hr-1.png",
-          "alt": "HR initiatives visual"
+          "src": "/assets/pages/hr/hr-initiatives-photo-live.png",
+          "alt": "LPTE human resource initiatives"
         }
       ]
     },
