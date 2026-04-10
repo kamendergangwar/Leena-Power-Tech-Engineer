@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { ChevronDown, Menu, X } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { useData } from '../context/DataContext';
 
 const Navbar = () => {
   const { data } = useData();
   const { companyInfo, navigation } = data;
+  const location = useLocation();
   const [isSticky, setIsSticky] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [openGroup, setOpenGroup] = useState(null);
@@ -18,21 +19,34 @@ const Navbar = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  useEffect(() => {
+    setMobileMenuOpen(false);
+    setOpenGroup(null);
+  }, [location.pathname]);
+
+  useEffect(() => {
+    document.body.style.overflow = mobileMenuOpen ? 'hidden' : '';
+
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [mobileMenuOpen]);
+
   return (
-    <nav className={`w-full bg-white text-leena-navy transition-all duration-300 z-50 ${isSticky ? 'fixed top-0 shadow-lg' : 'relative'}`}>
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 md:px-12">
+    <nav className={`z-50 w-full bg-white text-leena-navy transition-all duration-300 ${isSticky ? 'fixed left-0 right-0 top-0 shadow-lg' : 'relative'}`}>
+      <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3 sm:py-4 md:px-12">
         <div className="flex items-center">
           <Link to={navigation[0].href} className="flex items-center">
-            <img src={companyInfo.logo} alt="Leena Powertech" className="h-16 w-16 object-cover md:h-[72px] md:w-[72px]" />
+            <img src={companyInfo.logo} alt="Leena Powertech" className="h-14 w-14 object-cover sm:h-16 sm:w-16 md:h-[72px] md:w-[72px]" />
           </Link>
         </div>
 
-        <div className="hidden lg:flex items-center space-x-8">
+        <div className="hidden items-center gap-6 lg:flex xl:gap-8">
           {navigation.map((link) => (
             <div key={link.name} className="group relative">
               <Link
                 to={link.href}
-                className="flex items-center text-sm font-semibold hover:text-leena-yellow transition-colors"
+                className="flex items-center text-sm font-semibold transition-colors hover:text-leena-yellow"
               >
                 {link.name}
                 {link.children ? <ChevronDown size={14} className="ml-1" /> : null}
@@ -57,15 +71,20 @@ const Navbar = () => {
         </div>
 
         <div className="lg:hidden">
-          <button onClick={() => setMobileMenuOpen(!mobileMenuOpen)} aria-label="Toggle menu">
+          <button
+            type="button"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            aria-label="Toggle menu"
+            className="rounded-full p-2 transition-colors hover:bg-slate-100"
+          >
             {mobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
           </button>
         </div>
       </div>
 
       {mobileMenuOpen && (
-        <div className="absolute w-full border-t border-slate-100 bg-white py-4 shadow-xl lg:hidden">
-          <div className="flex flex-col gap-2 px-6 text-sm font-semibold uppercase">
+        <div className="absolute left-0 right-0 top-full max-h-[calc(100vh-4.75rem)] overflow-y-auto border-t border-slate-100 bg-white py-4 shadow-xl lg:hidden">
+          <div className="flex flex-col gap-2 px-4 text-sm font-semibold uppercase sm:px-6">
             {navigation.map((link) => (
               <div key={link.name} className="rounded-2xl border border-slate-100 px-4 py-3">
                 <div className="flex items-center justify-between gap-4">

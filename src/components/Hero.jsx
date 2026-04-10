@@ -24,7 +24,7 @@ const Hero = () => {
       >
         {heroSlides.map((slide, index) => (
           <SwiperSlide key={index}>
-            <div className="relative h-[320px] w-full bg-[#111827] sm:h-[420px] md:h-[52vw] md:max-h-[900px] md:min-h-[560px]">
+            <div className="relative h-[280px] w-full bg-[#111827] sm:h-[420px] md:h-[52vw] md:min-h-[460px] md:max-h-[900px] lg:min-h-[560px]">
               <picture>
                 <source media="(max-width: 767px)" srcSet={slide.mobile} />
                 <img

@@ -9,7 +9,7 @@ function LeaderModal({ leader, onClose }) {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm"
+      className="fixed inset-0 z-[100] flex items-start justify-center bg-black/50 p-3 backdrop-blur-sm sm:items-center sm:p-4"
       onClick={onClose}
     >
       <motion.div
@@ -17,7 +17,7 @@ function LeaderModal({ leader, onClose }) {
         animate={{ scale: 1, opacity: 1 }}
         exit={{ scale: 0.8, opacity: 0 }}
         transition={{ type: 'spring', damping: 25, stiffness: 300 }}
-        className="relative max-w-2xl w-full bg-white rounded-3xl overflow-hidden shadow-[0_30px_60px_-15px_rgba(0,0,0,0.5)]"
+        className="relative max-h-[90vh] w-full max-w-2xl overflow-y-auto rounded-2xl bg-white shadow-[0_30px_60px_-15px_rgba(0,0,0,0.5)] sm:rounded-3xl"
         onClick={(event) => event.stopPropagation()}
       >
         <button
@@ -27,16 +27,16 @@ function LeaderModal({ leader, onClose }) {
           <X size={28} />
         </button>
 
-        <div className="p-10 flex flex-col items-center">
+        <div className="flex flex-col items-center p-6 sm:p-8 md:p-10">
           <img
             src={leader.detailImage || leader.image}
             alt={leader.name}
-            className="w-full max-w-[250px] rounded-lg shadow-sm border border-slate-100 mb-8"
+            className="mb-6 w-full max-w-[210px] rounded-lg border border-slate-100 shadow-sm sm:mb-8 sm:max-w-[250px]"
           />
-          <h3 className="text-[23px] font-bold text-[#102071] font-montserrat">{leader.name}</h3>
-          <h5 className="text-[14px] font-medium text-[#212121] font-montserrat mt-2 uppercase tracking-widest">{leader.role}</h5>
-          <div className="mt-8 text-center">
-            <p className="text-[#000000] leading-[1.6] text-[18px] font-montserrat px-4">
+          <h3 className="text-center font-montserrat text-xl font-bold text-[#102071] sm:text-[23px]">{leader.name}</h3>
+          <h5 className="mt-2 text-center font-montserrat text-xs font-medium uppercase tracking-[0.22em] text-[#212121] sm:text-[14px] sm:tracking-widest">{leader.role}</h5>
+          <div className="mt-6 text-center sm:mt-8">
+            <p className="px-0 font-montserrat text-base leading-[1.7] text-[#000000] sm:px-4 sm:text-[18px] sm:leading-[1.6]">
               {leader.fullDescription}
             </p>
           </div>
@@ -54,7 +54,7 @@ function LeaderCard({ leader, onSelect, initialAnimation }) {
       viewport={{ once: true, margin: '-100px' }}
       className="group flex flex-col items-center bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300"
     >
-      <div className="w-full p-6">
+      <div className="w-full p-5 sm:p-6">
         <div className="relative aspect-square overflow-hidden rounded-lg">
           <img
             src={leader.image}
@@ -63,18 +63,18 @@ function LeaderCard({ leader, onSelect, initialAnimation }) {
           />
         </div>
       </div>
-      <div className="flex flex-col items-center p-6 pt-0">
-        <h3 className="text-[20px] font-bold text-[#102071] font-montserrat text-center">{leader.name}</h3>
-        <h5 className="text-[12px] font-medium text-[#212121] font-montserrat mt-1 mb-4 italic text-center uppercase tracking-wider">
+      <div className="flex flex-col items-center p-5 pt-0 sm:p-6 sm:pt-0">
+        <h3 className="text-center font-montserrat text-lg font-bold text-[#102071] sm:text-[20px]">{leader.name}</h3>
+        <h5 className="mb-4 mt-1 text-center font-montserrat text-[11px] font-medium uppercase tracking-wider text-[#212121] italic sm:text-[12px]">
           {leader.role}
         </h5>
-        <div className="text-[#555] text-[13px] text-center leading-[1.6] mb-8 max-w-[280px]">
+        <div className="mb-6 max-w-[280px] text-center text-[13px] leading-[1.6] text-[#555] sm:mb-8">
           <p>{leader.shortDescription}</p>
         </div>
         <motion.button
           onClick={() => onSelect(leader)}
           whileHover={{ scale: 1.05 }}
-          className="px-8 py-2 rounded-md text-leena-navy font-bold uppercase tracking-widest text-[12px] shadow-sm transition-all duration-200"
+          className="w-full rounded-md px-6 py-2 text-[12px] font-bold uppercase tracking-widest text-leena-navy shadow-sm transition-all duration-200 sm:w-auto sm:px-8"
           style={{
             background: 'linear-gradient(rgb(255, 211, 30) 0px, rgb(247, 181, 0) 100%)',
           }}
@@ -99,13 +99,13 @@ const DirectorsPage = () => {
   return (
     <div className="flex flex-col bg-white overflow-x-hidden font-montserrat">
       {/* Intro Section */}
-      <section className="py-24 px-4 md:px-12 bg-white">
+      <section className="bg-white px-4 py-16 sm:px-6 sm:py-20 md:px-12 md:py-24">
         <div className="mx-auto max-w-5xl text-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="flex flex-wrap justify-center gap-2 text-[34px] font-bold font-montserrat mb-4"
+            className="mb-4 flex flex-wrap justify-center gap-2 text-3xl font-bold font-montserrat sm:text-[34px]"
           >
             <span className="text-[#102071]">{page.title}</span>
           </motion.div>
@@ -116,7 +116,7 @@ const DirectorsPage = () => {
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
             transition={{ delay: 0.3 }}
-            className="mt-12 space-y-6 text-[#555] text-[14px] leading-[1.8] max-w-4xl mx-auto font-montserrat"
+            className="mx-auto mt-10 max-w-4xl space-y-5 font-montserrat text-sm leading-[1.8] text-[#555] sm:mt-12 sm:space-y-6 sm:text-[14px]"
           >
             {introParagraphs.map((paragraph) => (
               <p key={paragraph}>{paragraph}</p>
@@ -126,17 +126,17 @@ const DirectorsPage = () => {
       </section>
 
       {/* Directors Header Ribbon */}
-      <section className="bg-[#102071] py-12 text-center text-white">
-          <h2 className="text-[34px] font-bold font-montserrat text-[#F7B500] mb-4">Our Directors</h2>
+      <section className="bg-[#102071] py-10 text-center text-white sm:py-12">
+          <h2 className="mb-4 text-3xl font-bold font-montserrat text-[#F7B500] sm:text-[34px]">Our Directors</h2>
           <div className="flex justify-center">
-             <Briefcase className="h-8 w-8 text-white" />
+             <Briefcase className="h-7 w-7 text-white sm:h-8 sm:w-8" />
           </div>
       </section>
 
       {/* Directors Grid */}
-      <section className="py-24 px-4 md:px-12 bg-[#f4f4f4]">
+      <section className="bg-[#f4f4f4] px-4 py-16 sm:px-6 sm:py-20 md:px-12 md:py-24">
         <div className="mx-auto max-w-7xl">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-5xl mx-auto">
+          <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 md:grid-cols-2 md:gap-12">
             {directors.map((director, index) => (
               <LeaderCard
                 key={director.name}
@@ -150,17 +150,17 @@ const DirectorsPage = () => {
       </section>
 
       {/* Leadership Header Ribbon */}
-      <section className="bg-[#102071] py-12 text-center text-white">
-          <h2 className="text-[34px] font-bold font-montserrat text-[#F7B500] mb-4">Our Leadership</h2>
-          <div className="flex justify-center items-center gap-4 max-w-lg mx-auto">
+      <section className="bg-[#102071] py-10 text-center text-white sm:py-12">
+          <h2 className="mb-4 text-3xl font-bold font-montserrat text-[#F7B500] sm:text-[34px]">Our Leadership</h2>
+          <div className="mx-auto flex max-w-lg items-center justify-center gap-3 sm:gap-4">
              <div className="h-[1px] flex-grow bg-white/30"></div>
-             <Users className="h-8 w-8 text-white" />
+             <Users className="h-7 w-7 text-white sm:h-8 sm:w-8" />
              <div className="h-[1px] flex-grow bg-white/30"></div>
           </div>
       </section>
 
       {/* Leadership Section */}
-      <section className="py-24 px-4 md:px-12 bg-white">
+      <section className="bg-white px-4 py-16 sm:px-6 sm:py-20 md:px-12 md:py-24">
         <div className="mx-auto max-w-7xl">
           <div className="max-w-[420px] mx-auto">
             {leadership.map((leader) => (

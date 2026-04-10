@@ -24,7 +24,7 @@ const EventsPage = () => {
   return (
     <div className="flex flex-col bg-white">
       {/* Hero Section */}
-      <section className="relative flex h-[350px] items-center overflow-hidden md:h-[400px]">
+      <section className="relative flex h-[280px] items-center overflow-hidden sm:h-[350px] md:h-[400px]">
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{ 
@@ -34,12 +34,12 @@ const EventsPage = () => {
           <div className="absolute inset-0 bg-leena-navy/40 backdrop-blur-[1px]"></div>
         </div>
         
-        <div className="relative z-10 w-full max-w-7xl mx-auto px-4 md:px-12">
+        <div className="relative z-10 mx-auto w-full max-w-7xl px-4 md:px-12">
           <motion.h1 
             initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, ease: 'easeOut' }}
-            className="text-5xl font-bold text-white md:text-6xl"
+            className="text-4xl font-bold text-white sm:text-5xl md:text-6xl"
           >
             {page.title}
           </motion.h1>
@@ -53,11 +53,11 @@ const EventsPage = () => {
       </section>
 
       {/* Album Section: Annual Day Flipbook with Integrated Pics */}
-      <section className="py-24 px-4 md:px-12 bg-slate-50">
+      <section className="bg-slate-50 px-4 py-16 sm:py-20 md:px-12 md:py-24">
         <div className="mx-auto max-w-7xl">
-          <div className="mb-16 text-center md:text-left">
+          <div className="mb-10 text-center md:mb-16 md:text-left">
             <span className="text-xs font-black uppercase tracking-[0.3em] text-leena-yellow">Interactive Highlights</span>
-            <h2 className="text-4xl font-bold text-leena-navy mt-2 uppercase tracking-tight">
+            <h2 className="mt-2 text-3xl font-bold uppercase tracking-tight text-leena-navy sm:text-4xl">
               {events[0]?.title || 'Annual Day Chronicle'}
             </h2>
             <p className="text-slate-500 mt-4 max-w-2xl leading-relaxed">
@@ -92,7 +92,7 @@ const EventsPage = () => {
               className="w-full pb-12 pt-8"
             >
               {annualDayPics.map((pic, index) => (
-                <SwiperSlide key={index} className="w-[300px] md:w-[600px] h-[400px] md:h-[500px]">
+                <SwiperSlide key={index} className="h-[320px] w-[82vw] max-w-[300px] sm:h-[400px] sm:w-[300px] md:h-[500px] md:w-[600px] md:max-w-none">
                   <div className="h-full w-full overflow-hidden rounded-[32px] shadow-2xl border-4 border-white">
                     <img src={pic} alt={`Annual Day ${index + 1}`} className="h-full w-full object-cover" />
                   </div>
@@ -112,9 +112,9 @@ const EventsPage = () => {
       </section>
 
       {/* Other Ongoing Chronicles */}
-      <section className="py-24 px-4 md:px-12 bg-white">
+      <section className="bg-white px-4 py-16 sm:py-20 md:px-12 md:py-24">
         <div className="mx-auto max-w-7xl">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 md:gap-10 lg:grid-cols-3 lg:gap-12">
             {events.slice(1).map((event, index) => (
               <motion.div
                 key={event.title}
@@ -153,8 +153,8 @@ const EventsPage = () => {
       </section>
 
       {/* Capture Section */}
-      <section className="py-20 border-t border-slate-100 bg-slate-50">
-        <div className="mx-auto max-w-7xl px-4 md:px-12 flex flex-col md:flex-row items-center justify-between gap-8">
+      <section className="border-t border-slate-100 bg-slate-50 py-16 sm:py-20">
+        <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-8 px-4 md:flex-row md:px-12">
           <div className="text-center md:text-left">
             <Camera className="h-10 w-10 text-leena-navy mb-4 mx-auto md:mx-0" />
             <h2 className="text-2xl font-bold text-leena-navy uppercase tracking-[0.2em]">Capture the Moment</h2>
@@ -166,7 +166,7 @@ const EventsPage = () => {
             href={archiveUrl}
             target="_blank"
             rel="noreferrer"
-            className="inline-flex items-center gap-4 rounded-full bg-leena-navy px-10 py-5 text-sm font-bold uppercase tracking-widest text-white shadow-2xl hover:bg-leena-yellow hover:text-leena-navy transition-all hover:scale-105"
+            className="inline-flex w-full items-center justify-center gap-4 rounded-full bg-leena-navy px-8 py-4 text-center text-sm font-bold uppercase tracking-widest text-white shadow-2xl transition-all hover:scale-105 hover:bg-leena-yellow hover:text-leena-navy sm:w-auto sm:px-10 sm:py-5"
           >
             Download Event Archive (PDF)
             <ExternalLink size={18} />

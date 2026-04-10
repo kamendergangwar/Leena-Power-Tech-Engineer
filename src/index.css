@@ -6,6 +6,9 @@
   html {
     scroll-behavior: smooth;
   }
+  html, body, #root {
+    min-height: 100%;
+  }
   body {
     @apply overflow-x-hidden bg-white font-roboto text-leena-gray;
   }
@@ -14,6 +17,9 @@
   }
   a {
     @apply transition-colors;
+  }
+  img, picture, video, canvas, svg, iframe {
+    max-width: 100%;
   }
 }
 
@@ -74,4 +80,19 @@
 .homepage-testimonials-slider .swiper-pagination-bullet {
   background: rgba(255, 255, 255, 0.55);
   opacity: 1;
+}
+
+@media (max-width: 640px) {
+  .swiper-button-next, .swiper-button-prev {
+    width: 42px !important;
+    height: 42px !important;
+  }
+
+  .swiper-button-next::after, .swiper-button-prev::after {
+    font-size: 15px !important;
+  }
+
+  .homepage-hero-slider .swiper-pagination {
+    bottom: 12px !important;
+  }
 }

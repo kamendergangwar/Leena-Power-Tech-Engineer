@@ -15,7 +15,7 @@ const TopBar = () => {
 
   return (
     <div className="bg-leena-yellow text-leena-navy">
-      <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-between gap-4 px-4 py-2 text-sm font-medium md:px-12">
+      <div className="mx-auto flex max-w-7xl flex-wrap items-center justify-center gap-3 px-4 py-2 text-xs font-medium sm:justify-between sm:text-sm md:px-12">
         <div className="flex items-center gap-4">
           {socialItems.map(({ key, label, Icon }) => {
             const href = socialLinks[key]?.trim();
@@ -42,14 +42,14 @@ const TopBar = () => {
             );
           })}
         </div>
-        <div className="flex flex-wrap items-center gap-x-6 gap-y-2">
+        <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-center sm:justify-end sm:text-left">
           <a href={companyInfo.phoneHref} className="flex items-center gap-2 transition-colors hover:text-white">
             <Phone size={14} />
-            <span>Call Us : {companyInfo.phone}</span>
+            <span className="break-words">Call Us : {companyInfo.phone}</span>
           </a>
           <a href={companyInfo.emailHref} className="flex items-center gap-2 transition-colors hover:text-white">
             <Mail size={14} />
-            <span>Email : {companyInfo.email}</span>
+            <span className="break-all sm:break-normal">Email : {companyInfo.email}</span>
           </a>
         </div>
       </div>

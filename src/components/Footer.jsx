@@ -27,16 +27,16 @@ const Footer = () => {
       />
       <div className="absolute inset-0" style={{ backgroundColor: 'rgba(4, 9, 76, 0.88)' }} aria-hidden="true" />
 
-      <div className="relative mx-auto max-w-[1260px] px-4 pb-10 pt-14 md:px-8 md:pt-16">
-        <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-[1.15fr_0.9fr_0.95fr_1.2fr]">
-          <div className="rounded-sm px-8 py-6" style={{ backgroundColor: 'rgba(10, 23, 96, 0.32)' }}>
-            <img src={companyInfo.logo} alt="Leena Powertech" className="h-28 w-28 object-cover md:h-32 md:w-32" />
-            <p className="mt-6 text-[16px] leading-relaxed text-white/95">&lsquo;{companyInfo.tagline}&rsquo;</p>
+      <div className="relative mx-auto max-w-[1260px] px-4 pb-8 pt-12 sm:px-5 md:px-8 md:pt-16">
+        <div className="grid grid-cols-1 gap-6 sm:gap-8 md:grid-cols-2 lg:grid-cols-[1.15fr_0.9fr_0.95fr_1.2fr] lg:gap-10">
+          <div className="rounded-sm px-5 py-6 sm:px-6" style={{ backgroundColor: 'rgba(10, 23, 96, 0.32)' }}>
+            <img src={companyInfo.logo} alt="Leena Powertech" className="h-24 w-24 object-cover sm:h-28 sm:w-28 md:h-32 md:w-32" />
+            <p className="mt-5 text-sm leading-relaxed text-white/95 sm:text-[16px]">&lsquo;{companyInfo.tagline}&rsquo;</p>
           </div>
 
-          <div className="rounded-sm px-8 py-6" style={{ backgroundColor: 'rgba(10, 23, 96, 0.32)' }}>
-            <h4 className="text-[23px] font-semibold leading-[1.2] text-leena-yellow">Quick Links</h4>
-            <ul className="mt-5 space-y-2 text-[16px] text-white/95">
+          <div className="rounded-sm px-5 py-6 sm:px-6" style={{ backgroundColor: 'rgba(10, 23, 96, 0.32)' }}>
+            <h4 className="text-xl font-semibold leading-[1.2] text-leena-yellow sm:text-[23px]">Quick Links</h4>
+            <ul className="mt-5 space-y-2 text-sm text-white/95 sm:text-[16px]">
               {quickLinks.map((link) => (
                 <li key={link.name}>
                   <Link to={link.href} className="transition-colors hover:text-leena-yellow">
@@ -47,9 +47,9 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className="rounded-sm px-8 py-6" style={{ backgroundColor: 'rgba(10, 23, 96, 0.32)' }}>
-            <h4 className="text-[23px] font-semibold leading-[1.2] text-leena-yellow">Service</h4>
-            <ul className="mt-5 space-y-2 text-[16px] text-white/95">
+          <div className="rounded-sm px-5 py-6 sm:px-6" style={{ backgroundColor: 'rgba(10, 23, 96, 0.32)' }}>
+            <h4 className="text-xl font-semibold leading-[1.2] text-leena-yellow sm:text-[23px]">Service</h4>
+            <ul className="mt-5 space-y-2 text-sm text-white/95 sm:text-[16px]">
               {serviceLinks.map((link) => (
                 <li key={link.name}>
                   <Link to={link.href} className="transition-colors hover:text-leena-yellow">
@@ -60,23 +60,23 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div className="rounded-sm px-8 py-6" style={{ backgroundColor: 'rgba(10, 23, 96, 0.32)' }}>
-            <h4 className="text-[23px] font-semibold leading-[1.2] text-leena-yellow">Get In Touch!</h4>
-            <div className="mt-5 space-y-3 text-[16px] text-white/95">
+          <div className="rounded-sm px-5 py-6 sm:px-6" style={{ backgroundColor: 'rgba(10, 23, 96, 0.32)' }}>
+            <h4 className="text-xl font-semibold leading-[1.2] text-leena-yellow sm:text-[23px]">Get In Touch!</h4>
+            <div className="mt-5 space-y-3 text-sm text-white/95 sm:text-[16px]">
               <a href={companyInfo.phoneHref} className="flex items-center gap-3 transition-colors hover:text-leena-yellow">
                 <Phone size={16} className="text-white" />
-                <span>{companyInfo.phone}</span>
+                <span className="break-words">{companyInfo.phone}</span>
               </a>
               <a href={companyInfo.emailHref} className="flex items-center gap-3 transition-colors hover:text-leena-yellow">
                 <Mail size={16} className="text-white" />
-                <span>{companyInfo.email}</span>
+                <span className="break-all sm:break-normal">{companyInfo.email}</span>
               </a>
               <div className="flex items-start gap-3">
                 <MapPin size={16} className="mt-1 flex-shrink-0 text-white" />
-                <p className="max-w-[28ch] leading-8 text-white/95 md:leading-9">{companyInfo.address}</p>
+                <p className="leading-7 text-white/95 sm:leading-8 md:leading-9">{companyInfo.address}</p>
               </div>
             </div>
-            <div className="mt-7 flex items-center gap-3">
+            <div className="mt-7 flex flex-wrap items-center gap-3">
               {socialItems.map(({ key, label, Icon }) => {
                 const href = socialLinks[key]?.trim();
 
@@ -108,7 +108,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="mt-12 border-t border-white/35 pt-7 text-center text-[15px] text-white/90">
+        <div className="mt-10 border-t border-white/35 pt-6 text-center text-sm text-white/90 sm:mt-12 sm:pt-7 sm:text-[15px]">
           <p>
             ©2026 All Rights Reserved. | Powred by{' '}
             <a href="https://heliosadvisory.com/" className="transition-colors hover:text-leena-yellow" target="_blank" rel="noopener noreferrer">

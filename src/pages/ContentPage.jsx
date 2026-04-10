@@ -10,17 +10,17 @@ const ContentPage = ({ page, pathKey }) => {
   const imageSet = pageImages[pathKey] ?? {};
 
   return (
-    <section className="py-16 md:py-20">
-      <div className="mx-auto max-w-6xl px-4 md:px-12">
+    <section className="py-12 sm:py-16 md:py-20">
+      <div className="mx-auto max-w-6xl px-4 sm:px-5 md:px-12">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, ease: 'easeOut' }}
-          className="rounded-[32px] bg-[linear-gradient(120deg,#0a173d_0%,#1f3778_60%,#2f4e98_100%)] p-10 text-white shadow-[0_35px_90px_-45px_rgba(10,23,61,0.75)] md:p-14"
+          className="rounded-[28px] bg-[linear-gradient(120deg,#0a173d_0%,#1f3778_60%,#2f4e98_100%)] p-6 text-white shadow-[0_35px_90px_-45px_rgba(10,23,61,0.75)] sm:p-8 md:rounded-[32px] md:p-14"
         >
           <p className="text-xs uppercase tracking-[0.28em] text-leena-yellow">Leena Powertech</p>
-          <h1 className="mt-4 text-3xl uppercase tracking-[0.14em] text-white md:text-5xl">{page.title}</h1>
-          <p className="mt-4 max-w-3xl text-base text-white/85 md:text-lg">{page.subtitle}</p>
+          <h1 className="mt-4 text-2xl uppercase tracking-[0.08em] text-white sm:text-3xl sm:tracking-[0.12em] md:text-5xl md:tracking-[0.14em]">{page.title}</h1>
+          <p className="mt-4 max-w-3xl text-sm text-white/85 sm:text-base md:text-lg">{page.subtitle}</p>
         </motion.div>
 
         {imageSet.hero ? (
@@ -28,9 +28,9 @@ const ContentPage = ({ page, pathKey }) => {
             initial={{ opacity: 0, y: 16 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.08, ease: 'easeOut' }}
-            className="mt-8 overflow-hidden rounded-[28px] border border-slate-200 bg-white p-3 shadow-[0_20px_60px_-45px_rgba(10,23,61,0.65)] md:p-4"
+            className="mt-6 overflow-hidden rounded-[24px] border border-slate-200 bg-white p-2 shadow-[0_20px_60px_-45px_rgba(10,23,61,0.65)] sm:mt-8 sm:p-3 md:rounded-[28px] md:p-4"
           >
-            <img src={imageSet.hero} alt={`${page.title} visual`} className="h-[220px] w-full rounded-[20px] object-cover md:h-[360px]" />
+            <img src={imageSet.hero} alt={`${page.title} visual`} className="h-[220px] w-full rounded-[18px] object-cover sm:h-[280px] md:h-[360px] md:rounded-[20px]" />
           </motion.div>
         ) : null}
 
@@ -38,14 +38,14 @@ const ContentPage = ({ page, pathKey }) => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.1, ease: 'easeOut' }}
-          className="mt-10 rounded-[28px] border border-slate-200 bg-white p-8 shadow-[0_24px_70px_-45px_rgba(10,23,61,0.55)] md:p-12"
+          className="mt-8 rounded-[24px] border border-slate-200 bg-white p-5 shadow-[0_24px_70px_-45px_rgba(10,23,61,0.55)] sm:p-8 md:mt-10 md:rounded-[28px] md:p-12"
         >
-          <p className="text-lg leading-8 text-slate-600">{page.intro}</p>
+          <p className="text-base leading-7 text-slate-600 sm:text-lg sm:leading-8">{page.intro}</p>
 
-          <div className="mt-10 space-y-8">
+          <div className="mt-8 space-y-6 sm:mt-10 sm:space-y-8">
             {page.sections.map((section) => (
-              <article key={section.heading} className="rounded-2xl bg-slate-50 p-6 md:p-8">
-                <h2 className="text-2xl uppercase tracking-[0.12em] text-leena-navy">{section.heading}</h2>
+              <article key={section.heading} className="rounded-2xl bg-slate-50 p-5 sm:p-6 md:p-8">
+                <h2 className="text-xl uppercase tracking-[0.1em] text-leena-navy sm:text-2xl sm:tracking-[0.12em]">{section.heading}</h2>
                 {section.body ? <p className="mt-4 leading-7 text-slate-600">{section.body}</p> : null}
                 {section.bullets ? (
                   <ul className="mt-4 space-y-3 text-slate-600">
@@ -82,7 +82,7 @@ const ContentPage = ({ page, pathKey }) => {
           <div className="mt-10">
             <Link
               to={ROUTES.contact}
-              className="inline-flex items-center gap-2 rounded-full bg-leena-yellow px-8 py-3 text-sm font-bold uppercase tracking-[0.14em] text-leena-navy transition hover:bg-leena-navy hover:text-white"
+              className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-leena-yellow px-8 py-3 text-center text-sm font-bold uppercase tracking-[0.14em] text-leena-navy transition hover:bg-leena-navy hover:text-white sm:w-auto"
             >
               Contact Team
               <ArrowRight size={16} />

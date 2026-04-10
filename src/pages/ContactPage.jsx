@@ -29,9 +29,9 @@ const ContactPage = () => {
   ];
 
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col overflow-x-hidden">
       {/* Hero Section */}
-      <section className="relative flex h-[350px] items-center justify-center overflow-hidden md:h-[450px]">
+      <section className="relative flex h-[280px] items-center justify-center overflow-hidden sm:h-[350px] md:h-[450px]">
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{ 
@@ -46,7 +46,7 @@ const ContactPage = () => {
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, ease: 'easeOut' }}
-            className="text-5xl font-bold text-white md:text-7xl"
+            className="text-4xl font-bold text-white sm:text-5xl md:text-7xl"
           >
             Contact Us
           </motion.h1>
@@ -60,7 +60,7 @@ const ContactPage = () => {
       </section>
 
       {/* Info Cards Section */}
-      <section className="-mt-16 relative z-20 px-4 md:px-12">
+      <section className="relative z-20 -mt-10 px-4 sm:-mt-16 md:px-12">
         <div className="mx-auto max-w-7xl">
           <div className="grid grid-cols-1 gap-6 md:grid-cols-3">
             {contactDetails.map((item, index) => (
@@ -69,17 +69,17 @@ const ContactPage = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.2 + index * 0.1, duration: 0.5 }}
-                className="group flex flex-col items-center rounded-2xl border border-white/20 bg-white/90 p-8 text-center shadow-xl backdrop-blur-md transition-all hover:-translate-y-2 hover:bg-white hover:shadow-2xl"
+                className="group flex min-w-0 flex-col items-center rounded-2xl border border-white/20 bg-white/90 p-6 text-center shadow-xl backdrop-blur-md transition-all hover:-translate-y-2 hover:bg-white hover:shadow-2xl sm:p-8"
               >
                 <div className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-leena-navy text-leena-yellow shadow-lg transition-transform duration-300 group-hover:scale-110">
                   {item.icon}
                 </div>
-                <h3 className="mb-2 text-xl font-bold text-leena-navy uppercase tracking-wider">{item.title}</h3>
+                <h3 className="mb-2 text-lg font-bold uppercase tracking-wider text-leena-navy sm:text-xl">{item.title}</h3>
                 <a 
                   href={item.link} 
                   target={item.link.startsWith('http') ? '_blank' : '_self'}
                   rel="noreferrer"
-                  className="text-slate-600 hover:text-leena-navy transition-colors duration-300 font-medium"
+                  className="break-words text-sm font-medium text-slate-600 transition-colors duration-300 hover:text-leena-navy sm:text-base"
                 >
                   {item.content}
                 </a>
@@ -90,15 +90,15 @@ const ContactPage = () => {
       </section>
 
       {/* Contact Form Section */}
-      <section className="py-24 px-4 md:px-12 bg-white">
+      <section className="bg-white px-4 py-16 sm:py-20 md:px-12 md:py-24">
         <div className="mx-auto max-w-7xl">
           {/* Section Heading */}
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-extrabold text-[#0c1a66] uppercase tracking-tight">Get In Touch</h2>
+          <div className="mb-12 text-center sm:mb-16">
+            <h2 className="text-3xl font-extrabold uppercase tracking-tight text-[#0c1a66] sm:text-4xl">Get In Touch</h2>
             <div className="mx-auto mt-4 h-1 w-20 bg-leena-yellow rounded-full"></div>
           </div>
 
-          <div className="grid grid-cols-1 gap-12 lg:grid-cols-2 items-center">
+          <div className="grid grid-cols-1 items-center gap-8 sm:gap-12 lg:grid-cols-2">
             {/* Left Side: Illustration */}
             <motion.div
               initial={{ opacity: 0, x: -30 }}
@@ -120,9 +120,9 @@ const ContactPage = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
-              className="rounded-[32px] bg-leena-navy p-10 shadow-2xl md:p-14"
+              className="rounded-[28px] bg-leena-navy p-6 shadow-2xl sm:p-8 md:rounded-[32px] md:p-14"
             >
-              <form className="space-y-8">
+              <form className="space-y-6 sm:space-y-8">
                 <div className="space-y-1">
                   <label className="text-xs font-bold text-white/60 uppercase tracking-widest px-1">Name *</label>
                   <input 
@@ -165,7 +165,7 @@ const ContactPage = () => {
                 <div className="pt-4">
                   <button 
                     type="submit"
-                    className="rounded-full bg-leena-yellow px-10 py-4 text-sm font-bold uppercase tracking-widest text-leena-navy transition-all hover:scale-105 hover:bg-white active:scale-95 shadow-lg"
+                    className="w-full rounded-full bg-leena-yellow px-10 py-4 text-sm font-bold uppercase tracking-widest text-leena-navy shadow-lg transition-all hover:scale-105 hover:bg-white active:scale-95 sm:w-auto"
                   >
                     Submit
                   </button>
@@ -177,12 +177,12 @@ const ContactPage = () => {
       </section>
 
       {/* Map Section */}
-      <section className="py-24 bg-slate-50">
-        <div className="mx-auto max-w-7xl px-4 md:px-12 text-center mb-16">
-          <h2 className="text-4xl font-extrabold text-[#0c1a66] uppercase tracking-tight">Location</h2>
+      <section className="bg-slate-50 py-16 sm:py-20 md:py-24">
+        <div className="mx-auto mb-12 max-w-7xl px-4 text-center sm:mb-16 md:px-12">
+          <h2 className="text-3xl font-extrabold uppercase tracking-tight text-[#0c1a66] sm:text-4xl">Location</h2>
           <div className="mx-auto mt-4 h-1 w-20 bg-leena-yellow rounded-full"></div>
         </div>
-        <div className="h-[500px] w-full overflow-hidden grayscale contrast-125 transition-all hover:grayscale-0 border-y border-slate-200 shadow-inner bg-slate-100">
+        <div className="h-[320px] w-full overflow-hidden border-y border-slate-200 bg-slate-100 grayscale contrast-125 shadow-inner transition-all hover:grayscale-0 sm:h-[420px] md:h-[500px]">
           <iframe 
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.50361285496!2d73.03715691538355!3d19.011986558619623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c39062eb1d91%3A0x8673328e67041a8e!2sLeena%20Powertech%20Engineers%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1657805244569!5m2!1sen!2sin" 
             width="100%" 

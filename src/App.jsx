@@ -125,9 +125,9 @@ function App() {
         initial={{ opacity: 0, scale: 0.85 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ delay: 0.6, duration: 0.35 }}
-        className="fixed bottom-8 right-8 bg-leena-navy text-leena-yellow p-3 rounded-full shadow-2xl hover:bg-leena-yellow hover:text-leena-navy transition-all duration-300 z-50 group border-2 border-leena-yellow"
+        className="group fixed bottom-4 right-4 z-50 rounded-full border-2 border-leena-yellow bg-leena-navy p-2.5 text-leena-yellow shadow-2xl transition-all duration-300 hover:bg-leena-yellow hover:text-leena-navy sm:bottom-8 sm:right-8 sm:p-3"
       >
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 transform group-hover:-translate-y-1 transition-transform" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 transition-transform group-hover:-translate-y-1 sm:h-6 sm:w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 15l7-7 7 7" />
         </svg>
       </motion.button>
