@@ -8,10 +8,13 @@ import { withApiBase } from '../utils/api';
 const Footer = () => {
   const { data } = useData();
   const { companyInfo, navigation } = data;
-  const quickLinks = navigation;
-  const serviceLinks = navigation.find((item) => item.name === 'Verticals')?.children ?? [];
+  const navItems = Array.isArray(navigation) ? navigation.filter((item) => item && typeof item === 'object') : [];
+  const quickLinks = navItems;
+  const serviceLinks = navItems.find((item) => item.name === 'Verticals')?.children?.filter((item) => item && typeof item === 'object') ?? [];
   const footerBackground = `${withApiBase('assets/footer/mep-4.png')}?v=20260408`;
   const socialLinks = companyInfo.socialLinks ?? {};
+  const logoSrc = companyInfo.logo?.trim() || null;
+  const tagline = companyInfo.tagline?.trim() || 'Connecting People and Power';
   const socialItems = [
     { key: 'facebook', label: 'Facebook', Icon: FacebookIcon },
     { key: 'linkedin', label: 'LinkedIn', Icon: LinkedInIcon },
@@ -30,17 +33,23 @@ const Footer = () => {
       <div className="relative mx-auto max-w-[1260px] px-4 pb-8 pt-12 sm:px-5 md:px-8 md:pt-16">
         <div className="grid grid-cols-1 gap-6 sm:gap-8 md:grid-cols-2 lg:grid-cols-[1.15fr_0.9fr_0.95fr_1.2fr] lg:gap-10">
           <div className="rounded-sm px-5 py-6 sm:px-6" style={{ backgroundColor: 'rgba(10, 23, 96, 0.32)' }}>
-            <img src={companyInfo.logo} alt="Leena Powertech" className="h-24 w-24 object-cover sm:h-28 sm:w-28 md:h-32 md:w-32" />
-            <p className="mt-5 text-sm leading-relaxed text-white/95 sm:text-[16px]">&lsquo;{companyInfo.tagline}&rsquo;</p>
+            {logoSrc ? (
+              <img src={logoSrc} alt="Leena Powertech" className="h-24 w-24 object-cover sm:h-28 sm:w-28 md:h-32 md:w-32" />
+            ) : (
+              <span className="flex h-24 w-24 items-center justify-center rounded-full bg-leena-navy text-xl font-bold text-leena-yellow sm:h-28 sm:w-28 md:h-32 md:w-32">
+                LP
+              </span>
+            )}
+            <p className="mt-5 text-sm leading-relaxed text-white/95 sm:text-[16px]">&lsquo;{tagline}&rsquo;</p>
           </div>
 
           <div className="rounded-sm px-5 py-6 sm:px-6" style={{ backgroundColor: 'rgba(10, 23, 96, 0.32)' }}>
             <h4 className="text-xl font-semibold leading-[1.2] text-leena-yellow sm:text-[23px]">Quick Links</h4>
             <ul className="mt-5 space-y-2 text-sm text-white/95 sm:text-[16px]">
-              {quickLinks.map((link) => (
-                <li key={link.name}>
-                  <Link to={link.href} className="transition-colors hover:text-leena-yellow">
-                    {link.name}
+              {quickLinks.map((link, index) => (
+                <li key={link.name || `quick-link-${index}`}>
+                  <Link to={link.href || '/'} className="transition-colors hover:text-leena-yellow">
+                    {link.name || 'Menu'}
                   </Link>
                 </li>
               ))}
@@ -50,10 +59,10 @@ const Footer = () => {
           <div className="rounded-sm px-5 py-6 sm:px-6" style={{ backgroundColor: 'rgba(10, 23, 96, 0.32)' }}>
             <h4 className="text-xl font-semibold leading-[1.2] text-leena-yellow sm:text-[23px]">Service</h4>
             <ul className="mt-5 space-y-2 text-sm text-white/95 sm:text-[16px]">
-              {serviceLinks.map((link) => (
-                <li key={link.name}>
-                  <Link to={link.href} className="transition-colors hover:text-leena-yellow">
-                    {link.name}
+              {serviceLinks.map((link, index) => (
+                <li key={link.name || `service-link-${index}`}>
+                  <Link to={link.href || '/'} className="transition-colors hover:text-leena-yellow">
+                    {link.name || 'Service'}
                   </Link>
                 </li>
               ))}

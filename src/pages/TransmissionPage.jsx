@@ -6,19 +6,28 @@ import { useData } from '../context/DataContext';
 const TransmissionPage = () => {
   const { data } = useData();
   const { pageContent, pageImages, routes: ROUTES } = data;
-  const page = pageContent[ROUTES.transmission];
-  const images = pageImages[ROUTES.transmission] ?? {};
-  const capabilities = page.sections[0]?.bullets ?? [];
+  const transmissionPath = ROUTES?.transmission || '/transmission';
+  const page = pageContent?.[transmissionPath];
+  const images = pageImages?.[transmissionPath] ?? {};
+  const capabilities = Array.isArray(page?.sections?.[0]?.bullets) ? page.sections[0].bullets : [];
+  const pageTitle = page?.title || 'Transmission';
+  const pageIntro = page?.intro || 'Content for this section will be available shortly.';
+  const heroBannerSrc = images.heroBanner || images.hero || null;
+  const heroImageSrc = images.hero || images.heroBanner || null;
 
   return (
     <div className="bg-white font-montserrat">
       <section className="relative isolate overflow-hidden">
         <div className="absolute inset-0">
-          <img
-            src={images.heroBanner || images.hero}
-            alt={`${page.title} hero`}
-            className="h-full w-full object-cover object-center"
-          />
+          {heroBannerSrc ? (
+            <img
+              src={heroBannerSrc}
+              alt={`${pageTitle} hero`}
+              className="h-full w-full object-cover object-center"
+            />
+          ) : (
+            <div className="h-full w-full bg-[#102071]" />
+          )}
           <div className="absolute inset-0 bg-black/20" />
         </div>
 
@@ -29,7 +38,7 @@ const TransmissionPage = () => {
             transition={{ duration: 0.55, ease: 'easeOut' }}
             className="sr-only"
           >
-            {page.title}
+            {pageTitle}
           </motion.h1>
         </div>
       </section>
@@ -43,7 +52,7 @@ const TransmissionPage = () => {
             transition={{ duration: 0.45, ease: 'easeOut' }}
             className="max-w-[980px] text-[11px] leading-5 text-[#4d4d4d] md:text-[12px]"
           >
-            {page.intro}
+            {pageIntro}
           </motion.p>
 
           <div className="mx-auto mt-10 grid max-w-[950px] gap-8 md:grid-cols-[360px_minmax(0,1fr)] md:items-start">
@@ -54,11 +63,15 @@ const TransmissionPage = () => {
               transition={{ duration: 0.5, ease: 'easeOut' }}
               className="overflow-hidden border border-[#d8d8d8] bg-white"
             >
-              <img
-                src={images.hero}
-                alt="Navi Mumbai Substation"
-                className="aspect-[4/3] w-full object-cover"
-              />
+              {heroImageSrc ? (
+                <img
+                  src={heroImageSrc}
+                  alt="Navi Mumbai Substation"
+                  className="aspect-[4/3] w-full object-cover"
+                />
+              ) : (
+                <div className="aspect-[4/3] w-full bg-slate-100" />
+              )}
             </motion.div>
 
             <motion.div

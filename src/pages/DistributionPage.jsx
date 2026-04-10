@@ -6,20 +6,31 @@ import { useData } from '../context/DataContext';
 const DistributionPage = () => {
   const { data } = useData();
   const { pageContent, pageImages, routes: ROUTES } = data;
-  const page = pageContent[ROUTES.distribution];
-  const images = pageImages[ROUTES.distribution] ?? {};
-  const introParagraphs = page.introParagraphs ?? [page.intro];
-  const statsColumns = page.statsColumns ?? [];
+  const distributionPath = ROUTES?.distribution || '/distribution';
+  const page = pageContent?.[distributionPath];
+  const images = pageImages?.[distributionPath] ?? {};
+  const introParagraphs = Array.isArray(page?.introParagraphs) && page.introParagraphs.length
+    ? page.introParagraphs
+    : page?.intro
+      ? [page.intro]
+      : ['Content for this section will be available shortly.'];
+  const statsColumns = Array.isArray(page?.statsColumns) ? page.statsColumns : [];
+  const pageTitle = page?.title || 'Distribution';
+  const heroBannerSrc = images.heroBanner || images.hero || null;
 
   return (
     <div className="bg-white font-montserrat">
       <section className="relative isolate overflow-hidden">
         <div className="absolute inset-0">
-          <img
-            src={images.heroBanner || images.hero}
-            alt={`${page.title} hero`}
-            className="h-full w-full object-cover object-center"
-          />
+          {heroBannerSrc ? (
+            <img
+              src={heroBannerSrc}
+              alt={`${pageTitle} hero`}
+              className="h-full w-full object-cover object-center"
+            />
+          ) : (
+            <div className="h-full w-full bg-[#102071]" />
+          )}
         </div>
         <div className="relative mx-auto flex min-h-[220px] max-w-6xl items-center justify-center px-4 py-10 md:min-h-[300px] md:px-12">
           <motion.h1
@@ -28,7 +39,7 @@ const DistributionPage = () => {
             transition={{ duration: 0.5, ease: 'easeOut' }}
             className="sr-only"
           >
-            {page.title}
+            {pageTitle}
           </motion.h1>
         </div>
       </section>

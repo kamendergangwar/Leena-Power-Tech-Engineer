@@ -6,20 +6,30 @@ import { useData } from '../context/DataContext';
 const MepPage = () => {
   const { data } = useData();
   const { pageContent, pageImages, routes: ROUTES } = data;
-  const page = pageContent[ROUTES.mep];
-  const images = pageImages[ROUTES.mep] ?? {};
-  const expertise = page.sections.find((section) => section.heading === 'Our Expertise');
-  const trackRecord = page.sections.find((section) => section.heading === 'Project Track Record');
+  const mepPath = ROUTES?.mep || '/mep-works';
+  const page = pageContent?.[mepPath];
+  const images = pageImages?.[mepPath] ?? {};
+  const sections = Array.isArray(page?.sections) ? page.sections : [];
+  const expertise = sections.find((section) => section?.heading === 'Our Expertise');
+  const trackRecord = sections.find((section) => section?.heading === 'Project Track Record');
+  const pageTitle = page?.title || 'MEP Works';
+  const pageIntro = page?.intro || 'Content for this section will be available shortly.';
+  const heroBannerSrc = images.heroBanner || images.hero || null;
+  const heroImageSrc = images.hero || images.heroBanner || null;
 
   return (
     <div className="bg-white font-montserrat">
       <section className="relative isolate overflow-hidden">
         <div className="absolute inset-0">
-          <img
-            src={images.heroBanner || images.hero}
-            alt={`${page.title} hero`}
-            className="h-full w-full object-cover object-top"
-          />
+          {heroBannerSrc ? (
+            <img
+              src={heroBannerSrc}
+              alt={`${pageTitle} hero`}
+              className="h-full w-full object-cover object-top"
+            />
+          ) : (
+            <div className="h-full w-full bg-[#12256f]" />
+          )}
         </div>
 
         <div className="relative mx-auto flex min-h-[320px] max-w-6xl items-center justify-center px-4 py-24 text-center md:min-h-[420px] md:px-12">
@@ -30,7 +40,7 @@ const MepPage = () => {
               transition={{ duration: 0.6, ease: 'easeOut' }}
               className="text-4xl font-bold tracking-[0.06em] text-white md:text-6xl"
             >
-              {page.title}
+              {pageTitle}
             </motion.h1>
             <motion.div
               initial={{ opacity: 0, scaleX: 0 }}
@@ -51,7 +61,7 @@ const MepPage = () => {
             transition={{ duration: 0.45, ease: 'easeOut' }}
             className="max-w-5xl text-[12px] leading-6 text-[#4d4d4d] md:text-[13px]"
           >
-            {page.intro}
+            {pageIntro}
           </motion.p>
 
           <div className="mt-10 grid gap-8 md:grid-cols-[minmax(0,1.05fr)_minmax(0,1fr)] md:items-start">
@@ -62,11 +72,15 @@ const MepPage = () => {
               transition={{ duration: 0.5, ease: 'easeOut' }}
               className="overflow-hidden rounded-[10px] border border-[#dedede] bg-white"
             >
-              <img
-                src={images.hero}
-                alt="Spaghetti Housing Kharghar"
-                className="aspect-[4/3] w-full object-cover"
-              />
+              {heroImageSrc ? (
+                <img
+                  src={heroImageSrc}
+                  alt="Spaghetti Housing Kharghar"
+                  className="aspect-[4/3] w-full object-cover"
+                />
+              ) : (
+                <div className="aspect-[4/3] w-full bg-slate-100" />
+              )}
             </motion.div>
 
             <motion.div

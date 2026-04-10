@@ -4,6 +4,8 @@ import { Briefcase, Users, X } from 'lucide-react';
 import { useData } from '../context/DataContext';
 
 function LeaderModal({ leader, onClose }) {
+  const leaderImage = leader?.detailImage || leader?.image || null;
+
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -28,11 +30,17 @@ function LeaderModal({ leader, onClose }) {
         </button>
 
         <div className="flex flex-col items-center p-6 sm:p-8 md:p-10">
-          <img
-            src={leader.detailImage || leader.image}
-            alt={leader.name}
-            className="mb-6 w-full max-w-[210px] rounded-lg border border-slate-100 shadow-sm sm:mb-8 sm:max-w-[250px]"
-          />
+          {leaderImage ? (
+            <img
+              src={leaderImage}
+              alt={leader.name}
+              className="mb-6 w-full max-w-[210px] rounded-lg border border-slate-100 shadow-sm sm:mb-8 sm:max-w-[250px]"
+            />
+          ) : (
+            <div className="mb-6 flex h-[260px] w-full max-w-[210px] items-center justify-center rounded-lg border border-slate-100 bg-slate-50 text-sm text-slate-500 sm:mb-8 sm:max-w-[250px]">
+              No Image
+            </div>
+          )}
           <h3 className="text-center font-montserrat text-xl font-bold text-[#102071] sm:text-[23px]">{leader.name}</h3>
           <h5 className="mt-2 text-center font-montserrat text-xs font-medium uppercase tracking-[0.22em] text-[#212121] sm:text-[14px] sm:tracking-widest">{leader.role}</h5>
           <div className="mt-6 text-center sm:mt-8">
@@ -47,6 +55,8 @@ function LeaderModal({ leader, onClose }) {
 }
 
 function LeaderCard({ leader, onSelect, initialAnimation }) {
+  const leaderImage = leader?.image || null;
+
   return (
     <motion.div
       initial={initialAnimation}
@@ -56,11 +66,17 @@ function LeaderCard({ leader, onSelect, initialAnimation }) {
     >
       <div className="w-full p-5 sm:p-6">
         <div className="relative aspect-square overflow-hidden rounded-lg">
-          <img
-            src={leader.image}
-            alt={leader.name}
-            className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-          />
+          {leaderImage ? (
+            <img
+              src={leaderImage}
+              alt={leader.name}
+              className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+            />
+          ) : (
+            <div className="flex h-full w-full items-center justify-center bg-slate-100 text-sm text-slate-500">
+              No Image
+            </div>
+          )}
         </div>
       </div>
       <div className="flex flex-col items-center p-5 pt-0 sm:p-6 sm:pt-0">
@@ -90,11 +106,17 @@ const DirectorsPage = () => {
   const { data } = useData();
   const [selectedLeader, setSelectedLeader] = useState(null);
   const { pageContent, routes: ROUTES, specialPages } = data;
-  const page = pageContent[ROUTES.directors];
-  const teamContent = specialPages?.[ROUTES.directors] ?? {};
-  const introParagraphs = teamContent.introParagraphs ?? [page.intro];
-  const directors = teamContent.directors ?? [];
-  const leadership = teamContent.leadership ?? [];
+  const directorsPath = ROUTES?.directors || '/directors';
+  const page = pageContent?.[directorsPath];
+  const teamContent = specialPages?.[directorsPath] ?? {};
+  const pageTitle = page?.title || 'Our Team';
+  const introParagraphs = Array.isArray(teamContent.introParagraphs) && teamContent.introParagraphs.length
+    ? teamContent.introParagraphs
+    : page?.intro
+      ? [page.intro]
+      : ['Leadership information will be available shortly.'];
+  const directors = Array.isArray(teamContent.directors) ? teamContent.directors.filter((item) => item && typeof item === 'object') : [];
+  const leadership = Array.isArray(teamContent.leadership) ? teamContent.leadership.filter((item) => item && typeof item === 'object') : [];
 
   return (
     <div className="flex flex-col bg-white overflow-x-hidden font-montserrat">
@@ -107,7 +129,7 @@ const DirectorsPage = () => {
             viewport={{ once: true }}
             className="mb-4 flex flex-wrap justify-center gap-2 text-3xl font-bold font-montserrat sm:text-[34px]"
           >
-            <span className="text-[#102071]">{page.title}</span>
+            <span className="text-[#102071]">{pageTitle}</span>
           </motion.div>
           <div className="mx-auto h-[3px] w-12 bg-[#F7B500] rounded-full"></div>
           

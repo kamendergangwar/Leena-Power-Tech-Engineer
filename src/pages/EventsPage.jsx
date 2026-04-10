@@ -14,12 +14,16 @@ import 'swiper/css/effect-coverflow';
 const EventsPage = () => {
   const { data } = useData();
   const { pageContent, pageImages, routes: ROUTES, specialPages } = data;
-  const page = pageContent[ROUTES.events];
-  const imageSet = pageImages[ROUTES.events] ?? {};
-  const eventContent = specialPages?.[ROUTES.events] ?? {};
-  const annualDayPics = eventContent.annualDayPics ?? [];
-  const events = eventContent.featuredEvents ?? [];
-  const archiveUrl = eventContent.archiveUrl;
+  const eventsPath = ROUTES?.events || '/events';
+  const page = pageContent?.[eventsPath];
+  const imageSet = pageImages?.[eventsPath] ?? {};
+  const eventContent = specialPages?.[eventsPath] ?? {};
+  const annualDayPics = Array.isArray(eventContent.annualDayPics) ? eventContent.annualDayPics : [];
+  const events = Array.isArray(eventContent.featuredEvents) ? eventContent.featuredEvents : [];
+  const archiveUrl = eventContent.archiveUrl?.trim() || '';
+  const pageTitle = page?.title || 'Events';
+  const pageIntro = page?.intro || 'Updates and highlights from our team activities.';
+  const heroSrc = imageSet.hero || null;
 
   return (
     <div className="flex flex-col bg-white">
@@ -28,7 +32,7 @@ const EventsPage = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{ 
-            backgroundImage: `url('${imageSet.hero}')`,
+            backgroundImage: heroSrc ? `url('${heroSrc}')` : 'linear-gradient(135deg,#0b1f67 0%,#1c3f8d 100%)',
           }}
         >
           <div className="absolute inset-0 bg-leena-navy/40 backdrop-blur-[1px]"></div>
@@ -41,7 +45,7 @@ const EventsPage = () => {
             transition={{ duration: 0.6, ease: 'easeOut' }}
             className="text-4xl font-bold text-white sm:text-5xl md:text-6xl"
           >
-            {page.title}
+            {pageTitle}
           </motion.h1>
           <motion.div 
             initial={{ opacity: 0, scaleX: 0 }}
@@ -61,7 +65,7 @@ const EventsPage = () => {
               {events[0]?.title || 'Annual Day Chronicle'}
             </h2>
             <p className="text-slate-500 mt-4 max-w-2xl leading-relaxed">
-              {page.intro}
+              {pageIntro}
             </p>
           </div>
 
@@ -94,7 +98,11 @@ const EventsPage = () => {
               {annualDayPics.map((pic, index) => (
                 <SwiperSlide key={index} className="h-[320px] w-[82vw] max-w-[300px] sm:h-[400px] sm:w-[300px] md:h-[500px] md:w-[600px] md:max-w-none">
                   <div className="h-full w-full overflow-hidden rounded-[32px] shadow-2xl border-4 border-white">
-                    <img src={pic} alt={`Annual Day ${index + 1}`} className="h-full w-full object-cover" />
+                    {pic ? (
+                      <img src={pic} alt={`Annual Day ${index + 1}`} className="h-full w-full object-cover" />
+                    ) : (
+                      <div className="flex h-full w-full items-center justify-center bg-slate-100 text-slate-500">No Image</div>
+                    )}
                   </div>
                 </SwiperSlide>
               ))}
@@ -125,11 +133,15 @@ const EventsPage = () => {
                 className="group flex flex-col"
               >
                 <div className="relative aspect-[3/4.2] overflow-hidden rounded-2xl shadow-lg transition-all duration-500 group-hover:-translate-y-2 group-hover:shadow-2xl">
-                  <img 
-                    src={event.image} 
-                    alt={event.title} 
-                    className="h-full w-full object-cover grayscale transition-all duration-700 group-hover:grayscale-0 group-hover:scale-105"
-                  />
+                  {event.image ? (
+                    <img 
+                      src={event.image} 
+                      alt={event.title} 
+                      className="h-full w-full object-cover grayscale transition-all duration-700 group-hover:grayscale-0 group-hover:scale-105"
+                    />
+                  ) : (
+                    <div className="flex h-full w-full items-center justify-center bg-slate-100 text-slate-500">No Image</div>
+                  )}
                   <div className="absolute inset-x-0 bottom-0 p-6 bg-gradient-to-t from-leena-navy to-transparent">
                      <span className="inline-block px-3 py-1 bg-leena-yellow text-[10px] font-black uppercase tracking-widest text-leena-navy rounded mb-3">{event.category}</span>
                      <h3 className="text-xl font-bold text-white uppercase tracking-wider">{event.title}</h3>
@@ -162,15 +174,21 @@ const EventsPage = () => {
               Discover the vibrant culture and dedicated team behind our power engineering excellence.
             </p>
           </div>
-          <a 
-            href={archiveUrl}
-            target="_blank"
-            rel="noreferrer"
-            className="inline-flex w-full items-center justify-center gap-4 rounded-full bg-leena-navy px-8 py-4 text-center text-sm font-bold uppercase tracking-widest text-white shadow-2xl transition-all hover:scale-105 hover:bg-leena-yellow hover:text-leena-navy sm:w-auto sm:px-10 sm:py-5"
-          >
-            Download Event Archive (PDF)
-            <ExternalLink size={18} />
-          </a>
+          {archiveUrl ? (
+            <a 
+              href={archiveUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex w-full items-center justify-center gap-4 rounded-full bg-leena-navy px-8 py-4 text-center text-sm font-bold uppercase tracking-widest text-white shadow-2xl transition-all hover:scale-105 hover:bg-leena-yellow hover:text-leena-navy sm:w-auto sm:px-10 sm:py-5"
+            >
+              Download Event Archive (PDF)
+              <ExternalLink size={18} />
+            </a>
+          ) : (
+            <span className="inline-flex w-full items-center justify-center gap-4 rounded-full bg-slate-300 px-8 py-4 text-center text-sm font-bold uppercase tracking-widest text-slate-600 sm:w-auto sm:px-10 sm:py-5">
+              Archive Unavailable
+            </span>
+          )}
         </div>
       </section>
     </div>
