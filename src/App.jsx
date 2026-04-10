@@ -53,10 +53,28 @@ function App() {
     );
   }
 
-  const { pageContent, routes: ROUTES } = data;
-  const dynamicPages = Object.entries(pageContent).filter(
-    ([path]) => path !== ROUTES.about && path !== ROUTES.contact && path !== ROUTES.events && path !== ROUTES.csr && path !== ROUTES.directors && path !== ROUTES.awards && path !== ROUTES.mep && path !== ROUTES.transmission && path !== ROUTES.distribution && path !== ROUTES.om && path !== ROUTES.railways && path !== ROUTES.solar && path !== ROUTES.evcs && path !== ROUTES.liftEscalators && path !== ROUTES.currentVacancy && path !== ROUTES.joinTeam && path !== ROUTES.hrInitiatives
-  );
+  const { pageContent, routes: ROUTES, pagePaths = [] } = data;
+  const staticPaths = new Set([
+    ROUTES.home,
+    ROUTES.about,
+    ROUTES.contact,
+    ROUTES.events,
+    ROUTES.csr,
+    ROUTES.directors,
+    ROUTES.awards,
+    ROUTES.mep,
+    ROUTES.transmission,
+    ROUTES.distribution,
+    ROUTES.om,
+    ROUTES.railways,
+    ROUTES.solar,
+    ROUTES.evcs,
+    ROUTES.liftEscalators,
+    ROUTES.currentVacancy,
+    ROUTES.joinTeam,
+    ROUTES.hrInitiatives,
+  ]);
+  const dynamicPages = pagePaths.filter((path) => path && !staticPaths.has(path));
   const isAboutPage = location.pathname === ROUTES.about;
 
   return (
@@ -111,8 +129,12 @@ function App() {
           <Route path={ROUTES.currentVacancy} element={<CurrentVacancyPage />} />
           <Route path={ROUTES.joinTeam} element={<JoinTeamPage />} />
           <Route path={ROUTES.hrInitiatives} element={<HrInitiativesPage />} />
-          {dynamicPages.map(([path, page]) => (
-            <Route key={path} path={path} element={<ContentPage page={page} pathKey={path} />} />
+          {dynamicPages.map((path) => (
+            <Route
+              key={path}
+              path={path}
+              element={pageContent[path] ? <ContentPage page={pageContent[path]} pathKey={path} /> : <NotFoundPage />}
+            />
           ))}
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
